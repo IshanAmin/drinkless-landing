@@ -12,7 +12,6 @@ const Index = () => {
     e.preventDefault();
     if (!email) return;
     
-    // Here you would typically integrate with your email service
     toast({
       title: "Thanks for joining!",
       description: "We'll keep you updated on our launch.",
@@ -25,7 +24,7 @@ const Index = () => {
     <div className="min-h-screen">
       <header className="container mx-auto px-4 py-6">
         <div className="flex justify-between items-center">
-          <h1 className="text-xl font-bold gradient-text">AppName</h1>
+          <h1 className="text-xl font-bold gradient-text">drinkless</h1>
           <Button variant="ghost">Contact</Button>
         </div>
       </header>
@@ -33,11 +32,11 @@ const Index = () => {
       <main className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-3xl mx-auto text-center animate-fade-up">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Transform Your Mobile Experience
-            <span className="gradient-text block">With Our Revolutionary App</span>
+            Start Your Life's Success Story:
+            <span className="gradient-text block">Leave Alcohol Behind</span>
           </h2>
           <p className="text-lg md:text-xl text-slate-600 mb-12">
-            Join thousands of users who are already experiencing the future of mobile applications.
+            Join thousands of individuals on their journey to a healthier, alcohol-free lifestyle.
             Be the first to know when we launch.
           </p>
 
@@ -63,7 +62,7 @@ const Index = () => {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5 text-primary" />
-              <span>No Credit Card</span>
+              <span>Private & Secure</span>
             </div>
           </div>
         </div>
@@ -78,7 +77,7 @@ const Index = () => {
 
       <footer className="container mx-auto px-4 py-8 mt-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-600">
-          <p>© 2024 AppName. All rights reserved.</p>
+          <p>© 2024 drinkless. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary">Privacy</a>
             <a href="#" className="hover:text-primary">Terms</a>
