@@ -33,7 +33,7 @@ const Index = () => {
         <div className="max-w-3xl mx-auto text-center animate-fade-up">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Start Your Life's Success Story
-            <span className="gradient-text block">Leave Alcohol Behind</span>
+            <span className="gradient-text block">Live Better Today</span>
           </h2>
           <p className="text-lg md:text-xl text-slate-600 mb-12">
             Join thousands of individuals on their journey to a healthier, alcohol-free lifestyle.
