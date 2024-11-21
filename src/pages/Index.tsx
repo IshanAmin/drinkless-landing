@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
-import { Smartphone, CheckCircle, ArrowRight } from "lucide-react";
+import { Smartphone, CheckCircle, ArrowRight, Brain, Heart, Star, Trophy, Users, Shield, Clock, Target, Sparkles } from "lucide-react";
 
 const Index = () => {
   const [email, setEmail] = useState("");
@@ -19,6 +19,54 @@ const Index = () => {
     });
     setEmail("");
   };
+
+  const features = [
+    {
+      icon: Brain,
+      title: "Clear Mind",
+      description: "Experience improved mental clarity and focus"
+    },
+    {
+      icon: Heart,
+      title: "Better Health",
+      description: "Enhance your overall physical wellbeing"
+    },
+    {
+      icon: Star,
+      title: "Quality Sleep",
+      description: "Enjoy deeper, more restful nights"
+    },
+    {
+      icon: Trophy,
+      title: "Achievement",
+      description: "Track your progress and celebrate wins"
+    },
+    {
+      icon: Users,
+      title: "Community",
+      description: "Connect with like-minded individuals"
+    },
+    {
+      icon: Shield,
+      title: "Protection",
+      description: "Guard your mental and physical health"
+    },
+    {
+      icon: Clock,
+      title: "More Time",
+      description: "Reclaim your precious time and energy"
+    },
+    {
+      icon: Target,
+      title: "Goal Setting",
+      description: "Set and achieve meaningful goals"
+    },
+    {
+      icon: Sparkles,
+      title: "New You",
+      description: "Discover your best self every day"
+    }
+  ];
 
   return (
     <div className="min-h-screen">
@@ -64,6 +112,26 @@ const Index = () => {
               <CheckCircle className="h-5 w-5 text-primary" />
               <span>Private & Secure</span>
             </div>
+          </div>
+        </div>
+
+        <div className="mt-24 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <div 
+                  key={index}
+                  className="p-6 rounded-lg border border-slate-200 bg-white/50 backdrop-blur-sm hover:border-primary/20 transition-colors"
+                >
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                    <Icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                  <p className="text-slate-600">{feature.description}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
 
