@@ -170,8 +170,14 @@ const Index = () => {
           </div>
         </div>
 
-        {/* TheGrid Section */}
+        {/* The New You Section */}
         <div className="mt-24 max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              The New You
+              <span className="gradient-text block">Transform Your Life</span>
+            </h2>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => {
               const Icon = feature.icon;
