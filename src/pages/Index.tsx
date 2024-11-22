@@ -110,7 +110,7 @@ const Index = () => {
             </Button>
           </form>
 
-          <div className="flex justify-center gap-8 text-slate-600">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-slate-600 text-sm md:text-base px-2">
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5 text-primary" />
               <span>Non-Invasive</span>
@@ -237,3 +237,4 @@ const Index = () => {
 };
 
 export default Index;
+
