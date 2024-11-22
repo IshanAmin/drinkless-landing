@@ -5,6 +5,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { Smartphone, CheckCircle, ArrowRight, Brain, Heart, Star, Clock, Handshake } from "lucide-react";
 import FeatureShowcase from "@/components/FeatureShowcase";
 import WaitlistCTA from "@/components/WaitlistCTA";
+import ClinicalStudies from "@/components/ClinicalStudies";
 
 const Index = () => {
   const [email, setEmail] = useState("");
@@ -61,16 +62,16 @@ const Index = () => {
 
       <main className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-3xl mx-auto text-center animate-fade-up">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight px-4">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             <span className="inline-block">Start Your Life's Success Story</span>
             <span className="gradient-text block">Live Better Today</span>
           </h2>
-          <p className="text-lg md:text-xl text-slate-600 mb-12 px-4">
+          <p className="text-lg md:text-xl text-slate-600 mb-12">
             Join thousands of individuals on their journey to a healthier, alcohol-free lifestyle.
             Be the first to know when we launch.
           </p>
 
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto mb-12 px-4">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto mb-12">
             <Input
               type="email"
               placeholder="Enter your email"
@@ -85,7 +86,7 @@ const Index = () => {
             </Button>
           </form>
 
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-8 text-slate-600 px-4">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-8 text-slate-600">
             <div className="flex items-center gap-2">
               <CheckCircle className="h-5 w-5 text-primary" />
               <span>Non-Invasive</span>
@@ -160,34 +161,7 @@ const Index = () => {
         <FeatureShowcase />
 
         {/* Clinical Studies Section */}
-        <div className="container mx-auto px-4 py-24 max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Clinically Proven
-              <span className="gradient-text block">Research-Backed Approach</span>
-            </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Our approach is grounded in extensive clinical research and proven methodologies.
-              Here are some key studies that validate our methods:
-            </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2">
-            {clinicalStudies.map((study, index) => (
-              <div 
-                key={index}
-                className="p-8 rounded-xl border border-slate-200 bg-white/50 backdrop-blur-sm hover:border-primary/20 transition-all duration-300 animate-fade-up"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <h3 className="text-xl font-semibold mb-4 gradient-text">{study.title}</h3>
-                <div className="space-y-4">
-                  <p className="text-sm text-slate-500 italic">{study.study}</p>
-                  <p className="text-slate-600">{study.findings}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <ClinicalStudies />
 
         {/* Bottom Waitlist CTA */}
         <WaitlistCTA />
