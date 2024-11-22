@@ -49,7 +49,7 @@ const Index = () => {
       description: "Reclaim your precious time and energy"
     },
     {
-      icon: Sparkles,
+      icon: Shield,
       title: "Respect",
       description: "Command the respect you deserve"
     }
