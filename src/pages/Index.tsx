@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 import { Smartphone, CheckCircle, ArrowRight, Brain, Heart, Star, Trophy, Users, Shield, Clock, Target, Sparkles } from "lucide-react";
+import FeatureShowcase from "@/components/FeatureShowcase";
 
 const Index = () => {
   const [email, setEmail] = useState("");
@@ -196,6 +197,9 @@ const Index = () => {
             })}
           </div>
         </div>
+
+        {/* Feature Showcase Section */}
+        <FeatureShowcase />
 
         {/* Clinical Studies Section */}
         <div className="container mx-auto px-4 py-24 max-w-6xl">
