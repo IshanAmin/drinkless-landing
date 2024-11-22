@@ -89,14 +89,11 @@ const Index = () => {
 
       <main className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-3xl mx-auto text-center animate-fade-up">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-none">
-            <span className="whitespace-nowrap">Start Your Life's Success Story</span>
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight md:leading-none px-4">
+            <span className="block mb-2">Start Your Life's</span>
+            <span className="block mb-2">Success Story</span>
             <span className="gradient-text block">Live Better Today</span>
           </h2>
-          <p className="text-lg md:text-xl text-slate-600 mb-12">
-            Join thousands of individuals on their journey to a healthier, alcohol-free lifestyle.
-            Be the first to know when we launch.
-          </p>
 
           <form onSubmit={handleSubmit} className="flex gap-4 max-w-md mx-auto mb-12">
             <Input
