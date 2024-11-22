@@ -24,7 +24,7 @@ const WaitlistCTA = () => {
     <div className="py-24 bg-white/50 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-none whitespace-nowrap">
             Ready to start your success story?
           </h2>
           <form onSubmit={handleSubmit} className="flex gap-4 max-w-md mx-auto">
