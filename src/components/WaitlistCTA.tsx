@@ -3,21 +3,36 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 import { ArrowRight } from "lucide-react";
+import { addToWaitlist } from "@/utils/brevo";
 
 const WaitlistCTA = () => {
   const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
     
-    toast({
-      title: "Thanks for joining!",
-      description: "We'll keep you updated on our launch.",
-      duration: 5000,
-    });
-    setEmail("");
+    setIsLoading(true);
+    try {
+      await addToWaitlist(email);
+      toast({
+        title: "Thanks for joining!",
+        description: "We'll keep you updated on our launch.",
+        duration: 5000,
+      });
+      setEmail("");
+    } catch (error) {
+      toast({
+        title: "Oops!",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
+        duration: 5000,
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -36,9 +51,15 @@ const WaitlistCTA = () => {
               onChange={(e) => setEmail(e.target.value)}
               className="h-12"
               required
+              disabled={isLoading}
             />
-            <Button type="submit" size="lg" className="bg-primary hover:bg-primary/90">
-              Join Waitlist
+            <Button 
+              type="submit" 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90"
+              disabled={isLoading}
+            >
+              {isLoading ? "Joining..." : "Join Waitlist"}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </form>
