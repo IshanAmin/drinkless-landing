@@ -236,6 +236,9 @@ const Index = () => {
       <footer className="container mx-auto px-4 py-8 mt-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-600">
           <p>© 2024 drinkless. All rights reserved.</p>
+          <p className="flex items-center gap-1">
+            Made with <Heart className="h-4 w-4 text-red-500 fill-red-500" /> in Omaha, Nebraska
+          </p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary">Privacy</a>
             <a href="#" className="hover:text-primary">Terms</a>
@@ -243,6 +246,7 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
     </div>
   );
 };
