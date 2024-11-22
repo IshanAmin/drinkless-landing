@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 import { Smartphone, CheckCircle, ArrowRight, Brain, Heart, Star, Trophy, Users, Shield, Clock, Target, Sparkles } from "lucide-react";
 import FeatureShowcase from "@/components/FeatureShowcase";
+import WaitlistCTA from "@/components/WaitlistCTA";
 
 const Index = () => {
   const [email, setEmail] = useState("");
@@ -231,6 +232,8 @@ const Index = () => {
           </div>
         </div>
 
+        {/* Bottom Waitlist CTA */}
+        <WaitlistCTA />
       </main>
 
       <footer className="container mx-auto px-4 py-8 mt-auto">
