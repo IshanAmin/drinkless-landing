@@ -50,8 +50,8 @@ const Index = () => {
     },
     {
       icon: Sparkles,
-      title: "New You",
-      description: "Discover your best self every day"
+      title: "Respect",
+      description: "Command the respect you deserve"
     }
   ];
 
