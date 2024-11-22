@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
-import { Smartphone, CheckCircle, ArrowRight, Brain, Heart, Star, Trophy, Users, Shield, Clock, Target, Sparkles } from "lucide-react";
+import { Smartphone, CheckCircle, ArrowRight, Brain, Heart, Star, Shield, Clock, Sparkles } from "lucide-react";
 import FeatureShowcase from "@/components/FeatureShowcase";
 import WaitlistCTA from "@/components/WaitlistCTA";
 
@@ -39,16 +39,6 @@ const Index = () => {
       description: "Enjoy deeper, more restful nights"
     },
     {
-      icon: Trophy,
-      title: "Achievement",
-      description: "Track your progress and celebrate wins"
-    },
-    {
-      icon: Users,
-      title: "Community",
-      description: "Connect with like-minded individuals"
-    },
-    {
       icon: Shield,
       title: "Protection",
       description: "Guard your mental and physical health"
@@ -57,11 +47,6 @@ const Index = () => {
       icon: Clock,
       title: "More Time",
       description: "Reclaim your precious time and energy"
-    },
-    {
-      icon: Target,
-      title: "Goal Setting",
-      description: "Set and achieve meaningful goals"
     },
     {
       icon: Sparkles,
