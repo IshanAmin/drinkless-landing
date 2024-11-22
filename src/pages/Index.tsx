@@ -225,9 +225,7 @@ const Index = () => {
             Made with <Heart className="h-4 w-4 text-red-500 fill-red-500" /> in Omaha, Nebraska
           </p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-primary">Privacy</a>
-            <a href="#" className="hover:text-primary">Terms</a>
-            <a href="#" className="hover:text-primary">Contact</a>
+            <a href="mailto:info@drinkless.app" className="hover:text-primary">Contact</a>
           </div>
         </div>
       </footer>
