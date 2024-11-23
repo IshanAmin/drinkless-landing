@@ -82,7 +82,7 @@ const Index = () => {
     <div className="min-h-screen">
       <header className="container mx-auto px-4 py-6">
         <div className="flex justify-between items-center">
-          <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" alt="Logo" className="h-8 w-auto" />
+          <img src="https://ishanamin.com/wp-content/uploads/2024/11/drinkless-app-logo.png" alt="Drinkless Logo" className="h-8 w-auto" />
           <Button variant="ghost">Contact</Button>
         </div>
       </header>
@@ -235,4 +235,3 @@ const Index = () => {
 };
 
 export default Index;
-
