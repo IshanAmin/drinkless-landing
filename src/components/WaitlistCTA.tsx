@@ -59,7 +59,7 @@ const WaitlistCTA = () => {
               className="bg-primary hover:bg-primary/90"
               disabled={isLoading}
             >
-              {isLoading ? "Joining..." : "Join Waitlist"}
+              {isLoading ? "Requesting..." : "Request Access"}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </form>

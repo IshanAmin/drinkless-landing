@@ -82,7 +82,7 @@ const Index = () => {
     <div className="min-h-screen">
       <header className="container mx-auto px-4 py-6">
         <div className="flex justify-between items-center">
-          <h1 className="text-xl font-bold gradient-text">drinkless</h1>
+          <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" alt="Logo" className="h-8 w-auto" />
           <Button variant="ghost">Contact</Button>
         </div>
       </header>
@@ -105,7 +105,7 @@ const Index = () => {
               required
             />
             <Button type="submit" size="lg" className="bg-primary hover:bg-primary/90">
-              Join Waitlist
+              Request Access
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </form>
