@@ -43,7 +43,7 @@ const WaitlistCTA = () => {
             Ready to start your
             <span className="block">success story?</span>
           </h2>
-          <form onSubmit={handleSubmit} className="flex gap-4 max-w-md mx-auto">
+          <form onSubmit={handleSubmit} className="flex gap-4 max-w-md mx-auto mb-2">
             <Input
               type="email"
               placeholder="Enter your email"
@@ -63,6 +63,9 @@ const WaitlistCTA = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </form>
+          <p className="text-sm text-slate-600 mt-2">
+            Reserve your spot now to gain access to the app while we're still in beta!
+          </p>
         </div>
       </div>
     </div>

@@ -95,7 +95,7 @@ const Index = () => {
             <span className="gradient-text block">Live Better Today</span>
           </h2>
 
-          <form onSubmit={handleSubmit} className="flex gap-4 max-w-md mx-auto mb-12">
+          <form onSubmit={handleSubmit} className="flex gap-4 max-w-md mx-auto mb-2">
             <Input
               type="email"
               placeholder="Enter your email"
@@ -109,6 +109,9 @@ const Index = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </form>
+          <p className="text-sm text-slate-600 mt-2 mb-12">
+            Reserve your spot now to gain access to the app while we're still in beta!
+          </p>
 
           <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-slate-600 text-sm md:text-base px-2">
             <div className="flex items-center gap-2">
@@ -229,7 +232,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-
     </div>
   );
 };
