@@ -7,12 +7,17 @@ const WaitlistCTA = () => {
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = async (data: { email: string; city: string; state: string }) => {
+  const handleSubmit = async (data: { 
+    email: string; 
+    city: string; 
+    state: string;
+    country: string;
+  }) => {
     if (!data.email) return;
     
     setIsLoading(true);
     try {
-      await addToWaitlist(data.email);
+      await addToWaitlist(data.email, data.city, data.state, data.country);
       toast({
         title: "Thanks for joining!",
         description: "We'll keep you updated on our launch.",

@@ -1,7 +1,12 @@
 const BREVO_API_KEY = 'xsmtpsib-0bbb8e35bdd90134d18a399f083b82e3c47f8a46add8a9140bee8705077d4d8a-LSvbxHIzkwW8AD7f';
 const BREVO_LIST_ID = 42;
 
-export const addToWaitlist = async (email: string) => {
+export const addToWaitlist = async (
+  email: string, 
+  city: string, 
+  state: string,
+  country: string
+) => {
   try {
     const response = await fetch('https://api.brevo.com/v3/contacts', {
       method: 'POST',
@@ -12,6 +17,11 @@ export const addToWaitlist = async (email: string) => {
       },
       body: JSON.stringify({
         email,
+        attributes: {
+          CITY: city,
+          STATE: state,
+          COUNTRY: country,
+        },
         listIds: [BREVO_LIST_ID],
         updateEnabled: true,
       }),
