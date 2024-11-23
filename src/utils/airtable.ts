@@ -18,6 +18,7 @@ export const addToWaitlist = async (data: {
   city: string;
   state: string;
   country: string;
+  platform: string;
 }) => {
   // If Airtable is not configured, log the submission
   if (!base) {
@@ -33,6 +34,7 @@ export const addToWaitlist = async (data: {
           City: data.city,
           State: data.state,
           Country: data.country,
+          Platform: data.platform,
         }
       }
     ]);

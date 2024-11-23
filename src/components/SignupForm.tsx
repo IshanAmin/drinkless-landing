@@ -40,6 +40,7 @@ const SignupForm = () => {
   const [customCountry, setCustomCountry] = useState("");
   const [email, setEmail] = useState("");
   const [city, setCity] = useState("");
+  const [platform, setPlatform] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
@@ -53,6 +54,7 @@ const SignupForm = () => {
         city,
         state: state === "custom" ? customState : state,
         country: country === "custom" ? customCountry : country,
+        platform,
       });
 
       toast({
@@ -66,6 +68,7 @@ const SignupForm = () => {
       setCity("");
       setState("");
       setCountry("");
+      setPlatform("");
       setCustomState("");
       setCustomCountry("");
     } catch (error) {
@@ -100,6 +103,22 @@ const SignupForm = () => {
         required
       />
       
+      <Select
+        value={platform}
+        onValueChange={setPlatform}
+        required
+      >
+        <SelectTrigger className="h-12">
+          <SelectValue placeholder="Select Platform" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectGroup>
+            <SelectItem value="iOS">iOS</SelectItem>
+            <SelectItem value="Android">Android</SelectItem>
+          </SelectGroup>
+        </SelectContent>
+      </Select>
+
       <div className="flex gap-4">
         <Select
           value={state}
