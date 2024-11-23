@@ -1,16 +1,16 @@
 import Airtable from 'airtable';
 
 // Check if environment variables are set
-const AIRTABLE_API_KEY = import.meta.env.VITE_AIRTABLE_API_KEY;
+const AIRTABLE_TOKEN = import.meta.env.VITE_AIRTABLE_TOKEN;
 const AIRTABLE_BASE_ID = import.meta.env.VITE_AIRTABLE_BASE_ID;
 
-if (!AIRTABLE_API_KEY || !AIRTABLE_BASE_ID) {
+if (!AIRTABLE_TOKEN || !AIRTABLE_BASE_ID) {
   console.warn('Airtable environment variables are not set. Form submissions will be logged to console only.');
 }
 
 // Initialize Airtable if credentials are available
-const base = AIRTABLE_API_KEY && AIRTABLE_BASE_ID 
-  ? new Airtable({apiKey: AIRTABLE_API_KEY}).base(AIRTABLE_BASE_ID)
+const base = AIRTABLE_TOKEN && AIRTABLE_BASE_ID 
+  ? new Airtable({apiKey: AIRTABLE_TOKEN}).base(AIRTABLE_BASE_ID)
   : null;
 
 export const addToWaitlist = async (data: {
