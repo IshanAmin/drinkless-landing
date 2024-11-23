@@ -7,6 +7,21 @@ export const addToWaitlist = async (
   state: string,
   country: string
 ) => {
+  console.log('Attempting to add to waitlist:', { email, city, state, country });
+  
+  const payload = {
+    email,
+    attributes: {
+      CITY: city,
+      STATE: state,
+      COUNTRY: country,
+    },
+    listIds: [BREVO_LIST_ID],
+    updateEnabled: true,
+  };
+  
+  console.log('Sending payload to Brevo:', payload);
+  
   const response = await fetch('https://api.brevo.com/v3/contacts', {
     method: 'POST',
     headers: {
@@ -14,23 +29,18 @@ export const addToWaitlist = async (
       'Content-Type': 'application/json',
       'api-key': BREVO_API_KEY,
     },
-    body: JSON.stringify({
-      email,
-      attributes: {
-        CITY: city,
-        STATE: state,
-        COUNTRY: country,
-      },
-      listIds: [BREVO_LIST_ID],
-      updateEnabled: true,
-    }),
+    body: JSON.stringify(payload),
   });
 
+  console.log('Brevo API Response Status:', response.status);
+  
   if (!response.ok) {
     const errorData = await response.json();
-    console.error('Brevo API Error:', errorData);
+    console.error('Brevo API Error Response:', errorData);
     throw new Error(errorData.message || 'Failed to add to waitlist');
   }
 
-  return await response.json();
+  const responseData = await response.json();
+  console.log('Brevo API Success Response:', responseData);
+  return responseData;
 };
