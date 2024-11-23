@@ -24,9 +24,10 @@ const WaitlistCTA = () => {
         duration: 5000,
       });
     } catch (error) {
+      console.error('Submission error:', error);
       toast({
         title: "Oops!",
-        description: "Something went wrong. Please try again later.",
+        description: error instanceof Error ? error.message : "Something went wrong. Please try again later.",
         variant: "destructive",
         duration: 5000,
       });
