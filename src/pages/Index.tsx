@@ -12,7 +12,7 @@ const Index = () => {
           <img 
             src="https://ishanamin.com/wp-content/uploads/2024/11/drinkless-app-logo.png" 
             alt="Drinkless Logo" 
-            className="h-8 w-auto" 
+            className="h-12 w-auto" // Changed from h-8 to h-12
           />
           <Button variant="ghost">Contact</Button>
         </div>
