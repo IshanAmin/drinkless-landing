@@ -9,6 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
   SelectLabel,
+  SelectGroup,
 } from "@/components/ui/select";
 
 interface SignupFormProps {
@@ -92,12 +93,14 @@ const SignupForm = ({ onSubmit, isLoading }: SignupFormProps) => {
             <SelectValue placeholder="Select Country" />
           </SelectTrigger>
           <SelectContent>
-            {COUNTRIES.map((c) => (
-              <SelectItem key={c} value={c}>
-                {c}
-              </SelectItem>
-            ))}
-            <SelectItem value="custom">Other</SelectItem>
+            <SelectGroup>
+              {COUNTRIES.map((c) => (
+                <SelectItem key={c} value={c}>
+                  {c}
+                </SelectItem>
+              ))}
+              <SelectItem value="custom">Other</SelectItem>
+            </SelectGroup>
           </SelectContent>
         </Select>
         
@@ -126,19 +129,25 @@ const SignupForm = ({ onSubmit, isLoading }: SignupFormProps) => {
             <SelectValue placeholder="Select State/Province" />
           </SelectTrigger>
           <SelectContent>
-            <SelectLabel>United States</SelectLabel>
-            {US_STATES.map((s) => (
-              <SelectItem key={s} value={s}>
-                {s}
-              </SelectItem>
-            ))}
-            <SelectLabel>Canada</SelectLabel>
-            {CANADIAN_PROVINCES.map((p) => (
-              <SelectItem key={p} value={p}>
-                {p}
-              </SelectItem>
-            ))}
-            <SelectItem value="custom">Other</SelectItem>
+            <SelectGroup>
+              <SelectLabel>United States</SelectLabel>
+              {US_STATES.map((s) => (
+                <SelectItem key={s} value={s}>
+                  {s}
+                </SelectItem>
+              ))}
+            </SelectGroup>
+            <SelectGroup>
+              <SelectLabel>Canada</SelectLabel>
+              {CANADIAN_PROVINCES.map((p) => (
+                <SelectItem key={p} value={p}>
+                  {p}
+                </SelectItem>
+              ))}
+            </SelectGroup>
+            <SelectGroup>
+              <SelectItem value="custom">Other</SelectItem>
+            </SelectGroup>
           </SelectContent>
         </Select>
 
