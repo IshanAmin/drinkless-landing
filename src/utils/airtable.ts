@@ -1,8 +1,17 @@
 import Airtable from 'airtable';
 
-// Initialize Airtable
-const base = new Airtable({apiKey: import.meta.env.VITE_AIRTABLE_API_KEY})
-  .base(import.meta.env.VITE_AIRTABLE_BASE_ID);
+// Check if environment variables are set
+const AIRTABLE_API_KEY = import.meta.env.VITE_AIRTABLE_API_KEY;
+const AIRTABLE_BASE_ID = import.meta.env.VITE_AIRTABLE_BASE_ID;
+
+if (!AIRTABLE_API_KEY || !AIRTABLE_BASE_ID) {
+  console.warn('Airtable environment variables are not set. Form submissions will be logged to console only.');
+}
+
+// Initialize Airtable if credentials are available
+const base = AIRTABLE_API_KEY && AIRTABLE_BASE_ID 
+  ? new Airtable({apiKey: AIRTABLE_API_KEY}).base(AIRTABLE_BASE_ID)
+  : null;
 
 export const addToWaitlist = async (data: {
   email: string;
@@ -10,6 +19,12 @@ export const addToWaitlist = async (data: {
   state: string;
   country: string;
 }) => {
+  // If Airtable is not configured, log the submission
+  if (!base) {
+    console.log('Form submission (Airtable not configured):', data);
+    return null;
+  }
+
   try {
     const record = await base('Waitlist').create([
       {
