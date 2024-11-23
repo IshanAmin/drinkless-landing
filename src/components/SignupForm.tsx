@@ -8,8 +8,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
+  SelectLabel,
 } from "@/components/ui/select";
-import { Command } from "cmdk";
 
 interface SignupFormProps {
   onSubmit: (data: { 
@@ -126,13 +126,13 @@ const SignupForm = ({ onSubmit, isLoading }: SignupFormProps) => {
             <SelectValue placeholder="Select State/Province" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="" disabled>United States</SelectItem>
+            <SelectLabel>United States</SelectLabel>
             {US_STATES.map((s) => (
               <SelectItem key={s} value={s}>
                 {s}
               </SelectItem>
             ))}
-            <SelectItem value="" disabled>Canada</SelectItem>
+            <SelectLabel>Canada</SelectLabel>
             {CANADIAN_PROVINCES.map((p) => (
               <SelectItem key={p} value={p}>
                 {p}
