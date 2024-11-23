@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowRight } from "lucide-react";
-import { useState } from "react";
+import { useForm, ValidationError } from '@formspree/react';
 import {
   Select,
   SelectContent,
@@ -11,16 +11,7 @@ import {
   SelectLabel,
   SelectGroup,
 } from "@/components/ui/select";
-
-interface SignupFormProps {
-  onSubmit: (data: { 
-    email: string; 
-    city: string; 
-    state: string;
-    country: string;
-  }) => void;
-  isLoading?: boolean;
-}
+import { useState } from "react";
 
 const US_STATES = [
   "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
@@ -41,48 +32,88 @@ const CANADIAN_PROVINCES = [
 
 const COUNTRIES = ["United States", "Canada"];
 
-const SignupForm = ({ onSubmit, isLoading }: SignupFormProps) => {
-  const [email, setEmail] = useState("");
-  const [city, setCity] = useState("");
+const SignupForm = () => {
   const [state, setState] = useState("");
   const [country, setCountry] = useState("");
   const [customState, setCustomState] = useState("");
   const [customCountry, setCustomCountry] = useState("");
+  
+  const [formState, handleSubmit] = useForm("xzbnzwkj"); // Replace with your form ID
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    onSubmit({ 
-      email, 
-      city, 
-      state: state || customState, 
-      country: country || customCountry 
-    });
-  };
+  if (formState.succeeded) {
+    return (
+      <div className="text-center p-4">
+        <p className="text-lg font-semibold text-green-600">Thanks for joining!</p>
+        <p className="text-sm text-slate-600">We'll keep you updated on our launch.</p>
+      </div>
+    );
+  }
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-md mx-auto mb-2">
       <Input
+        id="email"
         type="email"
+        name="email"
         placeholder="Enter your email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
         className="h-12"
         required
-        disabled={isLoading}
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={formState.errors}
+      />
+      
+      <Input
+        id="city"
+        name="city"
+        type="text"
+        placeholder="City"
+        className="h-12"
+        required
       />
       
       <div className="flex gap-4">
-        <Input
-          type="text"
-          placeholder="City"
-          value={city}
-          onChange={(e) => setCity(e.target.value)}
-          className="h-12"
-          required
-          disabled={isLoading}
-        />
-        
         <Select
+          name="country"
+          value={country}
+          onValueChange={(value) => {
+            setCountry(value);
+            setCustomCountry("");
+          }}
+        >
+          <SelectTrigger className="h-12">
+            <SelectValue placeholder="Select Country" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              {COUNTRIES.map((c) => (
+                <SelectItem key={c} value={c}>
+                  {c}
+                </SelectItem>
+              ))}
+              <SelectItem value="custom">Other</SelectItem>
+            </SelectGroup>
+          </SelectContent>
+        </Select>
+        
+        {country === "custom" && (
+          <Input
+            name="customCountry"
+            type="text"
+            placeholder="Enter country"
+            value={customCountry}
+            onChange={(e) => setCustomCountry(e.target.value)}
+            className="h-12"
+            required
+          />
+        )}
+      </div>
+
+      <div className="flex gap-4">
+        <Select
+          name="state"
           value={state}
           onValueChange={(value) => {
             setState(value);
@@ -117,49 +148,13 @@ const SignupForm = ({ onSubmit, isLoading }: SignupFormProps) => {
         
         {state === "custom" && (
           <Input
+            name="customState"
             type="text"
             placeholder="Enter state/province"
             value={customState}
             onChange={(e) => setCustomState(e.target.value)}
             className="h-12"
             required
-            disabled={isLoading}
-          />
-        )}
-      </div>
-
-      <div className="flex gap-4">
-        <Select
-          value={country}
-          onValueChange={(value) => {
-            setCountry(value);
-            setCustomCountry("");
-          }}
-        >
-          <SelectTrigger className="h-12">
-            <SelectValue placeholder="Select Country" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              {COUNTRIES.map((c) => (
-                <SelectItem key={c} value={c}>
-                  {c}
-                </SelectItem>
-              ))}
-              <SelectItem value="custom">Other</SelectItem>
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-        
-        {country === "custom" && (
-          <Input
-            type="text"
-            placeholder="Enter country"
-            value={customCountry}
-            onChange={(e) => setCustomCountry(e.target.value)}
-            className="h-12"
-            required
-            disabled={isLoading}
           />
         )}
       </div>
@@ -168,9 +163,9 @@ const SignupForm = ({ onSubmit, isLoading }: SignupFormProps) => {
         type="submit" 
         size="lg" 
         className="bg-primary hover:bg-primary/90"
-        disabled={isLoading}
+        disabled={formState.submitting}
       >
-        {isLoading ? "Requesting..." : "Request Access"}
+        {formState.submitting ? "Requesting..." : "Request Access"}
         <ArrowRight className="ml-2 h-5 w-5" />
       </Button>
     </form>

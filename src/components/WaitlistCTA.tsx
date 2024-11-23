@@ -1,41 +1,6 @@
-import { useState } from "react";
-import { useToast } from "@/components/ui/use-toast";
-import { addToWaitlist } from "@/utils/brevo";
 import SignupForm from "./SignupForm";
 
 const WaitlistCTA = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const { toast } = useToast();
-
-  const handleSubmit = async (data: { 
-    email: string; 
-    city: string; 
-    state: string;
-    country: string;
-  }) => {
-    if (!data.email) return;
-    
-    setIsLoading(true);
-    try {
-      await addToWaitlist(data.email, data.city, data.state, data.country);
-      toast({
-        title: "Thanks for joining!",
-        description: "We'll keep you updated on our launch.",
-        duration: 5000,
-      });
-    } catch (error) {
-      console.error('Submission error:', error);
-      toast({
-        title: "Oops!",
-        description: error instanceof Error ? error.message : "Something went wrong. Please try again later.",
-        variant: "destructive",
-        duration: 5000,
-      });
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   return (
     <div className="py-24 bg-white/50 backdrop-blur-sm">
       <div className="container mx-auto px-4">
@@ -44,7 +9,7 @@ const WaitlistCTA = () => {
             Ready to start your
             <span className="block">success story?</span>
           </h2>
-          <SignupForm onSubmit={handleSubmit} isLoading={isLoading} />
+          <SignupForm />
           <p className="text-sm text-slate-600 mt-2">
             Reserve your spot now to gain access to the app while we're still in beta!
           </p>
