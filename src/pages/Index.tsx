@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import { CheckCircle, Brain, Heart, Star, Shield, Clock, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button"; // Added Button import
 import FeatureShowcase from "@/components/FeatureShowcase";
 import WaitlistCTA from "@/components/WaitlistCTA";
 import SignupForm from "@/components/SignupForm";
