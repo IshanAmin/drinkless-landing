@@ -20,13 +20,18 @@ export const addToWaitlist = async (data: {
   country: string;
   platform: string;
 }) => {
+  console.log('Attempting to add to waitlist with data:', data);
+  console.log('Using Airtable token:', AIRTABLE_TOKEN?.substring(0, 10) + '...');
+  console.log('Using Airtable base ID:', AIRTABLE_BASE_ID);
+
   // If Airtable is not configured, log the submission
   if (!base) {
-    console.log('Form submission (Airtable not configured):', data);
-    return null;
+    console.error('Airtable base is not initialized!');
+    throw new Error('Airtable configuration is missing');
   }
 
   try {
+    console.log('Creating record in Airtable...');
     const record = await base('Waitlist').create([
       {
         fields: {
@@ -38,6 +43,7 @@ export const addToWaitlist = async (data: {
         }
       }
     ]);
+    console.log('Record created successfully:', record);
     return record;
   } catch (error) {
     console.error('Error adding to waitlist:', error);
