@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowRight } from "lucide-react";
-import { useForm, ValidationError } from '@formspree/react';
+import { useState } from "react";
+import { addToWaitlist } from "@/utils/airtable";
+import { useToast } from "@/components/ui/use-toast";
 import {
   Select,
   SelectContent,
@@ -11,7 +13,6 @@ import {
   SelectLabel,
   SelectGroup,
 } from "@/components/ui/select";
-import { useState } from "react";
 
 const US_STATES = [
   "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
@@ -37,38 +38,63 @@ const SignupForm = () => {
   const [country, setCountry] = useState("");
   const [customState, setCustomState] = useState("");
   const [customCountry, setCustomCountry] = useState("");
-  
-  const [formState, handleSubmit] = useForm("xzbnzwkj"); // Replace with your form ID
+  const [email, setEmail] = useState("");
+  const [city, setCity] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
-  if (formState.succeeded) {
-    return (
-      <div className="text-center p-4">
-        <p className="text-lg font-semibold text-green-600">Thanks for joining!</p>
-        <p className="text-sm text-slate-600">We'll keep you updated on our launch.</p>
-      </div>
-    );
-  }
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      await addToWaitlist({
+        email,
+        city,
+        state: state === "custom" ? customState : state,
+        country: country === "custom" ? customCountry : country,
+      });
+
+      toast({
+        title: "Thanks for joining!",
+        description: "We'll keep you updated on our launch.",
+        duration: 5000,
+      });
+
+      // Reset form
+      setEmail("");
+      setCity("");
+      setState("");
+      setCountry("");
+      setCustomState("");
+      setCustomCountry("");
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was a problem adding you to the waitlist. Please try again.",
+        variant: "destructive",
+        duration: 5000,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-md mx-auto mb-2">
       <Input
-        id="email"
         type="email"
-        name="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
         placeholder="Enter your email"
         className="h-12"
         required
       />
-      <ValidationError 
-        prefix="Email" 
-        field="email"
-        errors={formState.errors}
-      />
       
       <Input
-        id="city"
-        name="city"
         type="text"
+        value={city}
+        onChange={(e) => setCity(e.target.value)}
         placeholder="City"
         className="h-12"
         required
@@ -76,7 +102,6 @@ const SignupForm = () => {
       
       <div className="flex gap-4">
         <Select
-          name="state"
           value={state}
           onValueChange={(value) => {
             setState(value);
@@ -111,7 +136,6 @@ const SignupForm = () => {
         
         {state === "custom" && (
           <Input
-            name="customState"
             type="text"
             placeholder="Enter state/province"
             value={customState}
@@ -124,7 +148,6 @@ const SignupForm = () => {
 
       <div className="flex gap-4">
         <Select
-          name="country"
           value={country}
           onValueChange={(value) => {
             setCountry(value);
@@ -148,7 +171,6 @@ const SignupForm = () => {
         
         {country === "custom" && (
           <Input
-            name="customCountry"
             type="text"
             placeholder="Enter country"
             value={customCountry}
@@ -163,9 +185,9 @@ const SignupForm = () => {
         type="submit" 
         size="lg" 
         className="bg-primary hover:bg-primary/90"
-        disabled={formState.submitting}
+        disabled={isSubmitting}
       >
-        {formState.submitting ? "Requesting..." : "Request Access"}
+        {isSubmitting ? "Requesting..." : "Request Access"}
         <ArrowRight className="ml-2 h-5 w-5" />
       </Button>
     </form>
