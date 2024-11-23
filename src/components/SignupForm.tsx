@@ -76,43 +76,6 @@ const SignupForm = () => {
       
       <div className="flex gap-4">
         <Select
-          name="country"
-          value={country}
-          onValueChange={(value) => {
-            setCountry(value);
-            setCustomCountry("");
-          }}
-        >
-          <SelectTrigger className="h-12">
-            <SelectValue placeholder="Select Country" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              {COUNTRIES.map((c) => (
-                <SelectItem key={c} value={c}>
-                  {c}
-                </SelectItem>
-              ))}
-              <SelectItem value="custom">Other</SelectItem>
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-        
-        {country === "custom" && (
-          <Input
-            name="customCountry"
-            type="text"
-            placeholder="Enter country"
-            value={customCountry}
-            onChange={(e) => setCustomCountry(e.target.value)}
-            className="h-12"
-            required
-          />
-        )}
-      </div>
-
-      <div className="flex gap-4">
-        <Select
           name="state"
           value={state}
           onValueChange={(value) => {
@@ -153,6 +116,43 @@ const SignupForm = () => {
             placeholder="Enter state/province"
             value={customState}
             onChange={(e) => setCustomState(e.target.value)}
+            className="h-12"
+            required
+          />
+        )}
+      </div>
+
+      <div className="flex gap-4">
+        <Select
+          name="country"
+          value={country}
+          onValueChange={(value) => {
+            setCountry(value);
+            setCustomCountry("");
+          }}
+        >
+          <SelectTrigger className="h-12">
+            <SelectValue placeholder="Select Country" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              {COUNTRIES.map((c) => (
+                <SelectItem key={c} value={c}>
+                  {c}
+                </SelectItem>
+              ))}
+              <SelectItem value="custom">Other</SelectItem>
+            </SelectGroup>
+          </SelectContent>
+        </Select>
+        
+        {country === "custom" && (
+          <Input
+            name="customCountry"
+            type="text"
+            placeholder="Enter country"
+            value={customCountry}
+            onChange={(e) => setCustomCountry(e.target.value)}
             className="h-12"
             required
           />

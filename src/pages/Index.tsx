@@ -1,23 +1,13 @@
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import { CheckCircle, Brain, Heart, Star, Shield, Clock, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button"; // Added Button import
+import { Button } from "@/components/ui/button";
 import FeatureShowcase from "@/components/FeatureShowcase";
 import WaitlistCTA from "@/components/WaitlistCTA";
 import SignupForm from "@/components/SignupForm";
 
 const Index = () => {
   const { toast } = useToast();
-
-  const handleSubmit = (data: { email: string; city: string; state: string }) => {
-    if (!data.email) return;
-    
-    toast({
-      title: "Thanks for joining!",
-      description: "We'll keep you updated on our launch.",
-      duration: 5000,
-    });
-  };
 
   const features = [
     {
@@ -92,7 +82,7 @@ const Index = () => {
             <span className="gradient-text block">Live Better Today</span>
           </h2>
 
-          <SignupForm onSubmit={handleSubmit} />
+          <SignupForm />
           <p className="text-sm text-slate-600 mt-2 mb-12">
             Reserve your spot now to gain access to the app while we're still in beta!
           </p>
