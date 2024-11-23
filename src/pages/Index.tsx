@@ -1,25 +1,21 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
-import { Smartphone, CheckCircle, ArrowRight, Brain, Heart, Star, Shield, Clock, Sparkles } from "lucide-react";
+import { CheckCircle, Brain, Heart, Star, Shield, Clock, Sparkles } from "lucide-react";
 import FeatureShowcase from "@/components/FeatureShowcase";
 import WaitlistCTA from "@/components/WaitlistCTA";
+import SignupForm from "@/components/SignupForm";
 
 const Index = () => {
-  const [email, setEmail] = useState("");
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
+  const handleSubmit = (data: { email: string; city: string; state: string }) => {
+    if (!data.email) return;
     
     toast({
       title: "Thanks for joining!",
       description: "We'll keep you updated on our launch.",
       duration: 5000,
     });
-    setEmail("");
   };
 
   const features = [
@@ -95,20 +91,7 @@ const Index = () => {
             <span className="gradient-text block">Live Better Today</span>
           </h2>
 
-          <form onSubmit={handleSubmit} className="flex gap-4 max-w-md mx-auto mb-2">
-            <Input
-              type="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="h-12"
-              required
-            />
-            <Button type="submit" size="lg" className="bg-primary hover:bg-primary/90">
-              Request Access
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </form>
+          <SignupForm onSubmit={handleSubmit} />
           <p className="text-sm text-slate-600 mt-2 mb-12">
             Reserve your spot now to gain access to the app while we're still in beta!
           </p>

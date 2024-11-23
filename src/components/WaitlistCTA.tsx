@@ -1,28 +1,23 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
-import { ArrowRight } from "lucide-react";
 import { addToWaitlist } from "@/utils/brevo";
+import SignupForm from "./SignupForm";
 
 const WaitlistCTA = () => {
-  const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
+  const handleSubmit = async (data: { email: string; city: string; state: string }) => {
+    if (!data.email) return;
     
     setIsLoading(true);
     try {
-      await addToWaitlist(email);
+      await addToWaitlist(data.email);
       toast({
         title: "Thanks for joining!",
         description: "We'll keep you updated on our launch.",
         duration: 5000,
       });
-      setEmail("");
     } catch (error) {
       toast({
         title: "Oops!",
@@ -43,26 +38,7 @@ const WaitlistCTA = () => {
             Ready to start your
             <span className="block">success story?</span>
           </h2>
-          <form onSubmit={handleSubmit} className="flex gap-4 max-w-md mx-auto mb-2">
-            <Input
-              type="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="h-12"
-              required
-              disabled={isLoading}
-            />
-            <Button 
-              type="submit" 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90"
-              disabled={isLoading}
-            >
-              {isLoading ? "Requesting..." : "Request Access"}
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </form>
+          <SignupForm onSubmit={handleSubmit} isLoading={isLoading} />
           <p className="text-sm text-slate-600 mt-2">
             Reserve your spot now to gain access to the app while we're still in beta!
           </p>
