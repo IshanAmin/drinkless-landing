@@ -5,6 +5,7 @@ import FeatureShowcase from "@/components/FeatureShowcase";
 import WaitlistCTA from "@/components/WaitlistCTA";
 import TransformSection from "@/components/TransformSection";
 import ResearchSection from "@/components/ResearchSection";
+import SavingsCalculator from "@/components/SavingsCalculator";
 
 const Index = () => {
   return (
@@ -60,6 +61,7 @@ const Index = () => {
         </div>
 
         <TransformSection />
+        <SavingsCalculator />
         <FeatureShowcase />
         <ResearchSection />
         <WaitlistCTA />
