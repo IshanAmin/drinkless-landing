@@ -73,7 +73,7 @@ export const LocationSection = ({
           }}
         >
           <SelectTrigger className="h-12">
-            <SelectValue placeholder="Select State/Province" />
+            <SelectValue placeholder="State" />
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
@@ -119,7 +119,7 @@ export const LocationSection = ({
           }}
         >
           <SelectTrigger className="h-12">
-            <SelectValue placeholder="Select Country" />
+            <SelectValue placeholder="Country" />
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
