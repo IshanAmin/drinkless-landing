@@ -23,6 +23,7 @@ export const EmailPlatformSection = ({
 }: EmailPlatformSectionProps) => {
   return (
     <div className="flex flex-col gap-4">
+      <p className="text-slate-600 text-sm">A 90-day focused journey on sobriety</p>
       <Input
         type="email"
         value={email}
