@@ -32,7 +32,7 @@ const SignupForm = () => {
 
       toast({
         title: "Congratulations! You're ready to change your life for the better!",
-        description: "We'll keep you updated when we're ready for the launch. Your place in line is secured.",
+        description: "We'll keep you updated via email when we launch. Your place in line is secured.",
         duration: 5000,
       });
 
