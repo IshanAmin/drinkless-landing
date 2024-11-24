@@ -1,5 +1,5 @@
 import { Card } from "./ui/card";
-import { Brain, Heart, Smile, Sun, Wallet, Battery } from "lucide-react";
+import { Brain, Heart, Smile, Sun, Wallet, Battery, Clock, Award, Trophy } from "lucide-react";
 
 const TransformSection = () => {
   const benefits = [
@@ -32,6 +32,21 @@ const TransformSection = () => {
       icon: <Battery className="w-8 h-8 text-primary" />,
       title: "Better Sleep",
       description: "Enjoy quality, restorative sleep every night"
+    },
+    {
+      icon: <Clock className="w-8 h-8 text-primary" />,
+      title: "Time Revival",
+      description: "Reclaim precious moments and create lasting memories"
+    },
+    {
+      icon: <Award className="w-8 h-8 text-primary" />,
+      title: "Respect",
+      description: "Build authentic relationships and earn genuine admiration"
+    },
+    {
+      icon: <Trophy className="w-8 h-8 text-primary" />,
+      title: "Success",
+      description: "Break through barriers and achieve your full potential"
     }
   ];
 
