@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { BookOpen, Lightbulb } from "lucide-react";
 
 const ResearchSection = () => {
   const studies = [
@@ -43,16 +44,25 @@ const ResearchSection = () => {
                   {study.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <ScrollArea className="h-[200px] rounded-md border p-4">
-                  <CardDescription className="text-sm font-medium text-slate-600">
-                    Study:
-                  </CardDescription>
-                  <p className="text-sm mb-4 text-slate-700">{study.study}</p>
-                  <CardDescription className="text-sm font-medium text-slate-600">
-                    Findings:
-                  </CardDescription>
-                  <p className="text-sm text-slate-700">{study.findings}</p>
+              <CardContent className="space-y-6">
+                <ScrollArea className="h-[200px] rounded-md p-4">
+                  <div className="space-y-6">
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2 text-primary">
+                        <BookOpen className="h-5 w-5" />
+                        <h4 className="font-semibold">Research Publication</h4>
+                      </div>
+                      <p className="text-sm leading-relaxed text-slate-700 pl-7">{study.study}</p>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2 text-primary">
+                        <Lightbulb className="h-5 w-5" />
+                        <h4 className="font-semibold">Key Findings</h4>
+                      </div>
+                      <p className="text-sm leading-relaxed text-slate-700 pl-7">{study.findings}</p>
+                    </div>
+                  </div>
                 </ScrollArea>
               </CardContent>
             </Card>
