@@ -3,6 +3,7 @@ import { Heart } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import FeatureShowcase from "@/components/FeatureShowcase";
 import WaitlistCTA from "@/components/WaitlistCTA";
+import TransformSection from "@/components/TransformSection";
 
 const Index = () => {
   return (
@@ -12,7 +13,7 @@ const Index = () => {
           <img 
             src="https://ishanamin.com/wp-content/uploads/2024/11/drinkless-app-logo.png" 
             alt="Drinkless Logo" 
-            className="h-12 w-auto" // Changed from h-8 to h-12
+            className="h-12 w-auto"
           />
           <Button variant="ghost">Contact</Button>
         </div>
@@ -45,6 +46,7 @@ const Index = () => {
           </div>
         </div>
 
+        <TransformSection />
         <FeatureShowcase />
         <WaitlistCTA />
       </main>
