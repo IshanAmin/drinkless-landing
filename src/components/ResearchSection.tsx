@@ -45,7 +45,7 @@ const ResearchSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
-                <ScrollArea className="h-[200px] rounded-md p-4">
+                <ScrollArea className="h-[250px] rounded-md p-4">
                   <div className="space-y-6">
                     <div className="space-y-2">
                       <div className="flex items-center gap-2 text-primary">
