@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import FeatureShowcase from "@/components/FeatureShowcase";
 import WaitlistCTA from "@/components/WaitlistCTA";
 import TransformSection from "@/components/TransformSection";
+import ResearchSection from "@/components/ResearchSection";
 
 const Index = () => {
   return (
@@ -48,6 +49,7 @@ const Index = () => {
 
         <TransformSection />
         <FeatureShowcase />
+        <ResearchSection />
         <WaitlistCTA />
       </main>
 
