@@ -54,63 +54,63 @@ export const LocationSection = ({
   setCustomCountry,
 }: LocationSectionProps) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <Input
-        type="text"
-        value={city}
-        onChange={(e) => setCity(e.target.value)}
-        placeholder="City"
-        className="h-12"
-        required
-      />
-      
-      <div className="flex gap-4">
-        <Select
-          value={state}
-          onValueChange={(value) => {
-            setState(value);
-            setCustomState("");
-          }}
-        >
-          <SelectTrigger className="h-12">
-            <SelectValue placeholder="State" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              <SelectLabel>United States</SelectLabel>
-              {US_STATES.map((s) => (
-                <SelectItem key={s} value={s}>
-                  {s}
-                </SelectItem>
-              ))}
-            </SelectGroup>
-            <SelectGroup>
-              <SelectLabel>Canada</SelectLabel>
-              {CANADIAN_PROVINCES.map((p) => (
-                <SelectItem key={p} value={p}>
-                  {p}
-                </SelectItem>
-              ))}
-            </SelectGroup>
-            <SelectGroup>
-              <SelectItem value="custom">Other</SelectItem>
-            </SelectGroup>
-          </SelectContent>
-        </Select>
+    <div className="flex flex-col gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <Input
+          type="text"
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+          placeholder="City"
+          className="h-12"
+          required
+        />
         
-        {state === "custom" && (
-          <Input
-            type="text"
-            placeholder="Enter state/province"
-            value={customState}
-            onChange={(e) => setCustomState(e.target.value)}
-            className="h-12"
-            required
-          />
-        )}
-      </div>
+        <div className="flex gap-4">
+          <Select
+            value={state}
+            onValueChange={(value) => {
+              setState(value);
+              setCustomState("");
+            }}
+          >
+            <SelectTrigger className="h-12">
+              <SelectValue placeholder="State" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectLabel>United States</SelectLabel>
+                {US_STATES.map((s) => (
+                  <SelectItem key={s} value={s}>
+                    {s}
+                  </SelectItem>
+                ))}
+              </SelectGroup>
+              <SelectGroup>
+                <SelectLabel>Canada</SelectLabel>
+                {CANADIAN_PROVINCES.map((p) => (
+                  <SelectItem key={p} value={p}>
+                    {p}
+                  </SelectItem>
+                ))}
+              </SelectGroup>
+              <SelectGroup>
+                <SelectItem value="custom">Other</SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+          
+          {state === "custom" && (
+            <Input
+              type="text"
+              placeholder="Enter state/province"
+              value={customState}
+              onChange={(e) => setCustomState(e.target.value)}
+              className="h-12"
+              required
+            />
+          )}
+        </div>
 
-      <div className="flex gap-4">
         <Select
           value={country}
           onValueChange={(value) => {
@@ -132,8 +132,10 @@ export const LocationSection = ({
             </SelectGroup>
           </SelectContent>
         </Select>
-        
-        {country === "custom" && (
+      </div>
+      
+      {country === "custom" && (
+        <div className="w-full">
           <Input
             type="text"
             placeholder="Enter country"
@@ -142,8 +144,8 @@ export const LocationSection = ({
             className="h-12"
             required
           />
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };
