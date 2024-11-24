@@ -31,8 +31,8 @@ const SignupForm = () => {
       });
 
       toast({
-        title: "Thanks for joining!",
-        description: "We'll keep you updated on our launch.",
+        title: "Congratulations! You're ready to change your life for the better!",
+        description: "We'll keep you updated when we're ready for the launch. Your place in line is secured.",
         duration: 5000,
       });
 
