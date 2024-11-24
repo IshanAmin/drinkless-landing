@@ -29,19 +29,31 @@ const Index = () => {
             <div className="relative w-64 h-[500px] transform -rotate-12">
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[3rem] blur-xl" />
               <div className="relative w-full h-full border-8 border-black rounded-[3rem] overflow-hidden bg-white">
-                <img src="/placeholder.svg" alt="App Screenshot 1" className="w-full h-full object-cover" />
+                <img 
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                  alt="Drinkless App Dashboard" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="relative w-64 h-[500px] transform translate-y-8">
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[3rem] blur-xl" />
               <div className="relative w-full h-full border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-2xl z-10">
-                <img src="/placeholder.svg" alt="App Screenshot 2" className="w-full h-full object-cover" />
+                <img 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
+                  alt="Drinkless App Progress Screen" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="relative w-64 h-[500px] transform rotate-12">
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[3rem] blur-xl" />
               <div className="relative w-full h-full border-8 border-black rounded-[3rem] overflow-hidden bg-white">
-                <img src="/placeholder.svg" alt="App Screenshot 3" className="w-full h-full object-cover" />
+                <img 
+                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
+                  alt="Drinkless App Stats Screen" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
