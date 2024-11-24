@@ -10,7 +10,7 @@ const HeroSection = () => {
           <h2 className="text-4xl md:text-6xl font-bold leading-tight md:leading-none">
             <span className="block mb-2">Start Your Life's</span>
             <span className="block mb-2">Success Story</span>
-            <span className="gradient-text block">Live Better Today</span>
+            <span className="gradient-text block">Leave Alcohol Behind</span>
           </h2>
 
           <div className="flex flex-wrap gap-4 text-slate-600 text-sm md:text-base">
