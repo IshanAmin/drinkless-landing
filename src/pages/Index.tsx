@@ -27,9 +27,10 @@ const Index = () => {
         {/* App Screenshots Section */}
         <div className="mt-24 mb-24">
           <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-            <div className="relative w-64 h-[500px] transform -rotate-12">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[3rem] blur-xl" />
-              <div className="relative w-full h-full border-8 border-black rounded-[3rem] overflow-hidden bg-white">
+            <div className="relative w-[290px] h-[580px] transform -rotate-12">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[48px] blur-xl" />
+              <div className="relative w-full h-full border-[12px] border-black rounded-[48px] overflow-hidden bg-white shadow-xl">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[120px] h-[24px] bg-black rounded-b-[16px] z-10" />
                 <img 
                   src="https://ishanamin.com/wp-content/uploads/2024/11/Landing-Page-Tracker.jpeg" 
                   alt="Drinkless App Dashboard" 
@@ -37,9 +38,10 @@ const Index = () => {
                 />
               </div>
             </div>
-            <div className="relative w-64 h-[500px] transform translate-y-8">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[3rem] blur-xl" />
-              <div className="relative w-full h-full border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-2xl z-10">
+            <div className="relative w-[290px] h-[580px] transform translate-y-8">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[48px] blur-xl" />
+              <div className="relative w-full h-full border-[12px] border-black rounded-[48px] overflow-hidden bg-white shadow-2xl z-10">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[120px] h-[24px] bg-black rounded-b-[16px] z-10" />
                 <img 
                   src="https://ishanamin.com/wp-content/uploads/2024/11/Landing-Page-Home.jpeg" 
                   alt="Drinkless App Progress Screen" 
@@ -47,9 +49,10 @@ const Index = () => {
                 />
               </div>
             </div>
-            <div className="relative w-64 h-[500px] transform rotate-12">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[3rem] blur-xl" />
-              <div className="relative w-full h-full border-8 border-black rounded-[3rem] overflow-hidden bg-white">
+            <div className="relative w-[290px] h-[580px] transform rotate-12">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[48px] blur-xl" />
+              <div className="relative w-full h-full border-[12px] border-black rounded-[48px] overflow-hidden bg-white shadow-xl">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[120px] h-[24px] bg-black rounded-b-[16px] z-10" />
                 <img 
                   src="https://ishanamin.com/wp-content/uploads/2024/11/Landing-Page-Tracking.jpeg" 
                   alt="Drinkless App Stats Screen" 
