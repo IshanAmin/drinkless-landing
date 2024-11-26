@@ -36,7 +36,7 @@ const Index = () => {
         <TransformSection />
         <SavingsCalculator />
         
-        <div className="flex justify-center mb-16">
+        <div className="flex justify-center mb-16 bg-[#c6c6d5]">
           <img 
             src="https://ishanamin.com/wp-content/uploads/2024/11/alcohol-recover_66133658.png"
             alt="Recovery Journey"
