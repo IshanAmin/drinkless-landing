@@ -32,45 +32,6 @@ const Index = () => {
             className="w-full max-w-4xl mx-auto px-4"
           />
         </div>
-        
-        {/* Individual App Screenshots Section */}
-        <div className="mt-24 mb-24">
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-            <div className="relative w-[320px] h-[640px] transform -rotate-12">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[60px] blur-xl" />
-              <div className="relative w-full h-full border-[14px] border-black rounded-[60px] overflow-hidden bg-white shadow-xl">
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[140px] h-[32px] bg-black rounded-b-[20px] z-10" />
-                <img 
-                  src="https://ishanamin.com/wp-content/uploads/2024/11/Landing-Page-Tracker.jpeg" 
-                  alt="Drinkless App Dashboard" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <div className="relative w-[320px] h-[640px] transform translate-y-8">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[60px] blur-xl" />
-              <div className="relative w-full h-full border-[14px] border-black rounded-[60px] overflow-hidden bg-white shadow-2xl z-10">
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[140px] h-[32px] bg-black rounded-b-[20px] z-10" />
-                <img 
-                  src="https://ishanamin.com/wp-content/uploads/2024/11/Landing-Page-Home.jpeg" 
-                  alt="Drinkless App Progress Screen" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <div className="relative w-[320px] h-[640px] transform rotate-12">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[60px] blur-xl" />
-              <div className="relative w-full h-full border-[14px] border-black rounded-[60px] overflow-hidden bg-white shadow-xl">
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[140px] h-[32px] bg-black rounded-b-[20px] z-10" />
-                <img 
-                  src="https://ishanamin.com/wp-content/uploads/2024/11/Landing-Page-Tracking.jpeg" 
-                  alt="Drinkless App Stats Screen" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
 
         <TransformSection />
         <SavingsCalculator />
