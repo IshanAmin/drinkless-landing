@@ -18,7 +18,6 @@ const Index = () => {
             alt="Drinkless Logo" 
             className="h-12 w-auto"
           />
-          <Button variant="ghost">Contact</Button>
         </div>
       </header>
 
@@ -47,9 +46,6 @@ const Index = () => {
           <p className="flex items-center gap-1">
             Made with <Heart className="h-4 w-4 text-red-500 fill-red-500" /> in Omaha, Nebraska
           </p>
-          <div className="flex gap-6">
-            <a href="mailto:info@drinkless.app" className="hover:text-primary">Contact</a>
-          </div>
         </div>
       </footer>
     </div>
