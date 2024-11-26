@@ -25,7 +25,7 @@ const Index = () => {
         <HeroSection />
         
         {/* Combined iPhone Mockup */}
-        <div className="mt-24 mb-12 flex justify-center">
+        <div className="mt-12 mb-12 flex justify-center">
           <img 
             src="https://ishanamin.com/wp-content/uploads/2024/11/phone_screen_mockup-2.png"
             alt="Drinkless App Mockups"
