@@ -12,7 +12,7 @@ const TwitterTestimonials = () => {
       author: "Lisa Penderton",
     },
     {
-      quote: "The respect that I gained from family was well worth me leaving alcohol behind me!",
+      quote: "The respect that I gained from family was well worth leaving alcohol behind",
       author: "Vijay Kumar",
     },
   ];
