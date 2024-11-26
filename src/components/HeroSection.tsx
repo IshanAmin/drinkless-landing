@@ -37,7 +37,7 @@ const HeroSection = () => {
         <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
           <SignupForm />
           <p className="text-sm text-slate-600 mt-2 text-center">
-            Reserve your spot now to gain access to the app while we're still in beta!
+            Reserve your spot now and take the first step to leave alcohol behind for good!
           </p>
         </div>
       </div>
