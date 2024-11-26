@@ -31,7 +31,7 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[3rem] blur-xl" />
               <div className="relative w-full h-full border-8 border-black rounded-[3rem] overflow-hidden bg-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                  src="https://ishanamin.com/wp-content/uploads/2024/11/Landing-Page-Tracker.jpeg" 
                   alt="Drinkless App Dashboard" 
                   className="w-full h-full object-cover"
                 />
@@ -51,7 +51,7 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[3rem] blur-xl" />
               <div className="relative w-full h-full border-8 border-black rounded-[3rem] overflow-hidden bg-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
+                  src="https://ishanamin.com/wp-content/uploads/2024/11/Landing-Page-Tracking.jpeg" 
                   alt="Drinkless App Stats Screen" 
                   className="w-full h-full object-cover"
                 />
