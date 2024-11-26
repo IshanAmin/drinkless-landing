@@ -38,7 +38,7 @@ export const EmailPlatformSection = ({
         onValueChange={(value) => setPlatform(value)}
       >
         <SelectTrigger className="h-12">
-          <SelectValue placeholder="Select platform" />
+          <SelectValue placeholder="Mobile Device" />
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
