@@ -118,7 +118,7 @@ const FeatureShowcase = () => {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-2 mb-6">
             <Clock className="h-5 w-5 text-slate-500" />
-            <h3 className="text-xl font-semibold">Coming Soon</h3>
+            <h3 className="text-xl font-semibold">Future Roadmap</h3>
           </div>
           <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
             {comingSoonFeatures.map((feature, index) => (
