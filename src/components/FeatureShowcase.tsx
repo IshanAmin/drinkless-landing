@@ -56,36 +56,33 @@ const FeatureShowcase = () => {
     {
       title: "Gamification",
       description: "Earn badges, points, and rewards for reaching milestones."
-    },
+    }
+  ];
+
+  const comingSoonFeatures = [
     {
       title: "Professional Resources",
-      description: "Access professional advice and support through chat or video calls.",
-      isComingSoon: true
+      description: "Access professional advice and support through chat or video calls."
     },
     {
       title: "Community Support",
-      description: "Connect and stay motivated with like-minded individuals.",
-      isComingSoon: true
+      description: "Connect and stay motivated with like-minded individuals."
     },
     {
       title: "AI-Based Personalized Feedback",
-      description: "Receive tailored advice based on your unique journey.",
-      isComingSoon: true
+      description: "Receive tailored advice based on your unique journey."
     },
     {
       title: "Sunny Chatbot",
-      description: "Chat with Sunny, your cheerful companion on your alcohol-free journey.",
-      isComingSoon: true
+      description: "Chat with Sunny, your cheerful companion on your alcohol-free journey."
     },
     {
       title: "Social Substitutes",
-      description: "Explore and share mocktail recipes with our growing database.",
-      isComingSoon: true
+      description: "Explore and share mocktail recipes with our growing database."
     },
     {
       title: "Mindfulness Meditation",
-      description: "Practice specialized mindfulness techniques for managing cravings.",
-      isComingSoon: true
+      description: "Practice specialized mindfulness techniques for managing cravings."
     }
   ];
 
@@ -103,29 +100,39 @@ const FeatureShowcase = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {features.map((feature, index) => (
             <Card
               key={index}
-              className={`p-6 hover:border-primary/20 transition-colors animate-fade-up backdrop-blur-sm ${
-                feature.isComingSoon ? 'bg-white/30' : 'bg-white/50'
-              }`}
+              className="p-6 hover:border-primary/20 transition-colors animate-fade-up bg-white/50 backdrop-blur-sm"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="flex items-start justify-between mb-4">
                 <h3 className="font-semibold text-lg">{feature.title}</h3>
-                {feature.isComingSoon ? (
-                  <span className="flex items-center text-sm text-slate-500">
-                    <Clock className="h-4 w-4 mr-1" />
-                    Coming Soon
-                  </span>
-                ) : (
-                  <Check className="h-5 w-5 text-primary" />
-                )}
+                <Check className="h-5 w-5 text-primary" />
               </div>
               <p className="text-slate-600">{feature.description}</p>
             </Card>
           ))}
+        </div>
+
+        <div className="max-w-3xl mx-auto">
+          <div className="flex items-center gap-2 mb-6">
+            <Clock className="h-5 w-5 text-slate-500" />
+            <h3 className="text-xl font-semibold">Coming Soon</h3>
+          </div>
+          <ul className="space-y-4">
+            {comingSoonFeatures.map((feature, index) => (
+              <li 
+                key={index}
+                className="flex flex-col space-y-1 animate-fade-up"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <h4 className="font-semibold">{feature.title}</h4>
+                <p className="text-slate-600">{feature.description}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
