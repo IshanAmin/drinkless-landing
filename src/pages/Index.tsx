@@ -6,6 +6,7 @@ import WaitlistCTA from "@/components/WaitlistCTA";
 import TransformSection from "@/components/TransformSection";
 import ResearchSection from "@/components/ResearchSection";
 import SavingsCalculator from "@/components/SavingsCalculator";
+import TwitterTestimonials from "@/components/TwitterTestimonials";
 
 const Index = () => {
   return (
@@ -24,7 +25,6 @@ const Index = () => {
       <main>
         <HeroSection />
         
-        {/* Combined iPhone Mockup */}
         <div className="mt-12 mb-12 flex justify-center">
           <img 
             src="https://ishanamin.com/wp-content/uploads/2024/11/phone_screen_mockup-2.png"
@@ -38,6 +38,7 @@ const Index = () => {
         <FeatureShowcase />
         <ResearchSection />
         <WaitlistCTA />
+        <TwitterTestimonials />
       </main>
 
       <footer className="container mx-auto px-4 py-8 mt-auto">
