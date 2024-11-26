@@ -41,7 +41,7 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10 rounded-[3rem] blur-xl" />
               <div className="relative w-full h-full border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-2xl z-10">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
+                  src="https://ishanamin.com/wp-content/uploads/2024/11/Landing-Page-Home.jpeg" 
                   alt="Drinkless App Progress Screen" 
                   className="w-full h-full object-cover"
                 />
