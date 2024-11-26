@@ -4,10 +4,6 @@ import { Twitter } from "lucide-react";
 const TwitterTestimonials = () => {
   const testimonials = [
     {
-      quote: "I quit drinking and 100x my productivity",
-      author: "Alan Shepard",
-    },
-    {
       quote: "I focused on meditation and removed the urge to drink",
       author: "Lisa Penderton",
     },
@@ -20,7 +16,7 @@ const TwitterTestimonials = () => {
   return (
     <section className="py-16 bg-white/50 backdrop-blur-sm">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index}
