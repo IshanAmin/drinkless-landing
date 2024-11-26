@@ -24,7 +24,16 @@ const Index = () => {
       <main>
         <HeroSection />
         
-        {/* App Screenshots Section */}
+        {/* Combined iPhone Mockup */}
+        <div className="mt-24 mb-12 flex justify-center">
+          <img 
+            src="https://ishanamin.com/wp-content/uploads/2024/11/phone_screen_mockup-1.png"
+            alt="Drinkless App Mockups"
+            className="w-full max-w-4xl mx-auto px-4"
+          />
+        </div>
+        
+        {/* Individual App Screenshots Section */}
         <div className="mt-24 mb-24">
           <div className="flex flex-col md:flex-row justify-center items-center gap-8">
             <div className="relative w-[320px] h-[640px] transform -rotate-12">
