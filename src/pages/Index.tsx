@@ -7,6 +7,7 @@ import TransformSection from "@/components/TransformSection";
 import ResearchSection from "@/components/ResearchSection";
 import SavingsCalculator from "@/components/SavingsCalculator";
 import TwitterTestimonials from "@/components/TwitterTestimonials";
+import FAQSection from "@/components/FAQSection";
 
 const Index = () => {
   return (
@@ -38,6 +39,7 @@ const Index = () => {
         <ResearchSection />
         <WaitlistCTA />
         <TwitterTestimonials />
+        <FAQSection />
       </main>
 
       <footer className="container mx-auto px-4 py-8 mt-auto">
