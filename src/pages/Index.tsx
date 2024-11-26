@@ -38,7 +38,7 @@ const Index = () => {
         
         <div className="flex justify-center mb-16">
           <img 
-            src="https://ishanamin.com/wp-content/uploads/2024/11/alcohol-recover_66133658.png"
+            src="https://ishanamin.com/wp-content/uploads/2024/11/90-day-plan.png"
             alt="Recovery Journey"
             className="w-full max-w-4xl mx-auto px-4"
           />
