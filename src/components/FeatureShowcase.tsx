@@ -4,7 +4,6 @@ import { Card } from "./ui/card";
 interface Feature {
   title: string;
   description: string;
-  isComingSoon?: boolean;
 }
 
 const FeatureShowcase = () => {
@@ -116,23 +115,23 @@ const FeatureShowcase = () => {
           ))}
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-2 mb-6">
             <Clock className="h-5 w-5 text-slate-500" />
             <h3 className="text-xl font-semibold">Coming Soon</h3>
           </div>
-          <ul className="space-y-4">
+          <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
             {comingSoonFeatures.map((feature, index) => (
               <li 
                 key={index}
-                className="flex flex-col space-y-1 animate-fade-up"
+                className="flex flex-col space-y-1 animate-fade-up list-none"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <h4 className="font-semibold">{feature.title}</h4>
                 <p className="text-slate-600">{feature.description}</p>
               </li>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </div>
