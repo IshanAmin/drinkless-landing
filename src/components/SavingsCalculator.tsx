@@ -181,6 +181,10 @@ const SavingsCalculator = () => {
               </div>
             </div>
           </Card>
+          
+          <p className="text-sm text-slate-600 mt-4 text-center italic">
+            These values are estimates based on various studies and research about alcohol's economic impact. The actual costs could vary significantly based on individual circumstances, career, location, and lifestyle.
+          </p>
         </div>
       </div>
     </section>
