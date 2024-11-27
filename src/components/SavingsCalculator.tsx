@@ -63,7 +63,7 @@ const SavingsCalculator = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            True Cost Calculator
+            Your True Drinking Cost
             <span className="gradient-text block">Direct & Opportunity Costs</span>
           </h2>
         </div>
