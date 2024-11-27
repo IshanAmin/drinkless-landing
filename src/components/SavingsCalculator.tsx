@@ -26,22 +26,22 @@ const SavingsCalculator = () => {
     lostProductivity: {
       title: "Lost Productivity",
       description: "Reduced work performance and missed opportunities",
-      value: drinksPerWeek * daysPerWeek * 100 * 52, // $100 impact per drinking day
+      value: drinksPerWeek * daysPerWeek * 100 * 52,
     },
     mentalClarity: {
       title: "Mental Clarity Impact",
       description: "Reduced cognitive function and decision-making ability",
-      value: drinksPerWeek * 50 * 52, // $50 per drink per week annualized
+      value: drinksPerWeek * 50 * 52,
     },
     hangoverCost: {
       title: "Hangover Recovery Cost",
       description: "Lost time and productivity from hangovers",
-      value: daysPerWeek * 200 * 52, // $200 per drinking day annualized
+      value: daysPerWeek * 200 * 52,
     },
     socialImpact: {
       title: "Social & Relationship Impact",
       description: "Strain on personal and professional relationships",
-      value: drinksPerWeek * daysPerWeek * 75 * 52, // $75 per drinking occasion
+      value: drinksPerWeek * daysPerWeek * 75 * 52,
     },
   };
 
@@ -168,6 +168,13 @@ const SavingsCalculator = () => {
                       <p className="text-xl font-bold text-secondary">{formatCurrency(cost.value)}</p>
                     </div>
                   ))}
+                  <div className="p-4 rounded-lg bg-secondary/10 md:col-span-2">
+                    <p className="font-semibold text-secondary">Respect Cost</p>
+                    <p className="text-sm text-slate-600 mb-2">Impact on self-respect and dignity</p>
+                    <p className="text-xl font-bold text-secondary">
+                      {drinksPerWeek === 0 ? "All the Respect" : "Personal Reflection Required"}
+                    </p>
+                  </div>
                 </div>
               </div>
 
