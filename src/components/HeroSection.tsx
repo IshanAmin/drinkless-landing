@@ -26,10 +26,6 @@ const HeroSection = () => {
               <CheckCircle className="h-5 w-5 text-primary" />
               <span>Evidence-Based</span>
             </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span>Clinically Approved</span>
-            </div>
           </div>
         </div>
 
