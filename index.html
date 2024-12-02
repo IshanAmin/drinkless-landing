@@ -15,7 +15,24 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-XBKGLRX3EX');
+      gtag('config', 'G-XBKGLRX3EX', {
+        debug_mode: true,
+        send_page_view: true
+      });
+      
+      // Debug logging
+      console.log('GA4 initialization started');
+      window.addEventListener('load', function() {
+        console.log('Window loaded, checking GA4');
+        if (typeof gtag === 'function') {
+          console.log('GA4 loaded successfully');
+          // Test event
+          gtag('event', 'page_view', {
+            page_title: document.title,
+            page_location: window.location.href
+          });
+        }
+      });
     </script>
   </head>
 
