@@ -12,6 +12,16 @@ import FAQSection from "@/components/FAQSection";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <header className="container mx-auto px-4 py-6">
+        <div className="flex justify-between items-center">
+          <img 
+            src="https://ishanamin.com/wp-content/uploads/2024/11/drinkless-app-logo.png" 
+            alt="Drinkless Logo" 
+            className="h-12 w-auto"
+          />
+        </div>
+      </header>
+
       <main>
         <HeroSection />
         
