@@ -12,12 +12,8 @@ import FAQSection from "@/components/FAQSection";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <header className="container mx-auto px-4 py-6 relative bg-cover bg-center" 
-        style={{ 
-          backgroundImage: 'url("https://images.unsplash.com/photo-1439337153520-7082a56a81f4")',
-        }}>
-        <div className="absolute inset-0 bg-black/20" /> {/* Overlay for better contrast */}
-        <div className="flex justify-between items-center relative z-10">
+      <header className="container mx-auto px-4 py-6">
+        <div className="flex justify-between items-center">
           <img 
             src="https://ishanamin.com/wp-content/uploads/2024/11/drinkless-app-logo.png" 
             alt="Drinkless Logo" 
