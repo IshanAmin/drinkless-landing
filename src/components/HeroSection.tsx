@@ -6,7 +6,7 @@ const HeroSection = () => {
     <div 
       className="relative min-h-[90vh] flex items-center"
       style={{
-        backgroundImage: 'url("/lovable-uploads/daffb652-88b3-4ba2-afdd-a6402596d63a.png")',
+        backgroundImage: 'url("/lovable-uploads/b170d9ae-89cd-44e3-a592-0fe4d06ebc7d.png")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
