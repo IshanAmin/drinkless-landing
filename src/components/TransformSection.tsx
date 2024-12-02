@@ -59,21 +59,21 @@ const TransformSection = () => {
             <span className="gradient-text block">Transform Your Life</span>
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 mb-16 px-4">
             <img 
               src="/lovable-uploads/72f68afc-389c-4e4f-9cd6-ae3875938caf.png"
               alt="Scrabble tiles spelling YES YOU CAN"
-              className="rounded-lg shadow-lg w-full h-64 object-contain"
+              className="rounded-lg shadow-lg w-full h-64 object-contain p-4"
             />
             <img 
               src="/lovable-uploads/900358d8-fd7d-4564-8bcc-b33c229c5d96.png"
               alt="Scrabble tiles spelling IF NOT NOW WHEN"
-              className="rounded-lg shadow-lg w-full h-64 object-contain md:block"
+              className="rounded-lg shadow-lg w-full h-64 object-contain p-4 md:block"
             />
             <img 
               src="/lovable-uploads/ee84d0eb-883d-4553-be8c-3395e010c74a.png"
               alt="Scrabble tiles spelling STOP MAKING EXCUSES"
-              className="rounded-lg shadow-lg w-full h-64 object-contain md:block"
+              className="rounded-lg shadow-lg w-full h-64 object-contain p-4 md:block"
             />
           </div>
         </div>
