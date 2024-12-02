@@ -30,8 +30,8 @@ const HeroSection = () => {
 
           <div className="grid grid-cols-2 gap-4 mt-8">
             <img 
-              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
-              alt="Person focused on their success"
+              src="/lovable-uploads/daffb652-88b3-4ba2-afdd-a6402596d63a.png" 
+              alt="Person standing on mountain peak at sunset"
               className="rounded-lg shadow-lg w-full h-48 object-cover"
             />
             <img 
