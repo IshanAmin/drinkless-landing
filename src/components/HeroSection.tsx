@@ -21,7 +21,7 @@ const HeroSection = () => {
             <h2 className="text-4xl md:text-6xl font-bold leading-tight md:leading-none text-white">
               <span className="block mb-2">Start Your Life's</span>
               <span className="block mb-2">Success Story</span>
-              <span className="gradient-text block px-4 py-2 rounded-lg bg-white">Leave Alcohol Behind</span>
+              <span className="block px-4 py-2 rounded-lg bg-white">Leave Alcohol Behind</span>
             </h2>
 
             <div className="flex flex-wrap gap-4 text-white text-sm md:text-base">
