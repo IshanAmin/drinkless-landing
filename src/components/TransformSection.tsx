@@ -63,17 +63,17 @@ const TransformSection = () => {
             <img 
               src="/lovable-uploads/72f68afc-389c-4e4f-9cd6-ae3875938caf.png"
               alt="Scrabble tiles spelling YES YOU CAN"
-              className="rounded-lg shadow-lg w-full h-64 object-contain p-4"
+              className="rounded-xl shadow-lg w-full h-64 object-contain p-4"
             />
             <img 
               src="/lovable-uploads/900358d8-fd7d-4564-8bcc-b33c229c5d96.png"
               alt="Scrabble tiles spelling IF NOT NOW WHEN"
-              className="rounded-lg shadow-lg w-full h-64 object-contain p-4 md:block"
+              className="rounded-xl shadow-lg w-full h-64 object-contain p-4 md:block"
             />
             <img 
               src="/lovable-uploads/ee84d0eb-883d-4553-be8c-3395e010c74a.png"
               alt="Scrabble tiles spelling STOP MAKING EXCUSES"
-              className="rounded-lg shadow-lg w-full h-64 object-contain p-4 md:block"
+              className="rounded-xl shadow-lg w-full h-64 object-contain p-4 md:block"
             />
           </div>
         </div>
