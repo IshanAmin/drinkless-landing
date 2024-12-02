@@ -61,19 +61,19 @@ const TransformSection = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 mb-16">
             <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
-              alt="Professional success"
-              className="rounded-lg shadow-lg w-full h-64 object-cover"
+              src="/lovable-uploads/72f68afc-389c-4e4f-9cd6-ae3875938caf.png"
+              alt="Scrabble tiles spelling YES YOU CAN"
+              className="rounded-lg shadow-lg w-full h-64 object-contain"
             />
             <img 
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" 
-              alt="Team collaboration"
-              className="rounded-lg shadow-lg w-full h-64 object-cover hidden md:block"
+              src="/lovable-uploads/900358d8-fd7d-4564-8bcc-b33c229c5d96.png"
+              alt="Scrabble tiles spelling IF NOT NOW WHEN"
+              className="rounded-lg shadow-lg w-full h-64 object-contain md:block"
             />
             <img 
-              src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
-              alt="People achieving goals"
-              className="rounded-lg shadow-lg w-full h-64 object-cover hidden md:block"
+              src="/lovable-uploads/ee84d0eb-883d-4553-be8c-3395e010c74a.png"
+              alt="Scrabble tiles spelling STOP MAKING EXCUSES"
+              className="rounded-lg shadow-lg w-full h-64 object-contain md:block"
             />
           </div>
         </div>
