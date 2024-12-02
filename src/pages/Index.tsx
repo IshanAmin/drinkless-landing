@@ -8,7 +8,6 @@ import ResearchSection from "@/components/ResearchSection";
 import SavingsCalculator from "@/components/SavingsCalculator";
 import TwitterTestimonials from "@/components/TwitterTestimonials";
 import FAQSection from "@/components/FAQSection";
-import MotivationalTiles from "@/components/MotivationalTiles";
 
 const Index = () => {
   return (
@@ -25,7 +24,6 @@ const Index = () => {
 
       <main>
         <HeroSection />
-        <MotivationalTiles />
         
         <div className="mt-12 mb-12 flex justify-center">
           <img 
