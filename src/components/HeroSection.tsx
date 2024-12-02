@@ -25,7 +25,7 @@ const HeroSection = () => {
                 <span className="absolute inset-0 text-primary/20 translate-x-[2px] translate-y-[2px]">
                   Leave Alcohol Behind
                 </span>
-                <span className="relative text-primary">
+                <span className="relative gradient-text">
                   Leave Alcohol Behind
                 </span>
               </span>
