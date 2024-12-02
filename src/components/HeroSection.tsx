@@ -27,6 +27,19 @@ const HeroSection = () => {
               <span>Evidence-Based</span>
             </div>
           </div>
+
+          <div className="grid grid-cols-2 gap-4 mt-8">
+            <img 
+              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+              alt="Person focused on their success"
+              className="rounded-lg shadow-lg w-full h-48 object-cover"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" 
+              alt="Person enjoying peaceful moment"
+              className="rounded-lg shadow-lg w-full h-48 object-cover"
+            />
+          </div>
         </div>
 
         {/* Right Column - Form */}

@@ -58,6 +58,24 @@ const TransformSection = () => {
             The New You
             <span className="gradient-text block">Transform Your Life</span>
           </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 mb-16">
+            <img 
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
+              alt="Professional success"
+              className="rounded-lg shadow-lg w-full h-64 object-cover"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" 
+              alt="Team collaboration"
+              className="rounded-lg shadow-lg w-full h-64 object-cover hidden md:block"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
+              alt="People achieving goals"
+              className="rounded-lg shadow-lg w-full h-64 object-cover hidden md:block"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
