@@ -14,16 +14,16 @@ const HeroSection = () => {
       {/* Overlay to ensure text readability */}
       <div className="absolute inset-0 bg-black/40" />
       
+      {/* Logo positioned absolutely relative to hero section */}
+      <div className="absolute top-4 left-4 z-20">
+        <img 
+          src="https://ishanamin.com/wp-content/uploads/2024/11/drinkless-app-logo.png" 
+          alt="Drinkless Logo" 
+          className="h-12 w-auto"
+        />
+      </div>
+      
       <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
-        {/* Logo in Hero Section */}
-        <div className="absolute top-0 left-4">
-          <img 
-            src="https://ishanamin.com/wp-content/uploads/2024/11/drinkless-app-logo.png" 
-            alt="Drinkless Logo" 
-            className="h-12 w-auto"
-          />
-        </div>
-
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-6">
