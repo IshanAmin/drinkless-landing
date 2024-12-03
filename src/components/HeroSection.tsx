@@ -17,7 +17,7 @@ const HeroSection = () => {
       {/* Logo positioned absolutely relative to hero section */}
       <div className="absolute top-4 left-4 z-20">
         <img 
-          src="https://ishanamin.com/wp-content/uploads/2024/11/drinkless-app-logo.png" 
+          src="/lovable-uploads/d608c79f-c397-4cd1-934d-511092b5cda6.png"
           alt="Drinkless Logo" 
           className="h-12 w-auto"
         />
