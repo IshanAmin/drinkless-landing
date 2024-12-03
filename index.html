@@ -38,20 +38,33 @@
 
     <!-- TruConversion for getdrinkless.com -->
     <script type="text/javascript">
-        window._tip = window._tip || [];
-        (function(d,s,id){
-            try {
-                var js, tjs = d.getElementsByTagName(s)[0];
-                if(d.getElementById(id)) { return; }
-                js = d.createElement(s); js.id = id;
-                js.async = true;
-                js.src = d.location.protocol + '//app.truconversion.com/ti-js/42081/d53dd.js';
-                tjs.parentNode.insertBefore(js, tjs);
-                console.log('TruConversion script loaded successfully');
-            } catch (error) {
-                console.error('TruConversion script error:', error);
-            }
-        }(document, 'script', 'ti-js'));
+      // Initialize _tip on window object
+      window._tip = window._tip || [];
+      
+      // Load TruConversion script
+      window.addEventListener('load', function() {
+        try {
+          (function(d,s,id){
+            if (d.getElementById(id)) return;
+            
+            var js = d.createElement(s);
+            js.id = id;
+            js.async = true;
+            js.src = window.location.protocol + '//app.truconversion.com/ti-js/42081/d53dd.js';
+            js.onerror = function(error) {
+              console.error('TruConversion script failed to load:', error);
+            };
+            js.onload = function() {
+              console.log('TruConversion script loaded successfully');
+            };
+            
+            var firstScript = d.getElementsByTagName(s)[0];
+            firstScript.parentNode.insertBefore(js, firstScript);
+          })(document, 'script', 'ti-js');
+        } catch (error) {
+          console.error('TruConversion initialization error:', error);
+        }
+      });
     </script>
   </head>
 
