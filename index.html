@@ -38,14 +38,19 @@
 
     <!-- TruConversion for getdrinkless.com -->
     <script type="text/javascript">
-        var _tip = _tip || [];
+        window._tip = window._tip || [];
         (function(d,s,id){
-            var js, tjs = d.getElementsByTagName(s)[0];
-            if(d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.async = true;
-            js.src = d.location.protocol + '//app.truconversion.com/ti-js/42081/d53dd.js';
-            tjs.parentNode.insertBefore(js, tjs);
+            try {
+                var js, tjs = d.getElementsByTagName(s)[0];
+                if(d.getElementById(id)) { return; }
+                js = d.createElement(s); js.id = id;
+                js.async = true;
+                js.src = d.location.protocol + '//app.truconversion.com/ti-js/42081/d53dd.js';
+                tjs.parentNode.insertBefore(js, tjs);
+                console.log('TruConversion script loaded successfully');
+            } catch (error) {
+                console.error('TruConversion script error:', error);
+            }
         }(document, 'script', 'ti-js'));
     </script>
   </head>
