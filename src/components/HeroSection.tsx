@@ -14,8 +14,8 @@ const HeroSection = () => {
       {/* Overlay to ensure text readability */}
       <div className="absolute inset-0 bg-black/40" />
       
-      {/* Logo positioned absolutely relative to hero section */}
-      <div className="absolute top-4 left-4 z-20">
+      {/* Logo positioned absolutely with increased padding */}
+      <div className="absolute top-8 left-8 z-20">
         <img 
           src="/lovable-uploads/d608c79f-c397-4cd1-934d-511092b5cda6.png"
           alt="Drinkless Logo" 
