@@ -33,17 +33,17 @@ const HeroSection = () => {
               <span className="gradient-text block">Leave Alcohol Behind</span>
             </h2>
 
-            <div className="flex flex-wrap gap-4 text-white text-sm md:text-base">
+            <div className="flex flex-wrap gap-4 text-white text-base md:text-lg">
               <div className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-white" />
+                <CheckCircle className="h-6 w-6 text-white" />
                 <span>Non-Invasive</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-white" />
+                <CheckCircle className="h-6 w-6 text-white" />
                 <span>Private & Secure</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-white" />
+                <CheckCircle className="h-6 w-6 text-white" />
                 <span>Evidence-Based</span>
               </div>
             </div>
