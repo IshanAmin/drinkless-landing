@@ -9,7 +9,7 @@ import SavingsCalculator from "@/components/SavingsCalculator";
 import TwitterTestimonials from "@/components/TwitterTestimonials";
 import FAQSection from "@/components/FAQSection";
 
-const Index = () => {
+export default function Index() {
   return (
     <div className="min-h-screen">
       <header className="container mx-auto px-4 py-6 relative">
@@ -61,6 +61,4 @@ const Index = () => {
       </footer>
     </div>
   );
-};
-
-export default Index;
+}
