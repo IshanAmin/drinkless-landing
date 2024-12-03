@@ -23,7 +23,7 @@ const HeroSection = () => {
         />
       </div>
       
-      <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
+      <div className="container mx-auto px-4 py-16 md:py-24 relative z-10 mt-16 md:mt-0">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-6">
