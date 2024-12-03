@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/40" />
       
       {/* Logo positioned absolutely with increased padding */}
-      <div className="absolute top-8 left-8 z-20">
+      <div className="absolute top-8 w-full md:w-auto md:left-8 flex justify-center md:justify-start z-20">
         <img 
           src="/lovable-uploads/d608c79f-c397-4cd1-934d-511092b5cda6.png"
           alt="Drinkless Logo" 
