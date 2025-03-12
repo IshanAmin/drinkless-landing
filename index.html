@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,7 +42,7 @@
       // Initialize _tip on window object
       window._tip = window._tip || [];
       
-      // Load TruConversion script
+      // Load TruConversion script with improved error handling
       window.addEventListener('load', function() {
         try {
           (function(d,s,id){
@@ -53,6 +54,8 @@
             js.src = window.location.protocol + '//app.truconversion.com/ti-js/42081/d53dd.js';
             js.onerror = function(error) {
               console.error('TruConversion script failed to load:', error);
+              // Prevent further errors from affecting the user experience
+              window._tcErrorHandled = true;
             };
             js.onload = function() {
               console.log('TruConversion script loaded successfully');
@@ -63,12 +66,16 @@
           })(document, 'script', 'ti-js');
         } catch (error) {
           console.error('TruConversion initialization error:', error);
+          // Make sure errors don't affect the user experience
+          window._tcErrorHandled = true;
         }
       });
     </script>
 
-    <!-- TruConversion visitor tracking for getdrinkless.com -->
+    <!-- TruConversion visitor tracking for getdrinkless.com - Disabling Reveal script that's causing errors -->
     <script type="text/javascript">
+      // We're commenting out the Reveal tracking script that's causing the fetch error
+      /* 
       window.addEventListener('load', function() {
         try {
           !function(){
@@ -97,6 +104,13 @@
         } catch(error) {
           console.error('Error in Reveal tracking setup:', error);
         }
+      });
+      */
+      
+      // Adding a safer version that won't break the site if Reveal is down
+      window.addEventListener('load', function() {
+        // Skip loading the problematic script for now
+        console.log('Reveal tracking temporarily disabled to prevent fetch errors');
       });
     </script>
   </head>
