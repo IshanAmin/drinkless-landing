@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Heart } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
@@ -18,7 +19,7 @@ export default function Index() {
         <div className="mt-12 mb-12 flex justify-center">
           <img 
             src="https://ishanamin.com/wp-content/uploads/2024/11/phone_screen_mockup-3.png"
-            alt="Drinkless App Mockups"
+            alt="Sobr App Mockups"
             className="w-full max-w-6xl mx-auto px-4"
           />
         </div>
@@ -43,7 +44,7 @@ export default function Index() {
 
       <footer className="container mx-auto px-4 py-8 mt-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-600">
-          <p>© 2025 drinkless. All rights reserved.</p>
+          <p>© 2025 sobr. All rights reserved.</p>
           <p className="flex items-center gap-1">
             Made with <Heart className="h-4 w-4 text-red-500 fill-red-500" /> in Omaha, Nebraska
           </p>
