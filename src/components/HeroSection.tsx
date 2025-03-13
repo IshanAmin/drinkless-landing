@@ -1,3 +1,4 @@
+
 import SignupForm from "./SignupForm";
 import { CheckCircle } from "lucide-react";
 
@@ -17,7 +18,7 @@ const HeroSection = () => {
       {/* Logo positioned absolutely with increased padding */}
       <div className="absolute top-8 w-full md:w-auto md:left-8 flex justify-center md:justify-start z-20">
         <img 
-          src="/lovable-uploads/d608c79f-c397-4cd1-934d-511092b5cda6.png"
+          src="/lovable-uploads/434a8cbf-6477-4626-9f0f-bb9fdbdac292.png"
           alt="Drinkless Logo" 
           className="h-12 w-auto"
         />
