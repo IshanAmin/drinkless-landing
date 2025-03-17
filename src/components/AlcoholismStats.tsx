@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Users, Brain, Heart, PieChart, Droplet, ChevronDown, User, Users2, Building2, School } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -19,6 +20,24 @@ const StatCard = ({ icon, title, value, description, color }: StatCardProps) => 
         </div>
       </div>
       <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">{title}</h3>
+      <p className="text-3xl font-bold mb-3 text-center">{value}</p>
+      <p className="text-sm text-gray-700 text-center">{description}</p>
+    </div>
+  );
+}
+
+// Create a separate card for youth stats without icon
+type YouthStatCardProps = {
+  title: string;
+  value: string;
+  description: string;
+  color: string;
+}
+
+const YouthStatCard = ({ title, value, description, color }: YouthStatCardProps) => {
+  return (
+    <div className={`${color} rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl animate-fade-in`}>
+      <h3 className="text-lg font-semibold text-gray-800 mb-3 text-center">{title}</h3>
       <p className="text-3xl font-bold mb-3 text-center">{value}</p>
       <p className="text-sm text-gray-700 text-center">{description}</p>
     </div>
@@ -135,63 +154,54 @@ const AlcoholismStats = () => {
 
   const youthStats = [
     {
-      icon: <School className="h-8 w-8 text-blue-600" />,
       title: "Total Youth AUD",
       value: "757K",
       description: "Youth ages 12 to 17 (2.9% in this age group)",
       color: "bg-blue-50"
     },
     {
-      icon: <User className="h-8 w-8 text-sky-600" />,
       title: "Boys",
       value: "270K",
       description: "Boys ages 12 to 17 (2.0% in this age group)",
       color: "bg-sky-50"
     },
     {
-      icon: <User className="h-8 w-8 text-pink-600" />,
       title: "Girls",
       value: "487K",
       description: "Girls ages 12 to 17 (3.8% in this age group)",
       color: "bg-pink-50"
     },
     {
-      icon: <Users2 className="h-8 w-8 text-orange-600" />,
       title: "American Indian/Alaska Native",
       value: "5K",
       description: "Youth ages 12 to 17 (2.3% in this age group)",
       color: "bg-orange-50"
     },
     {
-      icon: <Users2 className="h-8 w-8 text-cyan-600" />,
       title: "Asian",
       value: "15K",
       description: "Youth ages 12 to 17 (1.0% in this age group)",
       color: "bg-cyan-50"
     },
     {
-      icon: <Users2 className="h-8 w-8 text-gray-600" />,
       title: "Black/African American",
       value: "46K",
       description: "Youth ages 12 to 17 (1.3% in this age group)",
       color: "bg-gray-50"
     },
     {
-      icon: <Users2 className="h-8 w-8 text-violet-600" />,
       title: "White",
       value: "438K",
       description: "Youth ages 12 to 17 (3.4% in this age group)",
       color: "bg-violet-50"
     },
     {
-      icon: <Users2 className="h-8 w-8 text-fuchsia-600" />,
       title: "Two or More Races",
       value: "28K",
       description: "Youth ages 12 to 17 (3.0% in this age group)",
       color: "bg-fuchsia-50"
     },
     {
-      icon: <Building2 className="h-8 w-8 text-amber-600" />,
       title: "Hispanic/Latino",
       value: "223K",
       description: "Youth ages 12 to 17 (3.3% in this age group)",
@@ -270,9 +280,8 @@ const AlcoholismStats = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in">
               {youthStats.map((stat, index) => (
-                <StatCard
+                <YouthStatCard
                   key={`youth-${index}`}
-                  icon={stat.icon}
                   title={stat.title}
                   value={stat.value}
                   description={stat.description}
