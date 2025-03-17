@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Card } from "./ui/card";
 import { InputSection } from "./calculator/InputSection";
@@ -26,9 +27,9 @@ const SavingsCalculator = () => {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-br from-primary/5 to-secondary/5">
+    <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Your True Drinking Cost
             <span className="gradient-text block">Direct & Opportunity Costs</span>
