@@ -1,3 +1,4 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +40,45 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Additional animations for our components */
+.stagger-animation > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.stagger-animation.show > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover effects */
+.button-glow:hover {
+  box-shadow: 0 0 15px rgba(79, 70, 229, 0.6);
+}
+
+/* Pulse animation for important elements */
+.pulse-slow {
+  animation: pulse 3s infinite ease-in-out;
+}
+
+/* Animated gradient background */
+.bg-animated-gradient {
+  background: linear-gradient(-45deg, #4f46e5, #818cf8, #6366f1, #4f46e5);
+  background-size: 400% 400%;
+  animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
