@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Heart } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
+import AlcoholismStats from "@/components/AlcoholismStats";
 import FeatureShowcase from "@/components/FeatureShowcase";
 import WaitlistCTA from "@/components/WaitlistCTA";
 import TransformSection from "@/components/TransformSection";
@@ -15,6 +16,7 @@ export default function Index() {
     <div className="min-h-screen">
       <main>
         <HeroSection />
+        <AlcoholismStats />
         
         <div className="mt-12 mb-12 flex justify-center">
           <img 
