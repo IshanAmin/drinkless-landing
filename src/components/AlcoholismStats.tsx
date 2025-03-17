@@ -1,6 +1,5 @@
-
 import { useState } from "react";
-import { Users, Brain, Heart, PieChart, Droplet, ChevronDown, User, Users2, Building2 } from "lucide-react";
+import { Users, Brain, Heart, PieChart, Droplet, ChevronDown, User, Users2, Building2, School } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 type StatCardProps = {
@@ -28,6 +27,7 @@ const StatCard = ({ icon, title, value, description, color }: StatCardProps) => 
 
 const AlcoholismStats = () => {
   const [showMoreStats, setShowMoreStats] = useState(false);
+  const [showYouthStats, setShowYouthStats] = useState(false);
 
   const primaryStats = [
     {
@@ -133,6 +133,72 @@ const AlcoholismStats = () => {
     }
   ];
 
+  const youthStats = [
+    {
+      icon: <School className="h-8 w-8 text-blue-600" />,
+      title: "Total Youth AUD",
+      value: "757K",
+      description: "Youth ages 12 to 17 (2.9% in this age group)",
+      color: "bg-blue-50"
+    },
+    {
+      icon: <User className="h-8 w-8 text-sky-600" />,
+      title: "Boys",
+      value: "270K",
+      description: "Boys ages 12 to 17 (2.0% in this age group)",
+      color: "bg-sky-50"
+    },
+    {
+      icon: <User className="h-8 w-8 text-pink-600" />,
+      title: "Girls",
+      value: "487K",
+      description: "Girls ages 12 to 17 (3.8% in this age group)",
+      color: "bg-pink-50"
+    },
+    {
+      icon: <Users2 className="h-8 w-8 text-orange-600" />,
+      title: "American Indian/Alaska Native",
+      value: "5K",
+      description: "Youth ages 12 to 17 (2.3% in this age group)",
+      color: "bg-orange-50"
+    },
+    {
+      icon: <Users2 className="h-8 w-8 text-cyan-600" />,
+      title: "Asian",
+      value: "15K",
+      description: "Youth ages 12 to 17 (1.0% in this age group)",
+      color: "bg-cyan-50"
+    },
+    {
+      icon: <Users2 className="h-8 w-8 text-gray-600" />,
+      title: "Black/African American",
+      value: "46K",
+      description: "Youth ages 12 to 17 (1.3% in this age group)",
+      color: "bg-gray-50"
+    },
+    {
+      icon: <Users2 className="h-8 w-8 text-violet-600" />,
+      title: "White",
+      value: "438K",
+      description: "Youth ages 12 to 17 (3.4% in this age group)",
+      color: "bg-violet-50"
+    },
+    {
+      icon: <Users2 className="h-8 w-8 text-fuchsia-600" />,
+      title: "Two or More Races",
+      value: "28K",
+      description: "Youth ages 12 to 17 (3.0% in this age group)",
+      color: "bg-fuchsia-50"
+    },
+    {
+      icon: <Building2 className="h-8 w-8 text-amber-600" />,
+      title: "Hispanic/Latino",
+      value: "223K",
+      description: "Youth ages 12 to 17 (3.3% in this age group)",
+      color: "bg-amber-50/70"
+    }
+  ];
+
   return (
     <section className="py-16 bg-gradient-to-br from-slate-50 to-slate-100">
       <div className="container mx-auto px-4">
@@ -174,6 +240,38 @@ const AlcoholismStats = () => {
               {additionalStats.map((stat, index) => (
                 <StatCard
                   key={`additional-${index}`}
+                  icon={stat.icon}
+                  title={stat.title}
+                  value={stat.value}
+                  description={stat.description}
+                  color={stat.color}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className="flex justify-center mt-8 mb-4">
+          <Button 
+            variant="outline" 
+            onClick={() => setShowYouthStats(!showYouthStats)}
+            className="flex items-center gap-2 group"
+          >
+            {showYouthStats ? "Hide" : "Show me"} the AUD in Youths! (Ages 12 to 17)
+            <ChevronDown className={`h-4 w-4 transition-transform ${showYouthStats ? 'rotate-180' : ''}`} />
+          </Button>
+        </div>
+        
+        {showYouthStats && (
+          <div className="mt-8">
+            <h3 className="text-xl md:text-2xl font-bold mb-3 text-center">Youth Alcohol Use Disorder</h3>
+            <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
+              Alcohol use disorder (AUD) among adolescents. 757,000 adolescents ages 12 to 17 had AUD in 2023. Source: 2023 NSDUH.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in">
+              {youthStats.map((stat, index) => (
+                <StatCard
+                  key={`youth-${index}`}
                   icon={stat.icon}
                   title={stat.title}
                   value={stat.value}
