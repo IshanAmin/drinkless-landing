@@ -4,7 +4,6 @@ import PrimaryStats from "./stats/PrimaryStats";
 import DemographicStats from "./stats/DemographicStats";
 import YouthStats from "./stats/YouthStats";
 import ExpandableSection from "./stats/ExpandableSection";
-import ReferencesDialog from "./stats/ReferencesDialog";
 
 const AlcoholismStats = () => {
   const [showMoreStats, setShowMoreStats] = useState(false);
@@ -43,8 +42,6 @@ const AlcoholismStats = () => {
         >
           <YouthStats />
         </ExpandableSection>
-        
-        <ReferencesDialog />
       </div>
     </section>
   );
