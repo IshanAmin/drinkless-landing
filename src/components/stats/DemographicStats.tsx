@@ -76,7 +76,7 @@ const DemographicStats = () => {
         {demographicStatsData.map((stat, index) => (
           <StatCard
             key={`demographic-${index}`}
-            icon={stat.icon}
+            icon={null}
             title={stat.title}
             value={stat.value}
             description={stat.description}
