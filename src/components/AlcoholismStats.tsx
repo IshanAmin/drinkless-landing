@@ -1,221 +1,14 @@
 
 import { useState } from "react";
-import { Users, Brain, Heart, PieChart, Droplet, ChevronDown, User, Users2, Building2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { 
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-
-type StatCardProps = {
-  icon: React.ReactNode;
-  title: string;
-  value: string;
-  description: string;
-  color: string;
-}
-
-const StatCard = ({ icon, title, value, description, color }: StatCardProps) => {
-  return (
-    <div className={`${color} rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl animate-fade-in`}>
-      <div className="mb-4 flex justify-center">
-        <div className="p-3 bg-white/90 rounded-full">
-          {icon}
-        </div>
-      </div>
-      <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">{title}</h3>
-      <p className="text-3xl font-bold mb-3 text-center">{value}</p>
-      <p className="text-sm text-gray-700 text-center">{description}</p>
-    </div>
-  );
-}
-
-// Create a separate card for youth stats without icon
-type YouthStatCardProps = {
-  title: string;
-  value: string;
-  description: string;
-  color: string;
-}
-
-const YouthStatCard = ({ title, value, description, color }: YouthStatCardProps) => {
-  return (
-    <div className={`${color} rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl animate-fade-in`}>
-      <h3 className="text-lg font-semibold text-gray-800 mb-3 text-center">{title}</h3>
-      <p className="text-3xl font-bold mb-3 text-center">{value}</p>
-      <p className="text-sm text-gray-700 text-center">{description}</p>
-    </div>
-  );
-}
+import PrimaryStats from "./stats/PrimaryStats";
+import DemographicStats from "./stats/DemographicStats";
+import YouthStats from "./stats/YouthStats";
+import ExpandableSection from "./stats/ExpandableSection";
+import ReferencesDialog from "./stats/ReferencesDialog";
 
 const AlcoholismStats = () => {
   const [showMoreStats, setShowMoreStats] = useState(false);
   const [showYouthStats, setShowYouthStats] = useState(false);
-
-  const primaryStats = [
-    {
-      icon: <Users className="h-8 w-8 text-indigo-600" />,
-      title: "Prevalence",
-      value: "28.9M",
-      description: "People aged 12+ had AUD in the past year (10.2% of population)",
-      color: "bg-indigo-50"
-    },
-    {
-      icon: <Brain className="h-8 w-8 text-purple-600" />,
-      title: "Adult Americans",
-      value: "18M",
-      description: "Adults have an alcohol use disorder causing distress and harm",
-      color: "bg-purple-50"
-    },
-    {
-      icon: <Heart className="h-8 w-8 text-pink-600" />,
-      title: "Gender Differences",
-      value: "9.2M vs 5.3M",
-      description: "Men vs women had AUD in the past year",
-      color: "bg-pink-50"
-    },
-    {
-      icon: <PieChart className="h-8 w-8 text-amber-600" />,
-      title: "Treatment Gap",
-      value: "Only 7.9%",
-      description: "Of people with past-year AUD received treatment",
-      color: "bg-amber-50"
-    },
-    {
-      icon: <Droplet className="h-8 w-8 text-blue-600" />,
-      title: "Heavy Alcohol Use",
-      value: "16.3M",
-      description: "Adults reported heavy alcohol use in the past month (6.3%)",
-      color: "bg-sky-50"
-    }
-  ];
-
-  const additionalStats = [
-    {
-      icon: <User className="h-8 w-8 text-emerald-600" />,
-      title: "Males",
-      value: "16.8M",
-      description: "Males ages 12 and older (12.1% in this age group)",
-      color: "bg-emerald-50"
-    },
-    {
-      icon: <User className="h-8 w-8 text-rose-600" />,
-      title: "Females",
-      value: "12.0M",
-      description: "Females ages 12 and older (8.3% in this age group)",
-      color: "bg-rose-50"
-    },
-    {
-      icon: <Users2 className="h-8 w-8 text-orange-600" />,
-      title: "American Indian/Alaska Native",
-      value: "156K",
-      description: "People ages 12 and older (11.6% in this age group)",
-      color: "bg-orange-50"
-    },
-    {
-      icon: <Users2 className="h-8 w-8 text-cyan-600" />,
-      title: "Asian",
-      value: "994K",
-      description: "People ages 12 and older (5.7% in this age group)",
-      color: "bg-cyan-50"
-    },
-    {
-      icon: <Users2 className="h-8 w-8 text-gray-600" />,
-      title: "Black/African American",
-      value: "3.3M",
-      description: "People ages 12 and older (9.6% in this age group)",
-      color: "bg-gray-50"
-    },
-    {
-      icon: <Users2 className="h-8 w-8 text-teal-600" />,
-      title: "Native Hawaiian/Pacific Islander",
-      value: "88K",
-      description: "People ages 12 and older (7.9% in this age group)",
-      color: "bg-teal-50"
-    },
-    {
-      icon: <Users2 className="h-8 w-8 text-violet-600" />,
-      title: "White",
-      value: "18.7M",
-      description: "People ages 12 and older (11.0% in this age group)",
-      color: "bg-violet-50"
-    },
-    {
-      icon: <Users2 className="h-8 w-8 text-fuchsia-600" />,
-      title: "Two or More Races",
-      value: "841K",
-      description: "People ages 12 and older (13.6% in this age group)",
-      color: "bg-fuchsia-50"
-    },
-    {
-      icon: <Building2 className="h-8 w-8 text-amber-600" />,
-      title: "Hispanic/Latino",
-      value: "4.8M",
-      description: "People ages 12 and older (10.8% in this age group)",
-      color: "bg-amber-50/70"
-    }
-  ];
-
-  const youthStats = [
-    {
-      title: "Total Youth AUD",
-      value: "757K",
-      description: "Youth ages 12 to 17 (2.9% in this age group)",
-      color: "bg-blue-50"
-    },
-    {
-      title: "Boys",
-      value: "270K",
-      description: "Boys ages 12 to 17 (2.0% in this age group)",
-      color: "bg-sky-50"
-    },
-    {
-      title: "Girls",
-      value: "487K",
-      description: "Girls ages 12 to 17 (3.8% in this age group)",
-      color: "bg-pink-50"
-    },
-    {
-      title: "American Indian/Alaska Native",
-      value: "5K",
-      description: "Youth ages 12 to 17 (2.3% in this age group)",
-      color: "bg-orange-50"
-    },
-    {
-      title: "Asian",
-      value: "15K",
-      description: "Youth ages 12 to 17 (1.0% in this age group)",
-      color: "bg-cyan-50"
-    },
-    {
-      title: "Black/African American",
-      value: "46K",
-      description: "Youth ages 12 to 17 (1.3% in this age group)",
-      color: "bg-gray-50"
-    },
-    {
-      title: "White",
-      value: "438K",
-      description: "Youth ages 12 to 17 (3.4% in this age group)",
-      color: "bg-violet-50"
-    },
-    {
-      title: "Two or More Races",
-      value: "28K",
-      description: "Youth ages 12 to 17 (3.0% in this age group)",
-      color: "bg-fuchsia-50"
-    },
-    {
-      title: "Hispanic/Latino",
-      value: "223K",
-      description: "Youth ages 12 to 17 (3.3% in this age group)",
-      color: "bg-amber-50/70"
-    }
-  ];
 
   return (
     <section className="py-16 bg-gradient-to-br from-slate-50 to-slate-100">
@@ -227,117 +20,31 @@ const AlcoholismStats = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-          {primaryStats.map((stat, index) => (
-            <StatCard
-              key={index}
-              icon={stat.icon}
-              title={stat.title}
-              value={stat.value}
-              description={stat.description}
-              color={stat.color}
-            />
-          ))}
-        </div>
+        <PrimaryStats />
 
-        <div className="flex justify-center mt-8 mb-4">
-          <Button 
-            variant="outline" 
-            onClick={() => setShowMoreStats(!showMoreStats)}
-            className="flex items-center gap-2 group"
-          >
-            {showMoreStats ? "Hide" : "Show"} Demographic Statistics
-            <ChevronDown className={`h-4 w-4 transition-transform ${showMoreStats ? 'rotate-180' : ''}`} />
-          </Button>
-        </div>
-        
-        {showMoreStats && (
-          <div className="mt-8">
-            <h3 className="text-xl md:text-2xl font-bold mb-6 text-center">Demographic Breakdown</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in">
-              {additionalStats.map((stat, index) => (
-                <StatCard
-                  key={`additional-${index}`}
-                  icon={stat.icon}
-                  title={stat.title}
-                  value={stat.value}
-                  description={stat.description}
-                  color={stat.color}
-                />
-              ))}
-            </div>
-          </div>
-        )}
+        <ExpandableSection 
+          isExpanded={showMoreStats}
+          onToggle={() => setShowMoreStats(!showMoreStats)}
+          buttonText={{
+            show: "Show Demographic Statistics",
+            hide: "Hide Demographic Statistics"
+          }}
+        >
+          <DemographicStats />
+        </ExpandableSection>
 
-        <div className="flex justify-center mt-8 mb-4">
-          <Button 
-            variant="outline" 
-            onClick={() => setShowYouthStats(!showYouthStats)}
-            className="flex items-center gap-2 group"
-          >
-            {showYouthStats ? "Hide" : "Show me"} the AUD in Youths! (Ages 12 to 17)
-            <ChevronDown className={`h-4 w-4 transition-transform ${showYouthStats ? 'rotate-180' : ''}`} />
-          </Button>
-        </div>
+        <ExpandableSection 
+          isExpanded={showYouthStats}
+          onToggle={() => setShowYouthStats(!showYouthStats)}
+          buttonText={{
+            show: "Show me the AUD in Youths! (Ages 12 to 17)",
+            hide: "Hide the AUD in Youths! (Ages 12 to 17)"
+          }}
+        >
+          <YouthStats />
+        </ExpandableSection>
         
-        {showYouthStats && (
-          <div className="mt-8">
-            <h3 className="text-xl md:text-2xl font-bold mb-3 text-center">Youth Alcohol Use Disorder</h3>
-            <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              Alcohol use disorder (AUD) among adolescents. 757,000 adolescents ages 12 to 17 had AUD in 2023. Source: 2023 NSDUH.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in">
-              {youthStats.map((stat, index) => (
-                <YouthStatCard
-                  key={`youth-${index}`}
-                  title={stat.title}
-                  value={stat.value}
-                  description={stat.description}
-                  color={stat.color}
-                />
-              ))}
-            </div>
-          </div>
-        )}
-        
-        <div className="mt-12 text-center">
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button variant="link" className="text-sm text-slate-600 hover:text-slate-800">
-                Statistical Data Source
-              </Button>
-            </DialogTrigger>
-            <DialogContent className="max-w-2xl">
-              <DialogHeader>
-                <DialogTitle className="text-xl mb-2">References</DialogTitle>
-                <DialogDescription className="text-base leading-6 space-y-4">
-                  <p className="mb-4">
-                    1. SAMHSA, Center for Behavioral Health Statistics and Quality. 2022 National Survey on Drug Use and Health. 
-                    Table 5.9A—Alcohol use disorder in past year: among people aged 12 or older; by age group and demographic 
-                    characteristics, numbers in thousands, 2022 and 2023. [cited 2024 Aug 2]. Available from: 
-                    <a href="https://www.samhsa.gov/data/report/2023-nsduh-detailed-tables" 
-                       className="text-blue-600 hover:underline ml-1" 
-                       target="_blank" 
-                       rel="noopener noreferrer">
-                      https://www.samhsa.gov/data/report/2023-nsduh-detailed-tables
-                    </a>
-                  </p>
-                  <p>
-                    2. SAMHSA, Center for Behavioral Health Statistics and Quality. 2022 National Survey on Drug Use and Health. 
-                    Table 5.9B—Alcohol use disorder in past year: among people aged 12 or older; by age group and demographic 
-                    characteristics, percentages, 2022 and 2023. [cited 2024 Aug 2]. Available from: 
-                    <a href="https://www.samhsa.gov/data/report/2023-nsduh-detailed-tables" 
-                       className="text-blue-600 hover:underline ml-1" 
-                       target="_blank" 
-                       rel="noopener noreferrer">
-                      https://www.samhsa.gov/data/report/2023-nsduh-detailed-tables
-                    </a>
-                  </p>
-                </DialogDescription>
-              </DialogHeader>
-            </DialogContent>
-          </Dialog>
-        </div>
+        <ReferencesDialog />
       </div>
     </section>
   );
