@@ -29,7 +29,7 @@ const WaitlistCTA = () => {
   }, []);
 
   return (
-    <div ref={sectionRef} className="py-16 bg-white/50 backdrop-blur-sm opacity-0 transform translate-y-4">
+    <div ref={sectionRef} className="py-24 bg-white/50 backdrop-blur-sm opacity-0 transform translate-y-4">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight px-4 bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-primary bg-size-200 animate-gradient">

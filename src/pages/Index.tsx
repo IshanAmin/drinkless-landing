@@ -52,10 +52,8 @@ export default function Index() {
           />
         </div>
 
-        <div className="bg-gradient-to-br from-primary/5 to-secondary/5">
-          <TransformSection />
-          <SavingsCalculator />
-        </div>
+        <TransformSection />
+        <SavingsCalculator />
         
         <div className="flex justify-center mb-16 animate-on-scroll opacity-0">
           <img 

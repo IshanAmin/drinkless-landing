@@ -78,9 +78,9 @@ const TransformSection = () => {
   ];
 
   return (
-    <section className="pt-16 pb-8">
+    <section className="py-24 bg-gradient-to-br from-primary/5 to-secondary/5">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-on-scroll opacity-0">
             The New You
             <span className="gradient-text block animate-gradient bg-size-200">Transform Your Life</span>
