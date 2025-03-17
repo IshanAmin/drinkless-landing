@@ -25,7 +25,7 @@ const AlcoholismStats = () => {
           isExpanded={showMoreStats}
           onToggle={() => setShowMoreStats(!showMoreStats)}
           buttonText={{
-            show: "Show More AUD Statistics",
+            show: "Show more Alcoholism Epidemic Statistics",
             hide: "Hide Demographic Statistics"
           }}
         >
@@ -36,7 +36,7 @@ const AlcoholismStats = () => {
           isExpanded={showYouthStats}
           onToggle={() => setShowYouthStats(!showYouthStats)}
           buttonText={{
-            show: "Show me the AUD in Youths! (Ages 12 to 17)",
+            show: "Show me the Alcoholism Epidemic in Youths! (Ages 12 to 17)",
             hide: "Hide the AUD in Youths! (Ages 12 to 17)"
           }}
         >
