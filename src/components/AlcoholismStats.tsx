@@ -25,7 +25,7 @@ const AlcoholismStats = () => {
           isExpanded={showMoreStats}
           onToggle={() => setShowMoreStats(!showMoreStats)}
           buttonText={{
-            show: "Show More Demographic Statistics",
+            show: "Show More AUD Statistics",
             hide: "Hide Demographic Statistics"
           }}
         >
