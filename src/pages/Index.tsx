@@ -48,7 +48,7 @@ export default function Index() {
       <footer className="container mx-auto px-4 py-8 mt-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-600">
           <div className="flex flex-col md:flex-row items-center gap-2">
-            <p>© 2025 sobr. All rights reserved.</p>
+            <p>© 2026 Sobr. All rights reserved. Brightslides LLC.</p>
             <ReferencesDialog />
           </div>
           <p className="flex items-center gap-1">
