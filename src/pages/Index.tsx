@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 import HeroSection from "@/components/HeroSection";
 import AlcoholismStats from "@/components/AlcoholismStats";
 import FeatureShowcase from "@/components/FeatureShowcase";
@@ -48,7 +49,7 @@ export default function Index() {
       <footer className="container mx-auto px-4 py-8 mt-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-600">
           <div className="flex flex-col md:flex-row items-center gap-2">
-            <p>© 2026 Sobr. All rights reserved. Brightslides LLC.</p>
+            <p>© <Link to="/home2" className="text-inherit no-underline hover:text-inherit">2026</Link> Sobr. All rights reserved. Brightslides LLC.</p>
             <ReferencesDialog />
           </div>
           <p className="flex items-center gap-1">
