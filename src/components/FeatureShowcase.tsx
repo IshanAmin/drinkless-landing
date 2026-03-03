@@ -72,8 +72,8 @@ const FeatureShowcase = () => {
       description: "Receive tailored advice based on your unique journey."
     },
     {
-      title: "Sunny Chatbot",
-      description: "Chat with Sunny, your cheerful companion on your alcohol-free journey."
+      title: "Soby Chatbot",
+      description: "Chat with Soby, your cheerful companion on your alcohol-free journey."
     },
     {
       title: "Social Substitutes",
