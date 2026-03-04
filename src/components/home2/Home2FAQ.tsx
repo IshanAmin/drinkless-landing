@@ -7,16 +7,16 @@ import {
 
 const faqs = [
   {
-    q: "What is SobrAI?",
-    a: "SobrAI is a mobile app for iOS and Android that helps people quit or reduce alcohol. It combines AI-powered support (Soby AI), personal tracking, gamification, and a unique Buddy–Sponsor pairing system.",
+    q: "What is Sobr?",
+    a: "Sobr is a mobile app for iOS and Android that helps people quit or reduce alcohol. It combines AI-powered support (Soby AI), personal tracking, gamification, and a unique Buddy–Sponsor pairing system.",
   },
   {
     q: "What's the difference between a Buddy and a Sponsor?",
     a: "A Buddy is the person on the sobriety journey — they track, journal, and get AI support. A Sponsor is someone who supports a Buddy — they get a dashboard, nudge system, and crisis alerts.",
   },
   {
-    q: "Is SobrAI free?",
-    a: "SobrAI offers a free tier with core features. Premium plans unlock advanced AI support, unlimited journal entries, and additional gamification rewards.",
+    q: "Is Sobr free?",
+    a: "Sobr offers a free tier with core features. Premium plans unlock advanced AI support, unlimited journal entries, and additional gamification rewards.",
   },
   {
     q: "How does the Crisis Flow work?",
@@ -27,12 +27,12 @@ const faqs = [
     a: "Absolutely. We use industry-standard encryption and never sell your data. Your journey is yours — we protect it.",
   },
   {
-    q: "Can I use SobrAI without a Sponsor?",
-    a: "Yes. While having a Sponsor adds accountability, SobrAI works fully independently with Soby AI, check-ins, journaling, and all core features.",
+    q: "Can I use Sobr without a Sponsor?",
+    a: "Yes. While having a Sponsor adds accountability, Sobr works fully independently with Soby AI, check-ins, journaling, and all core features.",
   },
   {
     q: "Where can I download the app?",
-    a: "SobrAI is available on the Apple App Store and Google Play Store. Download links are at the top and bottom of this page.",
+    a: "Sobr is available on the Apple App Store and Google Play Store. Download links are at the top and bottom of this page.",
   },
 ];
 
