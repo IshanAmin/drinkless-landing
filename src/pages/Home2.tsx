@@ -8,6 +8,7 @@ import Home2Testimonials from "@/components/home2/Home2Testimonials";
 import Home2FAQ from "@/components/home2/Home2FAQ";
 import FinalCTA from "@/components/home2/FinalCTA";
 import Home2Footer from "@/components/home2/Home2Footer";
+import ScrollToTop from "@/components/home2/ScrollToTop";
 
 export default function Home2() {
   const [activeRole, setActiveRole] = useState<string>("buddy");
