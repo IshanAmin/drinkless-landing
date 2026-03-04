@@ -1,28 +1,33 @@
-
-import { Heart } from "lucide-react";
-import HeroSection from "@/components/HeroSection";
-import { Link } from "react-router-dom";
+import Home2Hero from "@/components/home2/Home2Hero";
+import HowItWorks from "@/components/home2/HowItWorks";
+import DualExperience from "@/components/home2/DualExperience";
+import FivePillars from "@/components/home2/FivePillars";
+import AppShowcase from "@/components/home2/AppShowcase";
+import Home2Testimonials from "@/components/home2/Home2Testimonials";
+import Home2FAQ from "@/components/home2/Home2FAQ";
+import FinalCTA from "@/components/home2/FinalCTA";
+import Home2Footer from "@/components/home2/Home2Footer";
 
 export default function Home2() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen sobr-dark">
       {/* Work in Progress Banner */}
-      <div className="bg-amber-500 text-white text-center py-3 px-4 font-semibold text-sm tracking-wide">
+      <div className="bg-sobr-coral text-sobr-text text-center py-3 px-4 font-semibold text-sm tracking-wide font-jakarta">
         🚧 Work in Progress — New Site Coming Soon 🚧
       </div>
 
       <main>
-        <HeroSection />
+        <Home2Hero />
+        <HowItWorks />
+        <DualExperience />
+        <FivePillars />
+        <AppShowcase />
+        <Home2Testimonials />
+        <Home2FAQ />
+        <FinalCTA />
       </main>
 
-      <footer className="container mx-auto px-4 py-8 mt-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-600">
-          <p>© 2026 Sobr. All rights reserved. Brightslides LLC.</p>
-          <p className="flex items-center gap-1">
-            Made with <Heart className="h-4 w-4 text-red-500 fill-red-500" /> in Omaha, Nebraska
-          </p>
-        </div>
-      </footer>
+      <Home2Footer />
     </div>
   );
 }
