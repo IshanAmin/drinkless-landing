@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Home2Hero from "@/components/home2/Home2Hero";
 import HowItWorks from "@/components/home2/HowItWorks";
 import DualExperience from "@/components/home2/DualExperience";
@@ -9,6 +10,8 @@ import FinalCTA from "@/components/home2/FinalCTA";
 import Home2Footer from "@/components/home2/Home2Footer";
 
 export default function Home2() {
+  const [activeRole, setActiveRole] = useState<string>("buddy");
+
   return (
     <div className="min-h-screen sobr-dark">
       {/* Work in Progress Banner */}
@@ -17,9 +20,9 @@ export default function Home2() {
       </div>
 
       <main>
-        <Home2Hero />
+        <Home2Hero onRoleSelect={setActiveRole} activeRole={activeRole} />
         <HowItWorks />
-        <DualExperience />
+        <DualExperience activeTab={activeRole} onTabChange={setActiveRole} />
         <FivePillars />
         <AppShowcase />
         <Home2Testimonials />
