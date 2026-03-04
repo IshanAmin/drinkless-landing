@@ -50,6 +50,7 @@ export default function Index() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-600">
           <div className="flex flex-col md:flex-row items-center gap-2">
             <p>© <Link to="/home2" className="text-inherit no-underline hover:text-inherit">2026</Link> Sobr. All rights reserved. Brightslides LLC.</p>
+            <Link to="/privacy" className="hover:text-slate-900 transition-colors">Privacy Policy</Link>
             <ReferencesDialog />
           </div>
           <p className="flex items-center gap-1">
