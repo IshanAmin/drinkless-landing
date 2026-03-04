@@ -12,7 +12,7 @@ const AppShowcase = () => {
             Beautiful & Intuitive
           </p>
           <h2 className="text-3xl md:text-4xl font-jakarta font-bold text-sobr-text">
-            See SobrAI in Action
+            See Sobr in Action
           </h2>
           <p className="text-sobr-text-secondary font-inter max-w-xl mx-auto">
             Designed with care — every screen is built to support, encourage, and empower you on your journey.
