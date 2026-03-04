@@ -2,7 +2,7 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "SobrAI helped me see my progress when I couldn't see it myself. The daily check-ins changed everything.",
+    quote: "Sobr helped me see my progress when I couldn't see it myself. The daily check-ins changed everything.",
     name: "Sarah M.",
     role: "Buddy — 6 months sober",
   },

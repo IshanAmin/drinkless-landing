@@ -81,7 +81,7 @@ const DualExperience = ({ activeTab, onTabChange }: DualExperienceProps) => {
             Built for Buddies & Sponsors
           </h2>
           <p className="text-sobr-text-secondary font-inter max-w-2xl mx-auto">
-            Whether you're on the journey yourself or walking beside someone — SobrAI has you covered.
+            Whether you're on the journey yourself or walking beside someone — Sobr has you covered.
           </p>
         </div>
 
