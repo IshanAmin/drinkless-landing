@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Brain,
@@ -56,9 +57,21 @@ const FeatureCard = ({ icon: Icon, title, desc, index }: FeatureCardProps) => (
   </div>
 );
 
-const DualExperience = () => {
+interface DualExperienceProps {
+  activeTab?: string;
+  onTabChange?: (value: string) => void;
+}
+
+const DualExperience = ({ activeTab, onTabChange }: DualExperienceProps) => {
+  const [internalTab, setInternalTab] = useState("buddy");
+  const currentTab = activeTab ?? internalTab;
+  const handleChange = (v: string) => {
+    setInternalTab(v);
+    onTabChange?.(v);
+  };
+
   return (
-    <section className="py-20 md:py-28 bg-sobr-card">
+    <section id="dual-experience" className="py-20 md:py-28 bg-sobr-card">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 space-y-3">
           <p className="text-sobr-coral font-jakarta font-semibold tracking-wide uppercase text-sm">
@@ -72,7 +85,7 @@ const DualExperience = () => {
           </p>
         </div>
 
-        <Tabs defaultValue="buddy" className="max-w-5xl mx-auto">
+        <Tabs value={currentTab} onValueChange={handleChange} className="max-w-5xl mx-auto">
           <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 bg-sobr-elevated border border-white/5 p-1 rounded-xl mb-10">
             <TabsTrigger
               value="buddy"

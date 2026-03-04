@@ -1,9 +1,25 @@
+import { useState } from "react";
 import sobrLogo from "@/assets/sobr-logo-light.png";
 import appStoreBadge from "@/assets/app-store-badge.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
 import iphoneFrame from "@/assets/iphone-frame.png";
 
-const Home2Hero = () => {
+interface Home2HeroProps {
+  onRoleSelect: (role: "buddy" | "sponsor") => void;
+  activeRole: string;
+}
+
+const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
+  const isBuddy = activeRole === "buddy";
+
+  const handleClick = (role: "buddy" | "sponsor") => {
+    onRoleSelect(role);
+    // Smooth scroll to dual-experience section
+    setTimeout(() => {
+      document.getElementById("dual-experience")?.scrollIntoView({ behavior: "smooth" });
+    }, 50);
+  };
+
   return (
     <section
       className="relative min-h-[90vh] flex items-center overflow-hidden"
@@ -20,9 +36,9 @@ const Home2Hero = () => {
       {/* Warm gradient glow */}
       <div className="absolute inset-0 bg-gradient-to-br from-sobr-coral/10 via-transparent to-sobr-amber/5" />
 
-      {/* Logo */}
+      {/* Logo — 50% larger (h-10 → h-[60px]) */}
       <div className="absolute top-6 left-0 right-0 md:left-8 md:right-auto flex justify-center md:justify-start z-20">
-        <img src={sobrLogo} alt="Sobr Logo" className="h-10 w-auto" />
+        <img src={sobrLogo} alt="Sobr Logo" className="h-[60px] w-auto" />
       </div>
 
       <div className="container mx-auto px-4 py-20 md:py-28 relative z-10 mt-12 md:mt-0">
@@ -44,20 +60,28 @@ const Home2Hero = () => {
               </p>
             </div>
 
-            {/* Dual CTAs */}
+            {/* Dual CTAs — swap filled/outline based on activeRole */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a
-                href="#"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-sobr-coral text-sobr-text font-jakarta font-bold text-lg hover:bg-sobr-coral-dark transition-colors shadow-lg shadow-sobr-coral/25"
+              <button
+                onClick={() => handleClick("buddy")}
+                className={`inline-flex items-center justify-center px-8 py-4 rounded-xl font-jakarta font-bold text-lg transition-all duration-300 ${
+                  isBuddy
+                    ? "bg-sobr-coral text-sobr-text shadow-lg shadow-sobr-coral/25 hover:bg-sobr-coral-dark"
+                    : "border-2 border-sobr-coral/40 text-sobr-text hover:bg-sobr-coral/10"
+                }`}
               >
                 I Want to Quit
-              </a>
-              <a
-                href="#"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-xl border-2 border-sobr-coral/40 text-sobr-text font-jakarta font-bold text-lg hover:bg-sobr-coral/10 transition-colors"
+              </button>
+              <button
+                onClick={() => handleClick("sponsor")}
+                className={`inline-flex items-center justify-center px-8 py-4 rounded-xl font-jakarta font-bold text-lg transition-all duration-300 ${
+                  !isBuddy
+                    ? "bg-sobr-coral text-sobr-text shadow-lg shadow-sobr-coral/25 hover:bg-sobr-coral-dark"
+                    : "border-2 border-sobr-coral/40 text-sobr-text hover:bg-sobr-coral/10"
+                }`}
               >
                 I Want to Help Someone
-              </a>
+              </button>
             </div>
 
             {/* App store badges */}
