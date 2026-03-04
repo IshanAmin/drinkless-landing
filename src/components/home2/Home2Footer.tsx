@@ -11,9 +11,10 @@ const Home2Footer = () => {
             <img src={sobrLogo} alt="Sobr" className="h-8 w-auto" />
           </div>
 
-          <p className="text-sm text-sobr-text-muted font-inter">
-            © <Link to="/" className="hover:text-sobr-coral transition-colors">2026</Link> Sobr. All rights reserved. Brightslides LLC.
-          </p>
+          <div className="flex items-center gap-4 text-sm text-sobr-text-muted font-inter">
+            <p>© <Link to="/" className="hover:text-sobr-coral transition-colors">2026</Link> Sobr. All rights reserved. Brightslides LLC.</p>
+            <Link to="/privacy" className="hover:text-sobr-coral transition-colors">Privacy Policy</Link>
+          </div>
 
           <p className="flex items-center gap-1 text-sm text-sobr-text-muted font-inter">
             Made with <Heart className="h-4 w-4 text-sobr-coral fill-sobr-coral" /> in Omaha, Nebraska
