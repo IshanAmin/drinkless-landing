@@ -32,6 +32,7 @@ export default function Home2() {
       </main>
 
       <Home2Footer />
+      <ScrollToTop />
     </div>
   );
 }
