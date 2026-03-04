@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -29,23 +29,41 @@
     --radius: 0.5rem;
   }
 
+  /* SobrAI dark theme for Home2 */
+  .sobr-dark {
+    --sobr-bg-root: 260 30% 4%;
+    --sobr-bg-secondary: 264 28% 16%;
+    --sobr-bg-card: 255 25% 11%;
+    --sobr-bg-elevated: 264 28% 15%;
+    --sobr-text-main: 15 100% 98%;
+    --sobr-text-secondary: 14 60% 85%;
+    --sobr-text-muted: 14 30% 67%;
+    --sobr-primary: 8 100% 71%;
+    --sobr-primary-light: 8 100% 81%;
+    --sobr-primary-dark: 8 88% 59%;
+    --sobr-secondary: 35 95% 73%;
+    --sobr-accent: 211 100% 64%;
+    --sobr-success: 142 71% 45%;
+    --sobr-warning: 25 95% 53%;
+    --sobr-error: 0 89% 70%;
+  }
+
   * {
     @apply border-border;
   }
 
   body {
     @apply bg-background text-foreground font-['Inter'];
-    background: linear-gradient(
-      to bottom right,
-      rgba(79, 70, 229, 0.1) 0%,
-      rgba(129, 140, 248, 0.1) 100%
-    );
     min-height: 100vh;
   }
 }
 
 .gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#FF719A] to-[#FFE29F];
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#FF7E6B] to-[#FBBF77];
+}
+
+.sobr-gradient-bg {
+  background: linear-gradient(135deg, hsl(var(--sobr-primary) / 0.15), hsl(var(--sobr-secondary) / 0.1));
 }
 
 @keyframes fade-in {
@@ -62,4 +80,13 @@
 .animate-fade-in {
   animation: fade-in 0.5s ease-out forwards;
   opacity: 0;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }

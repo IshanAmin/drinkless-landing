@@ -18,6 +18,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        jakarta: ["Plus Jakarta Sans", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -25,11 +29,11 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#4F46E5",
+          DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "#818CF8",
+          DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
@@ -51,6 +55,24 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        // SobrAI palette
+        sobr: {
+          root: "hsl(var(--sobr-bg-root))",
+          secondary: "hsl(var(--sobr-bg-secondary))",
+          card: "hsl(var(--sobr-bg-card))",
+          elevated: "hsl(var(--sobr-bg-elevated))",
+          coral: "hsl(var(--sobr-primary))",
+          "coral-light": "hsl(var(--sobr-primary-light))",
+          "coral-dark": "hsl(var(--sobr-primary-dark))",
+          amber: "hsl(var(--sobr-secondary))",
+          blue: "hsl(var(--sobr-accent))",
+          text: "hsl(var(--sobr-text-main))",
+          "text-secondary": "hsl(var(--sobr-text-secondary))",
+          "text-muted": "hsl(var(--sobr-text-muted))",
+          success: "hsl(var(--sobr-success))",
+          warning: "hsl(var(--sobr-warning))",
+          error: "hsl(var(--sobr-error))",
         },
       },
       keyframes: {
