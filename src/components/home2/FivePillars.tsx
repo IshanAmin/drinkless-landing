@@ -37,7 +37,7 @@ const FivePillars = () => {
             Our foundation
           </p>
           <h2 className="text-3xl md:text-4xl font-jakarta font-bold text-sobr-text">
-            The Five Pillars of SobrAI
+            The Five Pillars of Sobr
           </h2>
         </div>
 

@@ -23,7 +23,7 @@ const AppShowcase = () => {
           <div className="relative w-[260px] md:w-[300px] animate-float">
             <img
               src={iphoneFrame}
-              alt="SobrAI app screenshot"
+              alt="Sobr app screenshot"
               className="w-full h-auto drop-shadow-2xl"
             />
             <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-coral/15 rounded-full scale-90" />

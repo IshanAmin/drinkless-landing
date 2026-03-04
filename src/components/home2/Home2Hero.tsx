@@ -55,7 +55,7 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
               </h1>
               <p className="text-lg md:text-xl text-sobr-text-secondary max-w-lg mx-auto md:mx-0 font-inter">
                 Whether you're ready to quit or supporting someone who is —
-                SobrAI gives you the tools, the community, and the AI-powered
+                Sobr gives you the tools, the community, and the AI-powered
                 guidance to make it stick.
               </p>
             </div>
@@ -108,7 +108,7 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
             <div className="relative w-[280px] md:w-[320px]">
               <img
                 src={iphoneFrame}
-                alt="SobrAI app preview"
+                alt="Sobr app preview"
                 className="w-full h-auto relative z-10 drop-shadow-2xl"
               />
               {/* Glow behind phone */}
