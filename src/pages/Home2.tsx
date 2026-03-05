@@ -26,6 +26,7 @@ export default function Home2() {
         <HowItWorks />
         <DualExperience activeTab={activeRole} onTabChange={setActiveRole} />
         <FivePillars />
+        <Home2Features />
         <AppShowcase />
         <Home2Testimonials />
         <Home2FAQ />
