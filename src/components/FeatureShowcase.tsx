@@ -4,7 +4,16 @@ import { Card } from "./ui/card";
 interface Feature {
   title: string;
   description: string;
+  comingSoon?: boolean;
 }
+
+const ComingSoonTab = () => (
+  <div className="absolute top-0 right-0 w-0 h-0 border-t-[3rem] border-t-primary border-l-[3rem] border-l-transparent z-10">
+    <span className="absolute -top-[2.6rem] right-[0.15rem] text-[0.5rem] font-bold text-primary-foreground rotate-45 uppercase tracking-wider leading-none">
+      Coming<br/>Soon
+    </span>
+  </div>
+);
 
 const FeatureShowcase = () => {
   const features: Feature[] = [
