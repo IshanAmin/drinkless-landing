@@ -84,8 +84,8 @@ const FeatureShowcase = () => {
       description: "Receive tailored advice based on your unique journey."
     },
     {
-      title: "Soby Chatbot",
-      description: "Chat with Soby, your cheerful companion on your alcohol-free journey."
+      title: "Mood & Trigger Journal",
+      description: "Track your moods and identify trigger patterns."
     },
     {
       title: "Social Substitutes",
