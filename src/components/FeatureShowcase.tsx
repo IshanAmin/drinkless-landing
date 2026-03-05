@@ -51,8 +51,9 @@ const FeatureShowcase = () => {
       description: "Simple mood tracking three times daily for better self-awareness."
     },
     {
-      title: "Mood & Trigger Journal",
-      description: "Track your moods and identify trigger patterns."
+      title: "Soby AI Companion",
+      description: "Chat with Soby, your cheerful companion on your alcohol-free journey.",
+      comingSoon: true
     },
     {
       title: "Goal Setting",
@@ -64,7 +65,8 @@ const FeatureShowcase = () => {
     },
     {
       title: "Gamification",
-      description: "Earn badges, points, and rewards for reaching milestones."
+      description: "Earn badges, points, and rewards for reaching milestones.",
+      comingSoon: true
     }
   ];
 
