@@ -31,7 +31,8 @@ const FeatureShowcase = () => {
     },
     {
       title: "Daily Affirmations",
-      description: "Stay motivated and focused with personalized daily affirmations."
+      description: "Stay motivated and focused with personalized daily affirmations.",
+      comingSoon: true
     },
     {
       title: "Daily Tips",
