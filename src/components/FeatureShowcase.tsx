@@ -4,7 +4,16 @@ import { Card } from "./ui/card";
 interface Feature {
   title: string;
   description: string;
+  comingSoon?: boolean;
 }
+
+const ComingSoonTab = () => (
+  <div className="absolute top-0 right-0 w-0 h-0 border-t-[3rem] border-t-primary border-l-[3rem] border-l-transparent z-10">
+    <span className="absolute -top-[2.6rem] right-[0.15rem] text-[0.5rem] font-bold text-primary-foreground rotate-45 uppercase tracking-wider leading-none">
+      Coming<br/>Soon
+    </span>
+  </div>
+);
 
 const FeatureShowcase = () => {
   const features: Feature[] = [
@@ -22,7 +31,8 @@ const FeatureShowcase = () => {
     },
     {
       title: "Daily Affirmations",
-      description: "Stay motivated and focused with personalized daily affirmations."
+      description: "Stay motivated and focused with personalized daily affirmations.",
+      comingSoon: true
     },
     {
       title: "Daily Tips",
@@ -41,8 +51,9 @@ const FeatureShowcase = () => {
       description: "Simple mood tracking three times daily for better self-awareness."
     },
     {
-      title: "Mood & Trigger Journal",
-      description: "Track your moods and identify trigger patterns."
+      title: "Soby AI Companion",
+      description: "Chat with Soby, your cheerful companion on your alcohol-free journey.",
+      comingSoon: true
     },
     {
       title: "Goal Setting",
@@ -54,7 +65,8 @@ const FeatureShowcase = () => {
     },
     {
       title: "Gamification",
-      description: "Earn badges, points, and rewards for reaching milestones."
+      description: "Earn badges, points, and rewards for reaching milestones.",
+      comingSoon: true
     }
   ];
 
@@ -72,8 +84,8 @@ const FeatureShowcase = () => {
       description: "Receive tailored advice based on your unique journey."
     },
     {
-      title: "Soby Chatbot",
-      description: "Chat with Soby, your cheerful companion on your alcohol-free journey."
+      title: "Mood & Trigger Journal",
+      description: "Track your moods and identify trigger patterns."
     },
     {
       title: "Social Substitutes",
@@ -103,14 +115,15 @@ const FeatureShowcase = () => {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="p-6 hover:border-primary/20 transition-colors animate-fade-up bg-white/50 backdrop-blur-sm"
+              className="relative overflow-hidden p-6 hover:border-primary/20 transition-colors animate-fade-up bg-white/50 backdrop-blur-sm"
               style={{ animationDelay: `${index * 100}ms` }}
             >
+              {feature.comingSoon && <ComingSoonTab />}
               <div className="flex items-start justify-between mb-4">
                 <h3 className="font-semibold text-lg">{feature.title}</h3>
                 <Check className="h-5 w-5 text-primary" />
               </div>
-              <p className="text-slate-600">{feature.description}</p>
+              <p className="text-muted-foreground">{feature.description}</p>
             </Card>
           ))}
         </div>
