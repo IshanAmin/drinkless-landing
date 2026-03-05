@@ -115,14 +115,15 @@ const FeatureShowcase = () => {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="p-6 hover:border-primary/20 transition-colors animate-fade-up bg-white/50 backdrop-blur-sm"
+              className="relative overflow-hidden p-6 hover:border-primary/20 transition-colors animate-fade-up bg-white/50 backdrop-blur-sm"
               style={{ animationDelay: `${index * 100}ms` }}
             >
+              {feature.comingSoon && <ComingSoonTab />}
               <div className="flex items-start justify-between mb-4">
                 <h3 className="font-semibold text-lg">{feature.title}</h3>
                 <Check className="h-5 w-5 text-primary" />
               </div>
-              <p className="text-slate-600">{feature.description}</p>
+              <p className="text-muted-foreground">{feature.description}</p>
             </Card>
           ))}
         </div>
