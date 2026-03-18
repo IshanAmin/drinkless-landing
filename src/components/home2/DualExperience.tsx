@@ -41,6 +41,8 @@ const buddyFeatures = [
 ];
 
 const sponsorFeatures = [
+  { icon: Activity, title: "Live Sponsor Accountability", desc: "Real-time visibility into your buddy's journey and progress." },
+  { icon: Shield, title: "Sponsor Driven Ground Rules", desc: "Set boundaries and expectations to guide your buddy's recovery." },
   { icon: Users, title: "Buddy Pairing", desc: "Connect with someone you care about in one tap." },
   { icon: LayoutDashboard, title: "Real-time Dashboard", desc: "See your buddy's progress, moods, and streaks." },
   { icon: MessageCircle, title: "Live Chat", desc: "Stay connected with built-in secure messaging." },
