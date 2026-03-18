@@ -103,16 +103,35 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
             </div>
           </div>
 
-          {/* Right — iPhone */}
-          <div className="flex justify-center animate-float">
-            <div className="relative w-[280px] md:w-[320px]">
+          {/* Right — Two iPhones with sync arrow */}
+          <div className="flex items-center justify-center gap-2 md:gap-4">
+            {/* Phone 1 */}
+            <div className="relative w-[140px] md:w-[200px] animate-float">
               <img
                 src={iphoneFrame}
-                alt="Sobr app preview"
+                alt="Sobr app — user view"
                 className="w-full h-auto relative z-10 drop-shadow-2xl"
               />
-              {/* Glow behind phone */}
               <div className="absolute inset-0 -z-0 blur-3xl bg-sobr-coral/20 rounded-full scale-75" />
+            </div>
+
+            {/* Bi-directional sync arrow */}
+            <div className="flex flex-col items-center gap-1 z-20 text-sobr-coral">
+              <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 md:w-12" stroke="currentColor">
+                <path d="M4 8H36L30 2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M44 16H12L18 22" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <span className="text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase">Sync</span>
+            </div>
+
+            {/* Phone 2 */}
+            <div className="relative w-[140px] md:w-[200px] animate-float" style={{ animationDelay: "0.5s" }}>
+              <img
+                src={iphoneFrame}
+                alt="Sobr app — sponsor view"
+                className="w-full h-auto relative z-10 drop-shadow-2xl"
+              />
+              <div className="absolute inset-0 -z-0 blur-3xl bg-sobr-amber/15 rounded-full scale-75" />
             </div>
           </div>
         </div>
