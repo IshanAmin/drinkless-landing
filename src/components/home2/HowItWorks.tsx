@@ -31,30 +31,41 @@ const HowItWorks = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-5 gap-4 md:gap-0 max-w-4xl mx-auto items-start">
           {steps.map((step, i) => (
-            <div
-              key={step.title}
-              className="flex flex-col items-center text-center space-y-4 animate-fade-in"
-              style={{ animationDelay: `${i * 150}ms` }}
-            >
-              {/* Step number + icon */}
-              <div className="relative">
-                <div className="w-20 h-20 rounded-2xl bg-sobr-coral/10 flex items-center justify-center">
-                  <step.icon className="w-9 h-9 text-sobr-coral" />
+            <>
+              <div
+                key={step.title}
+                className="flex flex-col items-center text-center space-y-4 animate-fade-in"
+                style={{ animationDelay: `${i * 150}ms` }}
+              >
+                {/* Step number + icon */}
+                <div className="relative">
+                  <div className="w-20 h-20 rounded-2xl bg-sobr-coral/10 flex items-center justify-center">
+                    <step.icon className="w-9 h-9 text-sobr-coral" />
+                  </div>
+                  <span className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-sobr-coral text-sobr-text text-xs font-bold flex items-center justify-center font-jakarta">
+                    {i + 1}
+                  </span>
                 </div>
-                <span className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-sobr-coral text-sobr-text text-xs font-bold flex items-center justify-center font-jakarta">
-                  {i + 1}
-                </span>
+
+                <h3 className="text-xl font-jakarta font-bold text-sobr-text">
+                  {step.title}
+                </h3>
+                <p className="text-sobr-text-muted font-inter leading-relaxed max-w-xs">
+                  {step.description}
+                </p>
               </div>
 
-              <h3 className="text-xl font-jakarta font-bold text-sobr-text">
-                {step.title}
-              </h3>
-              <p className="text-sobr-text-muted font-inter leading-relaxed max-w-xs">
-                {step.description}
-              </p>
-            </div>
+              {/* Arrow between steps (desktop only) */}
+              {i < steps.length - 1 && (
+                <div className="hidden md:flex items-center justify-center mt-7">
+                  <svg width="40" height="24" viewBox="0 0 40 24" fill="none" className="text-sobr-coral">
+                    <path d="M4 12H32M32 12L24 5M32 12L24 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
+              )}
+            </>
           ))}
         </div>
       </div>

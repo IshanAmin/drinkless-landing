@@ -126,7 +126,7 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
             </div>
 
             {/* Phone 2 */}
-            <div className="relative w-[140px] md:w-[200px] animate-float" style={{ animationDelay: "0.5s" }}>
+            <div className="relative w-[200px] md:w-[280px] animate-float" style={{ animationDelay: "0.5s" }}>
               <img
                 src={iphoneFrame}
                 alt="Sobr app — sponsor view"
