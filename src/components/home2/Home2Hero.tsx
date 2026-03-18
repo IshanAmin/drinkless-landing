@@ -116,14 +116,12 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
             </div>
 
             {/* Bi-directional sync arrow */}
-            <div className="flex flex-col items-center gap-1 z-20">
-              <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 md:w-12">
-                {/* Arrow right */}
-                <path d="M4 8H36L30 2" stroke="hsl(var(--sobr-coral))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="stroke-sobr-coral" />
-                {/* Arrow left */}
-                <path d="M44 16H12L18 22" stroke="hsl(var(--sobr-coral))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="stroke-sobr-coral" />
+            <div className="flex flex-col items-center gap-1 z-20 text-sobr-coral">
+              <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 md:w-12" stroke="currentColor">
+                <path d="M4 8H36L30 2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M44 16H12L18 22" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <span className="text-[10px] md:text-xs font-jakarta font-semibold text-sobr-coral tracking-wider uppercase">Sync</span>
+              <span className="text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase">Sync</span>
             </div>
 
             {/* Phone 2 */}
