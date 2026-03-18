@@ -37,7 +37,6 @@ const HowItWorks = () => {
             <Fragment key={step.title}>
               <div
                 className="flex flex-col items-center text-center space-y-4 animate-fade-in"
-                className="flex flex-col items-center text-center space-y-4 animate-fade-in"
                 style={{ animationDelay: `${i * 150}ms` }}
               >
                 {/* Step number + icon */}
