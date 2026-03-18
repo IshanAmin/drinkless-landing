@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { Download, Users, Rocket } from "lucide-react";
 
 const steps = [
