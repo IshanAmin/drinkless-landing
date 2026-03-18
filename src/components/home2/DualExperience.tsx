@@ -15,6 +15,12 @@ import {
   Bell,
   AlertTriangle,
   Award,
+  Gamepad,
+  UserCheck,
+  Zap,
+  BarChart2,
+  BookmarkCheck,
+  Lightbulb,
 } from "lucide-react";
 
 const buddyFeatures = [
