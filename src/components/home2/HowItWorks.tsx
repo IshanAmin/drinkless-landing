@@ -34,9 +34,9 @@ const HowItWorks = () => {
 
         <div className="grid md:grid-cols-5 gap-4 md:gap-0 max-w-4xl mx-auto items-start">
           {steps.map((step, i) => (
-            <>
+            <Fragment key={step.title}>
               <div
-                key={step.title}
+                className="flex flex-col items-center text-center space-y-4 animate-fade-in"
                 className="flex flex-col items-center text-center space-y-4 animate-fade-in"
                 style={{ animationDelay: `${i * 150}ms` }}
               >
