@@ -15,6 +15,12 @@ import {
   Bell,
   AlertTriangle,
   Award,
+  Gamepad,
+  UserCheck,
+  Zap,
+  BarChart2,
+  BookmarkCheck,
+  Lightbulb,
 } from "lucide-react";
 
 const buddyFeatures = [
@@ -23,9 +29,15 @@ const buddyFeatures = [
   { icon: Shield, title: "Crisis Flow", desc: "Instant emergency support when urges hit hardest." },
   { icon: Target, title: "Drink & Urge Tracker", desc: "Log triggers and watch your streak grow." },
   { icon: Sparkles, title: "Daily Affirmations", desc: "Personalized motivation delivered when you need it." },
-  { icon: Trophy, title: "Gamification", desc: "Earn badges, climb leaderboards, unlock rewards." },
+  { icon: Gamepad, title: "Distraction Activities", desc: "Earn badges, climb leaderboards, unlock rewards." },
   { icon: BookOpen, title: "Mood & Trigger Journal", desc: "Reflect, learn patterns, and build resilience." },
   { icon: Award, title: "Goal Setting", desc: "Set milestones and celebrate every victory." },
+  { icon: UserCheck, title: "Supportive Community", desc: "Connect with like-minded people on the same journey." },
+  { icon: Trophy, title: "Leaderboard", desc: "Compete with others and celebrate top streaks." },
+  { icon: Zap, title: "Challenges", desc: "Take on daily and weekly challenges to stay motivated." },
+  { icon: BarChart2, title: "Progress & Journey Analytics", desc: "Full insights into your progress, trends, and milestones." },
+  { icon: BookmarkCheck, title: "Helpful Resources", desc: "Podcasts, YouTube videos, and guides to support your journey." },
+  { icon: Lightbulb, title: "AI Insights", desc: "Personalized AI-driven insights based on your patterns." },
 ];
 
 const sponsorFeatures = [
