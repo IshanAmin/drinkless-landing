@@ -3,7 +3,7 @@ import Home2Hero from "@/components/home2/Home2Hero";
 import HowItWorks from "@/components/home2/HowItWorks";
 import DualExperience from "@/components/home2/DualExperience";
 import FivePillars from "@/components/home2/FivePillars";
-import Home2Features from "@/components/home2/Home2Features";
+
 import AppShowcase from "@/components/home2/AppShowcase";
 import Home2Testimonials from "@/components/home2/Home2Testimonials";
 import Home2FAQ from "@/components/home2/Home2FAQ";
