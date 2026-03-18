@@ -106,7 +106,7 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
           {/* Right — Two iPhones with sync arrow */}
           <div className="flex items-center justify-center gap-2 md:gap-4">
             {/* Phone 1 */}
-            <div className="relative w-[140px] md:w-[200px] animate-float">
+            <div className="relative w-[200px] md:w-[280px] animate-float">
               <img
                 src={iphoneFrame}
                 alt="Sobr app — user view"
