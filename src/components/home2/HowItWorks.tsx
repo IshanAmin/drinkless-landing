@@ -66,7 +66,7 @@ const HowItWorks = () => {
                   </svg>
                 </div>
               )}
-            </>
+            </Fragment>
           ))}
         </div>
       </div>
