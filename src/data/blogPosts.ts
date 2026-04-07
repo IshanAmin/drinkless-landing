@@ -519,7 +519,13 @@ The cost of drinking was never just the drink. And the reward of sobriety is nev
     readTime: "12 min read",
     date: "March 7, 2026",
     imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&q=80",
-    content: `One of the most common fears people have when they consider quitting alcohol is losing their social life. And that fear makes sense. For many people, alcohol has been the backdrop to nearly every social situation: the Friday night drinks, the wedding reception, the casual catch-up with old friends. When you remove it from the picture, it can feel like you're losing access to an entire world you knew how to navigate.
+    content: `One of the most common fears people have when they consider quitting alcohol is losing their social life. 
+
+And that fear makes sense. 
+
+For many people, alcohol has been the backdrop to nearly every social situation: the Friday night drinks, the wedding reception, the casual catch-up with old friends. 
+
+When you remove it from the picture, it can feel like you're losing access to an entire world you knew how to navigate.
 
 Here's what nobody tells you in those early, uncertain days: the sober social life waiting on the other side isn't a diminished version of your old one. For most people in alcohol recovery, it's genuinely better. The conversations are deeper. The connections are more real. The memories actually stick. And you show up as the truest version of yourself, not a loosened-up, alcohol-assisted impression of it.
 
