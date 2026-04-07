@@ -282,7 +282,11 @@ They show up uninvited....
 
 They can feel overwhelming and urgent, like something you have to act on right now.
 
-Here's what the science tells us: you don't. A craving is not a command. It is a wave - and waves, no matter how intense, always pass.
+Here's what the science tells us: YOU DON'T.
+
+A craving is not a command.
+
+It is a wave - and waves, no matter how intense, always pass.
 
 Mindfulness gives you the tools to ride that wave without being pulled under. These five techniques are practical, research-backed, and can be used anywhere - whether you're in your car, at a party, or lying awake at 2am. You don't need experience with meditation. You don't need a special setting. You just need a few minutes and the willingness to try.
 
