@@ -142,7 +142,13 @@ Your body remembers what relief felt like.
 
 And the voice that says "just this once" gets louder than the one that knows better.
 
-In that moment, willpower alone is rarely enough. Not because you're weak - but because addiction was never really about willpower in the first place. Recovery, at its core, is a human experience. And human experiences are not meant to be navigated alone.
+In that moment, willpower alone is rarely enough.
+
+Not because you're weak - but because addiction was never really about willpower in the first place.
+
+Recovery, at its core, is a human experience.
+
+And human experiences are not meant to be navigated alone.
 
 This is exactly why accountability partners change everything. Not as a concept. Not as a motivational idea. But as a lived, proven, research-backed reality: people who have someone walking alongside them in recovery are dramatically more likely to succeed than those who go it alone.
 
