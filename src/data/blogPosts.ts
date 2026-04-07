@@ -47,9 +47,9 @@ It's a practice backed by neuroscience,
 ...and embraced by thousands of people who have used it to transform their relationship with alcohol.
 
 In this article, we're going to explore exactly:
--why journaling works, 
--what it does to your brain, 
--how it specifically supports the process of quitting alcohol, 
+- why journaling works, 
+- what it does to your brain, 
+- how it specifically supports the process of quitting alcohol, 
 
 ...and how you can start today - no matter where you are in your recovery journey.
 
