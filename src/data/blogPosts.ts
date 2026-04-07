@@ -445,7 +445,17 @@ If you're spending $100 a week, you're looking at over $5,000 annually
 
 ...money that is quite literally being poured away.
 
-And then there's everything that tends to come with drinking: the late-night food run, the rideshare home because you can't drive, the spontaneous second round you didn't plan for. A 2019 survey found that 79% of drinkers had made at least one impulsive purchase while under the influence, averaging $444 in unplanned spending per year. Alcohol lowers your inhibition and your financial judgment at the same time.
+And then there's everything that tends to come with drinking: 
+
+- the late-night food run, 
+
+- the rideshare home because you can't drive, 
+
+- the spontaneous second round you didn't plan for. 
+
+A 2019 survey found that 79% of drinkers had made at least one impulsive purchase while under the influence, averaging $444 in unplanned spending per year. 
+
+Alcohol lowers your inhibition and your financial judgment at the same time.
 
 ---
 
