@@ -11,22 +11,72 @@ export default function BlogPost() {
 
   if (!post) return <Navigate to="/blog" replace />;
 
-  // Simple markdown-like rendering for ## headings and paragraphs
+  // Render inline formatting (bold and italic)
+  const renderInline = (text: string) => {
+    const parts: React.ReactNode[] = [];
+    const regex = /\*\*(.+?)\*\*|\*(.+?)\*/g;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = regex.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        parts.push(text.slice(lastIndex, match.index));
+      }
+      if (match[1]) {
+        parts.push(<strong key={match.index} className="text-sobr-text font-semibold">{match[1]}</strong>);
+      } else if (match[2]) {
+        parts.push(<em key={match.index} className="italic text-sobr-text-secondary">{match[2]}</em>);
+      }
+      lastIndex = regex.lastIndex;
+    }
+    if (lastIndex < text.length) {
+      parts.push(text.slice(lastIndex));
+    }
+    return parts;
+  };
+
+  // Render content blocks
   const renderContent = (content: string) => {
     return content.split("\n\n").map((block, i) => {
-      if (block.startsWith("## ")) {
+      const trimmed = block.trim();
+
+      if (trimmed === "---") {
+        return <hr key={i} className="border-white/10 my-10" />;
+      }
+
+      if (trimmed.startsWith("### ")) {
+        return (
+          <h3
+            key={i}
+            className="text-xl md:text-2xl font-bold font-jakarta text-sobr-text mt-10 mb-4"
+          >
+            {trimmed.replace("### ", "")}
+          </h3>
+        );
+      }
+
+      if (trimmed.startsWith("## ")) {
         return (
           <h2
             key={i}
-            className="text-2xl font-bold font-jakarta text-sobr-text mt-10 mb-4"
+            className="text-2xl md:text-3xl font-bold font-jakarta text-sobr-text mt-12 mb-5"
           >
-            {block.replace("## ", "")}
+            {trimmed.replace("## ", "")}
           </h2>
         );
       }
+
+      if (trimmed.startsWith("• ")) {
+        return (
+          <p key={i} className="text-sobr-text-secondary font-inter text-lg leading-relaxed mb-3 pl-6 relative before:content-['•'] before:absolute before:left-0 before:text-sobr-coral">
+            {renderInline(trimmed.replace("• ", ""))}
+          </p>
+        );
+      }
+
       return (
-        <p key={i} className="text-sobr-text-secondary font-inter leading-relaxed mb-4">
-          {block}
+        <p key={i} className="text-sobr-text-secondary font-inter text-lg leading-relaxed mb-6">
+          {renderInline(trimmed)}
         </p>
       );
     });
