@@ -66,10 +66,10 @@ export default function BlogPost() {
         );
       }
 
-      if (trimmed.startsWith("• ")) {
+      if (trimmed.startsWith("• ") || trimmed.startsWith("- ")) {
         return (
           <p key={i} className="text-sobr-text-secondary font-inter text-lg leading-relaxed mb-3 pl-6 relative before:content-['•'] before:absolute before:left-0 before:text-sobr-coral">
-            {renderInline(trimmed.replace("• ", ""))}
+            {renderInline(trimmed.replace(/^[•-]\s+/, ""))}
           </p>
         );
       }
