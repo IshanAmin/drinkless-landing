@@ -527,7 +527,17 @@ For many people, alcohol has been the backdrop to nearly every social situation:
 
 When you remove it from the picture, it can feel like you're losing access to an entire world you knew how to navigate.
 
-Here's what nobody tells you in those early, uncertain days: the sober social life waiting on the other side isn't a diminished version of your old one. For most people in alcohol recovery, it's genuinely better. The conversations are deeper. The connections are more real. The memories actually stick. And you show up as the truest version of yourself, not a loosened-up, alcohol-assisted impression of it.
+Here's what nobody tells you in those early, uncertain days: the sober social life waiting on the other side isn't a diminished version of your old one.
+
+For most people in alcohol recovery, it's genuinely better. 
+
+The conversations are deeper. 
+
+The connections are more real. 
+
+The memories actually stick. 
+
+And you show up as the truest version of yourself, not a loosened-up, alcohol-assisted impression of it.
 
 Building that sober social life takes intention, especially in the beginning. But it is absolutely possible - and millions of people are already doing it.
 
