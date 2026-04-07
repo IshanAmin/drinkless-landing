@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Home2 from "./pages/Home2";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +21,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/home2" element={<Home2 />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
