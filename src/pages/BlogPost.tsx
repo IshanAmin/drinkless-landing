@@ -33,7 +33,7 @@ export default function BlogPost() {
   };
 
   return (
-    <div className="min-h-screen sobr-dark">
+    <div className="min-h-screen sobr-dark bg-sobr-root">
       {/* Nav */}
       <nav className="bg-sobr-root/80 backdrop-blur-md border-b border-white/5 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
