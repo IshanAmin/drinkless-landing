@@ -270,7 +270,17 @@ Download Sobr. Find your person. And let the relationship do what relationships 
 
 ---
 
-Cravings don't announce themselves politely. They show up uninvited - at the end of a stressful workday, in a quiet moment when your guard is down, or in the middle of a social situation you thought you had handled. They can feel overwhelming and urgent, like something you have to act on right now.
+Cravings don't announce themselves politely. 
+
+They show up uninvited....
+
+- at the end of a stressful workday, 
+
+- in a quiet moment when your guard is down,
+
+- or in the middle of a social situation you thought you had handled. 
+
+They can feel overwhelming and urgent, like something you have to act on right now.
 
 Here's what the science tells us: you don't. A craving is not a command. It is a wave - and waves, no matter how intense, always pass.
 
