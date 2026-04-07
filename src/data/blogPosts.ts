@@ -132,7 +132,9 @@ Open the app. Start a new entry. Begin where you are. The most powerful conversa
 
 ---
 
-There is a moment that almost everyone in alcohol recovery knows. It usually comes late at night, or after a rough day, or when you find yourself alone in a situation that used to end the same way it always did. Your brain starts bargaining. Your body remembers what relief felt like. And the voice that says "just this once" gets louder than the one that knows better.
+There is a moment that almost everyone in alcohol recovery knows.
+
+It usually comes late at night, or after a rough day, or when you find yourself alone in a situation that used to end the same way it always did. Your brain starts bargaining. Your body remembers what relief felt like. And the voice that says "just this once" gets louder than the one that knows better.
 
 In that moment, willpower alone is rarely enough. Not because you're weak - but because addiction was never really about willpower in the first place. Recovery, at its core, is a human experience. And human experiences are not meant to be navigated alone.
 
