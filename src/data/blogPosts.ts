@@ -18,7 +18,27 @@ export const blogPosts: BlogPost[] = [
     readTime: "12 min read",
     date: "April 7, 2026",
     imageUrl: "https://images.unsplash.com/photo-1517842645767-c639042777db?w=800&q=80",
-    content: `If you've ever tried to quit drinking, or you're in the middle of that journey right now, you already know it's about far more than just putting down the bottle. It's about confronting the emotions you've been numbing, understanding the patterns that led you here, and building a new version of yourself one day at a time. That kind of deep, honest inner work requires tools. And one of the most powerful, most accessible, and most underrated tools available to you costs almost nothing: a few minutes, a quiet moment, and somewhere to write.
+    content: `If you've ever tried to quit drinking, 
+
+or you're in the middle of that journey right now, 
+
+you already know it's about far more than just putting down the bottle. 
+
+It's about confronting the emotions you've been numbing, 
+
+understanding the patterns that led you here,
+
+and building a new version of yourself one day at a time. 
+
+That kind of deep, honest inner work requires tools. 
+
+And one of the most powerful, most accessible, and most underrated tools available to you costs almost nothing: 
+
+- a few minutes, 
+
+- a quiet moment, 
+
+...and somewhere to write.
 
 Journaling for sobriety and alcohol recovery isn't a trendy wellness hack. It's a practice backed by neuroscience, championed by addiction specialists, and embraced by thousands of people who have used it to transform their relationship with alcohol. In this article, we're going to explore exactly why journaling works, what it does to your brain, how it specifically supports the process of quitting alcohol, and how you can start today — no matter where you are in your recovery journey.
 
