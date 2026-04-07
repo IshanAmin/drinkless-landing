@@ -655,12 +655,94 @@ Show up. Be curious. Stay connected. The rest follows.
   },
   {
     slug: "science-of-habit-change",
-    title: "The Science of Habit Change: Rewiring Your Brain",
-    excerpt: "How neuroplasticity works in your favor and why the first 90 days are critical for lasting change.",
+    title: "The Science of Habit Change: Rewiring Your Brain for Sobriety",
+    excerpt: "Your brain built the drinking habit. That same remarkable brain can build something better. Understand the neuroscience of habit change and why the first 90 days are critical.",
     category: "Science",
-    readTime: "6 min read",
+    readTime: "14 min read",
     date: "February 28, 2026",
     imageUrl: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80",
-    content: `Your brain is remarkably adaptable. The same neuroplasticity that created drinking habits can be harnessed to build healthier ones.\n\n## The Habit Loop\n\nEvery habit follows a cycle: cue → routine → reward. To change a habit, you don't eliminate the cue — you replace the routine while maintaining a reward.\n\n## Why 90 Days Matters\n\nResearch suggests it takes an average of 66 days to form a new habit, but for deeply ingrained behaviors like drinking, 90 days provides a more reliable foundation.\n\n## Dopamine and Recovery\n\nAlcohol hijacks your dopamine system. In early sobriety, your brain needs time to recalibrate. Exercise, meditation, and social connection help restore natural dopamine production.\n\n## Sobr's Role\n\nSobr's streak tracking, milestone celebrations, and gamification features work with your brain's reward system — replacing alcohol's artificial dopamine hit with genuine achievement.\n\n## Patience is Key\n\nNeuroplasticity is powerful but not instant. Be patient with yourself. Every sober day is literally rewiring your brain for the better.`,
+    content: `*Your brain built the drinking habit. That same remarkable brain can build something better.*
+
+---
+
+When people talk about quitting alcohol, the conversation tends to focus on willpower, motivation, and mental toughness. These things matter. But underneath all of them, something far more fundamental is happening: a biological process, playing out at the cellular level, in which your brain is literally rewiring itself.
+
+Understanding that process - what it is, how it works, and how long it takes - changes everything about how you approach sobriety. It removes the shame of struggling. It explains why the early days are so hard. And it gives you something powerful: a scientific foundation for patience, for persistence, and for trusting that every sober day is doing something real, whether you can feel it or not.
+
+---
+
+## How Your Brain Builds Habits in the First Place
+
+To understand how to change a habit, you first need to understand how one forms.
+
+Every habit your brain has ever developed follows the same three-part cycle: **cue, routine, reward**. A cue is the trigger - a time of day, an emotion, a place, a person, a sensation. The routine is the behaviour itself - in this case, reaching for a drink. The reward is what the brain gets in return: relief, relaxation, a sense of belonging, or simply the cessation of discomfort.
+
+Neuroscientists have traced this habit-making mechanism to a region of the brain called the **basal ganglia** - a deep, ancient structure involved in pattern recognition, emotion, and memory. As a behaviour is repeated, the basal ganglia begins to encode it as an automatic sequence. Over time, less and less conscious decision-making is required. The prefrontal cortex, your brain's rational, intentional thinking centre, essentially goes into standby mode. The habit runs itself.
+
+This is why drinking can feel almost effortless after years of practice, while choosing not to drink can feel exhausting. It's not a failure of character - it's neuroscience. The drinking pathway is smooth, deep, and automatic. The sobriety pathway is new, unfamiliar, and requires active effort every single time you choose it.
+
+The critical insight for recovery is this: **you cannot erase a habit loop, but you can replace it.** The cue will still exist. The craving for reward will still arise. What you can change - what recovery is fundamentally about - is the routine that sits between them. When a stressful moment triggers the urge to drink, the work of sobriety is finding a new routine that can deliver a meaningful reward: a walk, a call to your sponsor, a journal entry, a workout, a moment of breathing. Over time, with enough repetition, that new routine begins to carve its own neural pathway. The new habit begins to become automatic.
+
+---
+
+## Why 90 Days Is the Real Benchmark
+
+You may have heard the popular claim that it takes 21 days to form a new habit. That figure, unfortunately, is a myth - and for people in alcohol recovery, believing it can be genuinely harmful.
+
+The most comprehensive research on habit formation, a study involving over 2,600 participants, found that simple habits take an average of 66 days to become automatic. And that's for straightforward behaviours like drinking a glass of water with breakfast. For deeply ingrained behaviours rooted in years of repetition - such as drinking alcohol - the timeline is longer, more variable, and considerably more demanding.
+
+This is why 90 days has become the landmark milestone in alcohol recovery, not as an arbitrary number, but as a biologically grounded target. Neuroscience research shows that it typically takes around 90 days of sobriety before the brain's dopamine system begins to meaningfully recalibrate - before natural pleasures start feeling pleasurable again, before emotional regulation stabilises, before the new habits you're building start feeling anything close to natural.
+
+Knowing this changes how you hold difficult days. A hard week at 45 days sober isn't evidence that recovery isn't working. It's evidence that you're exactly where the science says you would be: in the middle of the process, building something that isn't finished yet. The 90-day mark isn't an ending; it's the point at which the neurological foundation you've been laying starts to feel solid beneath your feet.
+
+---
+
+## Dopamine: The System Alcohol Hijacked
+
+To understand why sobriety can feel joyless in the early weeks, you need to understand what alcohol did to your brain's reward system.
+
+Dopamine is your brain's primary motivation and pleasure chemical. Under healthy conditions, it's released in response to things that genuinely benefit you: connection, achievement, physical exertion, creative work, good food. It reinforces those behaviours, encouraging you to seek them out again.
+
+Alcohol floods the brain with dopamine at levels that natural experiences cannot match. Over time, the brain compensates by reducing its baseline sensitivity to dopamine - downregulating the receptors, in effect turning down the volume to protect against the constant excess. The result is that normal, healthy pleasures stop producing the same dopamine response they once did. Things that used to bring genuine joy begin to feel flat. This is why long-term heavy drinkers often describe feeling numb, bored, or emotionally blunted when they're not drinking.
+
+In early sobriety, this is one of the hardest realities to sit with. The brain's dopamine system is depleted, recalibrating, and not yet capable of generating the natural highs that will eventually return. Research from the National Institute on Alcohol Abuse and Alcoholism (NIAAA) suggests that after 14 months of abstinence, dopamine transporter levels in the brain's reward centre can return to near-normal levels. But the early weeks and months require a deliberate, conscious investment in activities that support that recalibration.
+
+**Exercise** is one of the most powerful tools available. Physical activity stimulates dopamine production, releases mood-regulating neurotransmitters like serotonin and endorphins, and promotes neuroplasticity by increasing BDNF - brain-derived neurotrophic factor - which supports the growth of new neural connections. Even a 20-minute walk has measurable effects on brain chemistry.
+
+**Meditation** strengthens the prefrontal cortex, the rational decision-making part of the brain that addiction effectively weakens over time. Regular mindfulness practice has been shown to improve emotional regulation, reduce craving responses, and rebuild the kind of deliberate, conscious self-awareness that supports recovery.
+
+**Social connection** triggers the release of oxytocin and dopamine simultaneously, making genuine human connection one of the most neurologically potent recovery tools available. This is not incidental to recovery; it is a core mechanism of it.
+
+---
+
+## How Sobr Works With Your Brain, Not Against It
+
+Here's something worth understanding about the psychology of behaviour change: the brain responds powerfully to reward, even small ones. Variable reinforcement - the kind where rewards arrive at slightly unpredictable intervals, tied to real progress - produces stronger habit formation than rewards that are perfectly predictable.
+
+This is the principle behind Sobr's streak tracking, milestone celebrations, and achievement features. Every day you log your sobriety in the app, your streak grows. Every milestone you hit - 7 days, 30 days, 60 days, 90 days - is recognised and celebrated. These aren't superficial touches. They are deliberate, neurologically-informed design choices that tap into your brain's reward circuitry in a healthy way.
+
+Where alcohol provided artificial dopamine hits, Sobr's gamification features offer genuine achievement-based ones. The satisfaction of watching your streak grow. The recognition of a milestone you worked for. The motivation to protect something you've built. These experiences activate the same reward pathways that alcohol used to hijack - but this time, they're building towards recovery rather than undermining it.
+
+Combined with the journaling tools, urge tracker, and accountability partner features, Sobr is designed to make the new habits of sobriety as supported, visible, and reinforced as possible - because that's what the neuroscience of habit change tells us matters.
+
+---
+
+## The Most Important Thing: Patience Is Not Passive
+
+One of the most important reframings in recovery is this: patience is not the absence of progress. It is the work itself.
+
+Every day you stay sober, synapses are strengthening. Neural pathways are being reinforced. Myelin sheaths are developing around the new habit circuits you're building, making those circuits faster and more reliable. The prefrontal cortex is slowly reclaiming the influence that addiction eroded. The dopamine system is quietly, steadily healing.
+
+None of this is visible in the moment. You can't feel a synapse strengthen. You can't observe your basal ganglia encoding a new routine. But the process is happening, every single day, regardless of whether it feels like it.
+
+Be patient with the hard days. Be patient with the flatness of early sobriety. Be patient with the moments when the old pathway feels more familiar and easier than the new one - because it genuinely is, and that will change with time.
+
+The brain that learned to drink is the same brain that is learning to be free of it. And that brain - your brain - is more adaptable, more resilient, and more capable of change than you may yet know.
+
+Every sober day is not just a day survived. It is a day spent rewiring the most complex organ in the known universe. That is not a small thing. That is everything.
+
+---
+
+*This article is intended for informational and supportive purposes. If you are struggling with alcohol dependency, please reach out to a qualified healthcare professional or addiction specialist.*`,
   },
 ];
