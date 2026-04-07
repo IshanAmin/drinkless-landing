@@ -665,7 +665,11 @@ Show up. Be curious. Stay connected. The rest follows.
 
 ---
 
-When people talk about quitting alcohol, the conversation tends to focus on willpower, motivation, and mental toughness. These things matter. But underneath all of them, something far more fundamental is happening: a biological process, playing out at the cellular level, in which your brain is literally rewiring itself.
+When people talk about quitting alcohol, the conversation tends to focus on willpower, motivation, and mental toughness. 
+
+These things matter. 
+
+But underneath all of them, something far more fundamental is happening: a biological process, playing out at the cellular level, in which your brain is literally rewiring itself.
 
 Understanding that process - what it is, how it works, and how long it takes - changes everything about how you approach sobriety. It removes the shame of struggling. It explains why the early days are so hard. And it gives you something powerful: a scientific foundation for patience, for persistence, and for trusting that every sober day is doing something real, whether you can feel it or not.
 
