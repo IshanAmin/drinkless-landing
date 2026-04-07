@@ -422,7 +422,14 @@ The true financial toll of regular drinking extends far beyond what you spend at
 
 Let's start with the numbers you can see.
 
-According to the U.S. Bureau of Labor Statistics, Americans spent an estimated $228 billion on alcoholic beverages in 2024 - which works out to an average of around $898 per adult per year. That's the national average, which includes light drinkers. For someone drinking regularly - a few drinks most evenings, more on weekends - the personal spend is considerably higher.
+According to the U.S. Bureau of Labor Statistics, 
+
+Americans spent an estimated $228 billion on alcoholic beverages in 2024 - which works out to an average of around $898 per adult per year. 
+
+That's the national average, which includes light drinkers. 
+
+For someone drinking regularly - a few drinks most evenings, more on weekends
+...the personal spend is considerably higher.
 
 Think about your own habits for a moment. Two drinks at a bar might cost $20 to $30. A bottle of wine at home, $15 to $25. A six-pack, $12 to $15. If you're spending $50 a week, that's $2,600 a year. If you're spending $100 a week, you're looking at over $5,000 annually - money that is quite literally being poured away.
 
