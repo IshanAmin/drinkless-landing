@@ -261,12 +261,90 @@ Download Sobr. Find your person. And let the relationship do what relationships 
   {
     slug: "mindfulness-techniques-cravings",
     title: "5 Mindfulness Techniques to Manage Alcohol Cravings",
-    excerpt: "Practical mindfulness exercises you can use anywhere to navigate cravings and stay on track with your goals.",
+    excerpt: "Simple, science-backed tools you can use anywhere, any time a craving strikes.",
     category: "Wellness",
-    readTime: "4 min read",
+    readTime: "10 min read",
     date: "March 21, 2026",
     imageUrl: "https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&q=80",
-    content: `Cravings are a normal part of the recovery journey. The key is not to eliminate them but to develop healthy strategies for navigating them.\n\n## 1. The HALT Check\n\nBefore reaching for a drink, ask yourself: Am I Hungry, Angry, Lonely, or Tired? These four states are the most common triggers.\n\n## 2. Box Breathing\n\nInhale for 4 counts, hold for 4, exhale for 4, hold for 4. This simple technique activates your parasympathetic nervous system and reduces anxiety.\n\n## 3. Body Scan Meditation\n\nSpend 5 minutes scanning from head to toe, noticing sensations without judgment. This grounds you in the present moment.\n\n## 4. Urge Surfing\n\nVisualize your craving as a wave — it rises, peaks, and eventually falls. Rather than fighting it, observe it with curiosity.\n\n## 5. Gratitude Journaling\n\nWrite three things you're grateful for. Shifting focus to positivity can short-circuit the craving cycle.\n\nSobr's built-in urge tracker helps you log and monitor these moments so you can identify patterns over time.`,
+    content: `*Simple, science-backed tools you can use anywhere, any time a craving strikes*
+
+---
+
+Cravings don't announce themselves politely. They show up uninvited - at the end of a stressful workday, in a quiet moment when your guard is down, or in the middle of a social situation you thought you had handled. They can feel overwhelming and urgent, like something you have to act on right now.
+
+Here's what the science tells us: you don't. A craving is not a command. It is a wave - and waves, no matter how intense, always pass.
+
+Mindfulness gives you the tools to ride that wave without being pulled under. These five techniques are practical, research-backed, and can be used anywhere - whether you're in your car, at a party, or lying awake at 2am. You don't need experience with meditation. You don't need a special setting. You just need a few minutes and the willingness to try.
+
+---
+
+## 1. The HALT Check
+
+Before anything else, pause and ask yourself four simple questions: **Am I Hungry? Angry? Lonely? Tired?**
+
+HALT is one of the most widely used tools in alcohol recovery because it targets the hidden drivers behind most cravings. The truth is, what feels like a desire for a drink is very often your body or mind asking for something else entirely - food, rest, connection, or an outlet for difficult emotions.
+
+Hunger and fatigue lower your emotional resilience and cloud your judgment, making cravings feel far more urgent than they actually are. Anger and loneliness create emotional pain that alcohol has historically numbed. When you identify which of these states is present, you can address the actual need rather than reaching for alcohol as a substitute.
+
+The next time a craving surfaces, stop and run through the checklist. If you're hungry, eat something. If you're tired, rest. If you're lonely, reach out to someone - your accountability partner, a friend, or your Sobr community. If you're angry, name it and let it breathe. More often than not, attending to the real underlying need will take the edge off the craving entirely.
+
+---
+
+## 2. Box Breathing
+
+When a craving hits hard, your nervous system is in a state of activation. Your heart rate rises, your thoughts race, and your body is primed for a reaction. Box breathing is one of the fastest, most effective ways to bring that arousal back down.
+
+Here's how it works: **inhale for 4 counts, hold for 4 counts, exhale for 4 counts, hold for 4 counts.** Repeat for two to five minutes.
+
+This simple pattern directly activates the **parasympathetic nervous system** - the branch of your nervous system responsible for the "rest and digest" response, as opposed to the "fight or flight" state that cravings tend to trigger. As your breathing slows and deepens, cortisol levels drop, heart rate stabilises, and the sense of urgency that accompanies a craving begins to ease.
+
+Box breathing is used by everyone from elite military units to professional athletes because it works quickly and requires nothing but your breath. You can do it discreetly in any situation - at a dinner table, in a bathroom, in the middle of a conversation. No one needs to know you're doing it. And within a few minutes, you will feel meaningfully calmer.
+
+---
+
+## 3. Body Scan Meditation
+
+Cravings live in the body as much as the mind. You might feel them as a tightness in the chest, a restlessness in the legs, a tension in the jaw, or a hollow sensation in the stomach. Most of us, when a craving hits, instinctively try to escape that physical discomfort. The body scan teaches a different response: curiosity.
+
+Find a quiet moment and spend five minutes slowly moving your awareness from the top of your head to the tips of your toes. At each area of the body, simply notice what's there - tension, warmth, tingling, numbness - without trying to change it or judge it. When you reach an area that feels uncomfortable, breathe into it gently and observe.
+
+This practice does two important things. First, it grounds you in the present moment, interrupting the mental spiral that cravings feed on. Second, it teaches you that physical sensations, even intense ones, are temporary. They shift. They soften. They pass. And when you learn to observe your body's signals with curiosity rather than panic, you begin to lose your fear of them.
+
+---
+
+## 4. Urge Surfing
+
+Urge surfing is one of the most powerful mindfulness tools in alcohol recovery, and its premise is elegant: instead of fighting a craving, you ride it.
+
+Picture your craving as an ocean wave. It builds, rises to a peak, and then - always - it breaks and recedes. The craving feels like it will keep intensifying forever, but it won't. Research shows that most cravings peak within 15 to 30 minutes and then naturally subside, especially if you don't fuel them with resistance or panic.
+
+When a craving surfaces, sit with it. Notice where you feel it in your body. Watch it build without acting on it. Name it if that helps - "this is a craving, and it will pass." Breathe through the peak. And then watch it fall away.
+
+Over time, urge surfing builds a profound sense of self-trust. Each wave you ride without acting on it is evidence that you can handle this - that the craving does not have power over you. That evidence accumulates, and with it, so does your confidence in your own recovery.
+
+---
+
+## 5. Gratitude Journaling
+
+When a craving hits, the mind narrows. All of your mental and emotional bandwidth gets pulled toward the discomfort of the present moment. Gratitude journaling is a way of deliberately widening that lens.
+
+Write down three things you are genuinely grateful for - right now, today. They don't need to be grand. A good conversation, a peaceful morning, the fact that you made it through yesterday. The act of identifying and articulating something positive activates the brain's reward pathways, releasing dopamine and serotonin in a way that directly counteracts the craving cycle.
+
+Gratitude also reconnects you to your reasons for getting sober in the first place. When you're deep in a craving, it's easy to forget how far you've come. A gratitude entry written in the middle of a difficult moment can be a powerful reminder of what you're protecting.
+
+---
+
+## Track Your Cravings, Find Your Patterns
+
+These five techniques become even more powerful when you can see them working over time. That's exactly what Sobr's built-in **urge tracker** is designed for. Each time a craving surfaces, you can log it in the app: what triggered it, how intense it was, which technique you used, and how it resolved. Over days and weeks, a picture emerges - the times of day, the emotional states, the situations that put you most at risk.
+
+Awareness is the foundation of lasting change. When you can see your craving patterns clearly, you can prepare for them, address their root causes, and celebrate just how many waves you've already surfed successfully.
+
+You are more capable than any craving gives you credit for. Start with one technique. Practice it the next time the wave comes. And let each time you choose differently be proof of what you already are: someone doing the hard, brave, extraordinary work of recovery.
+
+---
+
+*This article is intended for informational and supportive purposes. If you are struggling with alcohol dependency, please reach out to a qualified healthcare professional or addiction specialist.*`,
   },
   {
     slug: "financial-cost-of-drinking",
