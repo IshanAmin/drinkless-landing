@@ -38,7 +38,7 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
 
       {/* Logo — 50% larger (h-10 → h-[60px]) */}
       <div className="absolute top-6 left-0 right-0 md:left-8 md:right-auto flex justify-center md:justify-start z-20">
-        <img src={sobrLogo} alt="Sobr Logo" className="h-[100px] w-auto" />
+        <img src={sobrLogo} alt="Sobr Logo" className="h-[80px] w-auto" />
       </div>
 
       <div className="container mx-auto px-4 py-20 md:py-28 relative z-10 mt-12 md:mt-0">
