@@ -755,4 +755,96 @@ Every sober day is not just a day survived. It is a day spent rewiring the most 
 
 *This article is intended for informational and supportive purposes. If you are struggling with alcohol dependency, please reach out to a qualified healthcare professional or addiction specialist.*`,
   },
+  {
+    slug: "understanding-triggers-sponsors-guide",
+    title: "Understanding Triggers: A Sponsor's Guide to Helping Your Buddy Stay the Course",
+    excerpt: "You've been where they are. That's your greatest asset. Here's how to use your lived experience to help your Buddy identify, understand, and navigate their triggers.",
+    category: "Sponsorship",
+    readTime: "12 min read",
+    date: "April 8, 2026",
+    imageUrl: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80",
+    content: `*You've been where they are. That's your greatest asset. Here's how to use it.*
+
+---
+
+When you became a Sponsor, you brought something into that relationship that no textbook, no therapist, and no well-meaning family member can replicate: you have lived this. You know what a trigger feels like from the inside. You know the subtle shift in the body before a craving arrives. You know the rationalisation that sounds completely reasonable at 9pm on a Thursday. You've sat inside the exact moments your Buddy is sitting in right now.
+
+That knowledge is not just valuable - it is the foundation of everything you can offer them.
+
+But understanding your own triggers and helping someone else understand theirs are two different skills. This guide is about the second one: how to help your Buddy identify their triggers, talk about them honestly, and build the awareness that makes sobriety something they can sustain - not just survive.
+
+---
+
+## Why Triggers Matter More Than Most People Realise
+
+Here's the thing that's easy to overlook when you're focused on the day-to-day work of recovery: most people don't relapse because they forgot why they got sober. They relapse because a trigger fired, they didn't recognise it in time, and the craving escalated faster than their coping skills could respond.
+
+Research from the relapse prevention model developed by Marlatt and Gordon - one of the most rigorously studied frameworks in addiction science - identifies triggers as the primary precursors to relapse. Not lack of willpower. Not weak character. Triggers: specific emotional states, environments, people, and situations that activate the brain's deeply ingrained craving pathways before conscious thought has a chance to intervene.
+
+This is why trigger awareness is not optional in recovery. It is the foundation on which every other sobriety skill is built. And as a Sponsor, one of your most important roles is helping your Buddy develop that awareness - especially in the early months, when they often can't see their own patterns clearly yet.
+
+---
+
+## The Two Trigger Families: External and Internal
+
+Before you can help your Buddy identify their triggers, it helps to have a clear framework. Triggers generally fall into two categories, and both require different kinds of attention.
+
+**External triggers** are the ones most people think of first: the people, places, and things associated with past drinking. The bar they used to go to after work. The friend group that always had a bottle open. The sports game that was always paired with beers. A specific song, a smell, a route home that passed a certain pub. These are often easier to identify because they exist in the visible, physical world - and once identified, they can often be avoided or planned around, at least in the early stages of recovery.
+
+**Internal triggers** are subtler and often more dangerous. These are the emotional states and thought patterns that quietly build the pressure that cravings feed on: stress, loneliness, anger, boredom, shame, anxiety, or even unexpected positive emotions like excitement or celebration. Internal triggers operate largely beneath conscious awareness, which is why your Buddy might find themselves deep in a craving without being able to explain where it came from.
+
+Your lived experience is particularly valuable here. You've felt both. You know that internal triggers don't announce themselves. You know what it feels like when the emotional temperature starts rising before you've named what's happening. That recognition - and your ability to share it in conversation - is something your Buddy cannot yet access from their own history.
+
+---
+
+## The HALT Framework: A Practical Starting Point
+
+One of the most effective tools you can introduce early in your Sponsoring relationship is HALT - an acronym that stands for Hungry, Angry, Lonely, and Tired.
+
+Originally developed by addiction counsellors as a practical early-warning system, HALT captures the four internal states that most consistently lower a person's defences and make a craving feel genuinely irresistible. When someone in recovery is hungry, their blood sugar drops and irritability rises, making stress feel bigger than it is. When they're angry - whether at someone else, at a situation, or at themselves - that emotional intensity needs somewhere to go, and alcohol used to be the answer. Loneliness is one of the most underestimated triggers in recovery; a person can be surrounded by people and still feel profoundly isolated. And fatigue undermines judgment in ways that are hard to notice from the inside - tired people make impulsive decisions and are far less able to deploy the coping skills they've been building.
+
+When your Buddy calls you or messages you in a difficult moment, walking them through a HALT check is a simple, non-clinical way to cut through the noise and get to what's actually happening. Ask them directly: when did they last eat? What happened today that's sitting heavy? Have they felt connected to anyone lately? How's their sleep? Often, naming the real state beneath the craving is enough to give them back some control over it.
+
+---
+
+## How to Have the Trigger Conversation
+
+As a Sponsor, you're not a therapist - and you don't need to be. But you do need to be someone your Buddy can be honest with. That means creating the conditions for honesty, which starts with how you ask.
+
+Avoid questions that invite a surface answer. "How are you doing?" gets "fine." Instead, try: "What's been the hardest moment this week?" or "Was there a point where you felt the pull more than usual - what was happening right before that?" These questions invite reflection rather than reassurance.
+
+When your Buddy shares a difficult moment or a close call, resist the urge to immediately problem-solve. First, reflect it back. "So it sounds like being alone after work on Fridays is when you feel it most - does that sound right?" Mirroring what they've said helps them hear their own pattern more clearly. It makes the trigger visible in a way that staying inside their own head cannot.
+
+Then, together, you can begin building awareness around that specific trigger. What could they do differently in that window? Who could they reach out to? What routine could replace the old one? This is not you solving it for them - it's you walking alongside them as they figure it out. That distinction matters enormously for their long-term confidence and self-trust.
+
+---
+
+## Use Sobr's Tools to Make Patterns Visible
+
+One of the most powerful things you can do as a Sponsor is encourage your Buddy to use Sobr's urge tracker consistently. Every time they log a craving - noting what was happening, how they felt, and how they responded - they are building a personal data set of their own trigger patterns.
+
+After a few weeks, those logs become genuinely illuminating. You can look at them together in your check-ins. "I'm noticing you logged three difficult moments on Sunday evenings - does that feel true to you? What is it about Sundays?" Patterns that are invisible in the moment become clear over time on the page. And when a Buddy can see their own patterns laid out in front of them, trigger awareness shifts from an abstract concept to a practical tool they can actually use.
+
+Sobr's journaling features support this too. Encourage your Buddy to write after a difficult moment - not to process it perfectly, but simply to capture what happened. Over time, those entries become a record of how they navigated hard days, which becomes its own source of confidence and evidence that they are capable.
+
+---
+
+## The Hardest Trigger to Help Them See
+
+After all the external triggers and the emotional states and the HALT framework, there is one trigger that is the most difficult to help your Buddy recognise - and it's the one you probably know best yourself.
+
+It's the trigger of feeling like things are going well.
+
+Complacency is one of the leading drivers of relapse, particularly in months three through twelve of sobriety. When life begins to stabilise, when the acute difficulty of early recovery softens, it becomes easier to believe that the hard work is behind them - that they've got this now, that they don't need to be as vigilant. The brain starts whispering that one drink wouldn't hurt. That they're different now. That they're in control.
+
+You've been there. You know how convincing that voice sounds. And your job, as a Sponsor, is to gently, consistently remind your Buddy that the work doesn't end when things feel easier. That's actually when staying connected matters most.
+
+Keep showing up. Keep asking the real questions. Keep making the space safe for honesty.
+
+That consistency - your steady presence through both the hard days and the deceptively easy ones - is the most powerful trigger management tool your Buddy has.
+
+---
+
+*This article is intended for informational and supportive purposes. If you are supporting someone through alcohol recovery, please encourage them to seek guidance from a qualified healthcare professional or addiction specialist where appropriate.*`,
+  },
 ];
