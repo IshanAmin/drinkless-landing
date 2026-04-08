@@ -779,7 +779,15 @@ You've sat inside the exact moments your Buddy is sitting in right now.
 
 That knowledge is not just valuable - it is the foundation of everything you can offer them.
 
-But understanding your own triggers and helping someone else understand theirs are two different skills. This guide is about the second one: how to help your Buddy identify their triggers, talk about them honestly, and build the awareness that makes sobriety something they can sustain - not just survive.
+But understanding your own triggers and helping someone else understand theirs are two different skills. 
+
+This guide is about the second one: 
+
+- how to help your Buddy identify their triggers,
+
+- talk about them honestly,
+
+and build the awareness that makes sobriety something they can sustain - not just survive.
 
 ---
 
