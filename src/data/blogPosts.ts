@@ -767,7 +767,15 @@ Every sober day is not just a day survived. It is a day spent rewiring the most 
 
 ---
 
-When you became a Sponsor, you brought something into that relationship that no textbook, no therapist, and no well-meaning family member can replicate: you have lived this. You know what a trigger feels like from the inside. You know the subtle shift in the body before a craving arrives. You know the rationalisation that sounds completely reasonable at 9pm on a Thursday. You've sat inside the exact moments your Buddy is sitting in right now.
+When you became a Sponsor, you brought something into that relationship that no textbook, no therapist, and no well-meaning family member can replicate: you have lived this. 
+
+You know what a trigger feels like from the inside.
+
+You know the subtle shift in the body before a craving arrives.
+
+You know the rationalisation that sounds completely reasonable at 9pm on a Thursday.
+
+You've sat inside the exact moments your Buddy is sitting in right now.
 
 That knowledge is not just valuable - it is the foundation of everything you can offer them.
 
