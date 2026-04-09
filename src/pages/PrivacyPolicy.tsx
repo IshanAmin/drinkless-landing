@@ -65,7 +65,7 @@ const PrivacyPolicy = () => {
           <SubSection title="A. Personal Data">
             <p>When you register or participate in the App, we may collect:</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong className="text-sobr-text">Identity Data:</strong> Name, email address, profile details, work status, disability flag, (e.g., avatar URL), and your designated user type (buddy, sponsor, or primary user).</li>
+              <li><strong className="text-sobr-text">Identity Data:</strong> Name, email address, profile details, work status, disability flag, (e.g., avatar URL), and your designated user type (buddy or sponsor).</li>
               <li><strong className="text-sobr-text">Authentication Data:</strong> When you sign-in via Google Authentication, we receive identity information associated with that account (as permitted by your privacy settings with those providers).</li>
               <li><strong className="text-sobr-text">Emergency Contacts:</strong> If you designate an emergency contact, we store the name, phone number, and relationship type (e.g., partner, friend) of the contact you select from your address book.</li>
             </ul>
