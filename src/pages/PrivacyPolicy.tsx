@@ -176,7 +176,7 @@ const PrivacyPolicy = () => {
 
         {/* 7 */}
         <Section title="7. Children's Privacy">
-          <p>The App is not intended for use by children under the age of 16. We do not knowingly collect personally identifiable information from children under 16. If we become aware that we have collected personal data from a child under 16, we will delete that information. The app has built in precautions to prevent under age 16 users. These precautions can be bypassed with dishonesty and there is no 100% fool-proof method.</p>
+          <p>The App is not intended for use by children under the age of 18. We do not knowingly collect personally identifiable information from children under 18. If we become aware that we have collected personal data from a child under 18, we will delete that information. The app has built in precautions to prevent under age 18 users. These precautions can be bypassed with dishonesty and there is no 100% fool-proof method.</p>
         </Section>
 
         {/* 8 */}
