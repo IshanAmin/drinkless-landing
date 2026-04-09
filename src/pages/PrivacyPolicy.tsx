@@ -118,7 +118,7 @@ const PrivacyPolicy = () => {
             <li><strong className="text-sobr-text">Personalization:</strong> Tailor the App experience based on your mood, urges, and questionnaire responses.</li>
             <li><strong className="text-sobr-text">Notifications:</strong> Send push notifications for check-ins, streak milestones, and reminders (via Expo.dev).</li>
             <li><strong className="text-sobr-text">Transaction Processing:</strong> Manage your premium subscription status and entitlements via RevenueCat.</li>
-            <li><strong className="text-sobr-text">Improvement & Security:</strong> To troubleshoot bugs, monitor app stability, prevent fraud, and secure our systems.</li>
+            <li><strong className="text-sobr-text">Improvement & Security:</strong> To troubleshoot bugs, monitor app stability, prevent fraud, and secure our systems. Anonymized usage analytics are collected via PostHog solely to improve App performance and user experience.</li>
           </ul>
         </Section>
 
@@ -146,6 +146,7 @@ const PrivacyPolicy = () => {
             <p>As outlined in Section 3, strictly to operate the App, we share data with trusted third-party vendors who assist us in operating the App. These include:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong className="text-sobr-text">Supabase:</strong> For secure database hosting, user authentication, and backend services.</li>
+              <li><strong className="text-sobr-text">PostHog:</strong> For product analytics and in-app usage tracking. Only anonymized, non-personally identifiable usage data is transmitted to PostHog, used solely to improve App performance and functionality.</li>
               <li><strong className="text-sobr-text">RevenueCat:</strong> For managing subscriptions and in-app purchases.</li>
               <li><strong className="text-sobr-text">Expo:</strong> For the delivery of push notifications.</li>
               <li><strong className="text-sobr-text">Open-Meteo:</strong> For fetching weather data.</li>
