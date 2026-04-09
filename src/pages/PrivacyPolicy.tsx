@@ -80,7 +80,7 @@ const PrivacyPolicy = () => {
               <li><strong className="text-sobr-text">Social Data:</strong> Chat content and interaction history between you and your designated Buddy or Sponsor.</li>
               <li><strong className="text-sobr-text">Streak Tracking:</strong> To keep you on track, we offer Streak tracking and progress metrics.</li>
               <li><strong className="text-sobr-text">Chat Logs:</strong> In-app chat content between you and your designated buddy/sponsor. Chats are automatically deleted on a rolling 30-day cycle.</li>
-              <li><strong className="text-sobr-text">Push Notifications:</strong> Sponsor role has the ability to send custom push notifications. We store these to make it easy to send with one-tap.</li>
+              <li><strong className="text-sobr-text">Push Notifications:</strong> Sponsor role has the ability to send custom push notifications (also known in-app as "nudge/nudges"). We store these to make it easy to send with one-tap.</li>
             </ul>
             <div className="bg-sobr-card border border-white/10 rounded-lg p-4 mt-3">
               <p className="text-sm text-sobr-amber font-medium">
