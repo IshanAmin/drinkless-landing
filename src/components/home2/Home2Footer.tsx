@@ -16,6 +16,7 @@ const Home2Footer = () => {
             <Link to="/blog" className="hover:text-sobr-coral transition-colors">Blog</Link>
             <Link to="/terms" className="hover:text-sobr-coral transition-colors">Terms</Link>
             <Link to="/privacy" className="hover:text-sobr-coral transition-colors">Privacy Policy</Link>
+            <Link to="/home3" className="hover:text-sobr-coral transition-colors opacity-50">Home3 (old)</Link>
           </div>
 
           <p className="flex items-center gap-1 text-sm text-sobr-text-muted font-inter">
