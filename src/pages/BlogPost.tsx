@@ -87,7 +87,7 @@ export default function BlogPost() {
       {/* Nav */}
       <nav className="bg-sobr-root/80 backdrop-blur-md border-b border-white/5 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/home2" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <img src={sobrLogo} alt="Sobr" className="h-14 w-auto" />
           </Link>
           <Link
