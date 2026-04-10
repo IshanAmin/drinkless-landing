@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
       {/* Header */}
       <header className="border-b border-white/5 py-5">
         <div className="container mx-auto px-4 flex items-center justify-between">
-          <Link to="/home2" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <img src={sobrLogo} alt="Sobr" className="h-8 w-auto" />
           </Link>
           <Link
