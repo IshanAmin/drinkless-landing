@@ -49,7 +49,7 @@ export default function Index() {
       <footer className="container mx-auto px-4 py-8 mt-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-600">
           <div className="flex flex-col md:flex-row items-center gap-2">
-            <p>© <Link to="/home2" className="text-inherit no-underline hover:text-inherit">2026</Link> Sobr. All rights reserved. Brightslides LLC.</p>
+            <p><p>© <Link to="/home3" className="text-inherit no-underline hover:text-inherit">2026</Link> Sobr. All rights reserved. Brightslides LLC.</p> Sobr. All rights reserved. Brightslides LLC.</p>
             <Link to="/privacy" className="hover:text-slate-900 transition-colors">Privacy Policy</Link>
             <ReferencesDialog />
           </div>
