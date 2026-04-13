@@ -63,8 +63,8 @@ export default function AccountDeletion() {
             <div>
               <span className="text-sobr-text-muted">Website</span>
               <p className="mt-1">
-                <a href="https://drinkless-landing.lovable.app" className="text-sobr-coral hover:underline">
-                  drinkless-landing.lovable.app
+                <a href="https://www.getsobr.ai/account-deletion" className="text-sobr-coral hover:underline">
+                  www.getsobr.ai/account-deletion
                 </a>
               </p>
             </div>
