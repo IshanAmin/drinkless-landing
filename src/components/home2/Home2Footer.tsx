@@ -14,6 +14,7 @@ const Home2Footer = () => {
           <div className="flex items-center gap-4 text-sm text-sobr-text-muted font-inter">
             <p>© <Link to="/" className="hover:text-sobr-coral transition-colors">2026</Link> Sobr. All rights reserved. Brightslides LLC.</p>
             <Link to="/blog" className="hover:text-sobr-coral transition-colors">Blog</Link>
+            <Link to="/support" className="hover:text-sobr-coral transition-colors">Support</Link>
             <Link to="/terms" className="hover:text-sobr-coral transition-colors">Terms</Link>
             <Link to="/privacy" className="hover:text-sobr-coral transition-colors">Privacy Policy</Link>
             <Link to="/home3" className="hover:text-sobr-coral transition-colors opacity-50">Home3 (old)</Link>
