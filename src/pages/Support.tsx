@@ -34,7 +34,7 @@ export default function Support() {
   };
 
   return (
-    <div className="min-h-screen sobr-dark">
+    <div className="min-h-screen bg-sobr-root text-sobr-text sobr-dark">
       <header className="border-b border-white/5 bg-sobr-root">
         <div className="container mx-auto px-4 py-6 flex items-center justify-between">
           <Link to="/">
