@@ -68,9 +68,6 @@ export default function AccountDeletion() {
                 </a>
               </p>
             </div>
-                </a>
-              </p>
-            </div>
           </div>
         </div>
 
