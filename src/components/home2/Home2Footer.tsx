@@ -17,6 +17,7 @@ const Home2Footer = () => {
             <Link to="/support" className="hover:text-sobr-coral transition-colors">Support</Link>
             <Link to="/terms" className="hover:text-sobr-coral transition-colors">Terms</Link>
             <Link to="/privacy" className="hover:text-sobr-coral transition-colors">Privacy Policy</Link>
+            <Link to="/account-deletion" className="hover:text-sobr-coral transition-colors">Delete Account</Link>
             <Link to="/home3" className="hover:text-sobr-coral transition-colors opacity-50">Home3 (old)</Link>
           </div>
 
