@@ -11,6 +11,7 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import Support from "./pages/Support";
+import AccountDeletion from "./pages/AccountDeletion";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/account-deletion" element={<AccountDeletion />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
