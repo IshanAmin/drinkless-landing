@@ -55,8 +55,8 @@ export default function AccountDeletion() {
             <div>
               <span className="text-sobr-text-muted">Support Email</span>
               <p className="mt-1">
-                <a href="mailto:support@sobr.com" className="text-sobr-coral hover:underline">
-                  support@sobr.com
+                <a href="mailto:support@getsobr.ai" className="text-sobr-coral hover:underline">
+                  support@getsobr.ai
                 </a>
               </p>
             </div>
