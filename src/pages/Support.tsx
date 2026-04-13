@@ -67,7 +67,7 @@ export default function Support() {
               onChange={(e) => setName(e.target.value)}
               placeholder="Your name"
               required
-              className="bg-sobr-surface border-white/10 text-sobr-text placeholder:text-sobr-text-muted/50 h-12"
+              className="bg-sobr-card border-white/10 text-sobr-text placeholder:text-sobr-text-muted/50 h-12"
             />
           </div>
 
@@ -80,7 +80,7 @@ export default function Support() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@example.com"
               required
-              className="bg-sobr-surface border-white/10 text-sobr-text placeholder:text-sobr-text-muted/50 h-12"
+              className="bg-sobr-card border-white/10 text-sobr-text placeholder:text-sobr-text-muted/50 h-12"
             />
           </div>
 
@@ -91,7 +91,7 @@ export default function Support() {
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               placeholder="What's this about?"
-              className="bg-sobr-surface border-white/10 text-sobr-text placeholder:text-sobr-text-muted/50 h-12"
+              className="bg-sobr-card border-white/10 text-sobr-text placeholder:text-sobr-text-muted/50 h-12"
             />
           </div>
 
@@ -104,7 +104,7 @@ export default function Support() {
               placeholder="Tell us how we can help..."
               required
               rows={6}
-              className="bg-sobr-surface border-white/10 text-sobr-text placeholder:text-sobr-text-muted/50"
+              className="bg-sobr-card border-white/10 text-sobr-text placeholder:text-sobr-text-muted/50"
             />
           </div>
 
