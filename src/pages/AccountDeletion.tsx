@@ -55,8 +55,8 @@ export default function AccountDeletion() {
             <div>
               <span className="text-sobr-text-muted">Support Email</span>
               <p className="mt-1">
-                <a href="mailto:support@sobr.com" className="text-sobr-coral hover:underline">
-                  support@sobr.com
+                <a href="mailto:support@getsobr.ai" className="text-sobr-coral hover:underline">
+                  support@getsobr.ai
                 </a>
               </p>
             </div>
@@ -98,8 +98,8 @@ export default function AccountDeletion() {
               <p className="font-semibold text-sobr-text mb-2">Option 2 — Email Request</p>
               <p>
                 If you are unable to access the app, you can email{" "}
-                <a href="mailto:support@sobr.com" className="text-sobr-coral hover:underline">
-                  support@sobr.com
+                <a href="mailto:support@getsobr.ai" className="text-sobr-coral hover:underline">
+                  support@getsobr.ai
                 </a>{" "}
                 with the subject line <strong className="text-sobr-text">"Account Deletion Request"</strong>.
                 Please include the email address associated with your Sobr account so we can verify your identity.
@@ -168,8 +168,8 @@ export default function AccountDeletion() {
         <Section title="Questions?">
           <p>
             If you have any questions about account deletion or your data, please contact us at{" "}
-            <a href="mailto:support@sobr.com" className="text-sobr-coral hover:underline">
-              support@sobr.com
+            <a href="mailto:support@getsobr.ai" className="text-sobr-coral hover:underline">
+              support@getsobr.ai
             </a>{" "}
             or visit our{" "}
             <Link to="/support" className="text-sobr-coral hover:underline">
