@@ -112,12 +112,12 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
               <img
                 src={buddyScreenshot}
                 alt="Sobr app — buddy view"
-                className="absolute inset-[3.5%] top-[2%] bottom-[2%] w-[93%] h-[96%] object-cover rounded-[2rem] z-[5]"
+                className="w-full h-auto rounded-[2rem] relative z-[5] drop-shadow-2xl"
               />
               <img
                 src={iphoneFrame}
                 alt="iPhone frame"
-                className="w-full h-auto relative z-10 drop-shadow-2xl"
+                className="absolute inset-0 w-full h-full z-10 pointer-events-none"
               />
               <div className="absolute inset-0 -z-0 blur-3xl bg-sobr-coral/20 rounded-full scale-75" />
             </div>
@@ -137,12 +137,12 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
               <img
                 src={sponsorScreenshot}
                 alt="Sobr app — sponsor view"
-                className="absolute inset-[3.5%] top-[2%] bottom-[2%] w-[93%] h-[96%] object-cover rounded-[2rem] z-[5]"
+                className="w-full h-auto rounded-[2rem] relative z-[5] drop-shadow-2xl"
               />
               <img
                 src={iphoneFrame}
                 alt="iPhone frame"
-                className="w-full h-auto relative z-10 drop-shadow-2xl"
+                className="absolute inset-0 w-full h-full z-10 pointer-events-none"
               />
               <div className="absolute inset-0 -z-0 blur-3xl bg-sobr-amber/15 rounded-full scale-75" />
             </div>
