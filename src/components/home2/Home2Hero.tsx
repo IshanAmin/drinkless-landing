@@ -3,6 +3,8 @@ import sobrLogo from "@/assets/sobr-logo-light.png";
 import appStoreBadge from "@/assets/app-store-badge.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
 import iphoneFrame from "@/assets/iphone-frame.png";
+import buddyScreenshot from "@/assets/buddy-screenshot.png";
+import sponsorScreenshot from "@/assets/sponsor-screenshot.png";
 
 interface Home2HeroProps {
   onRoleSelect: (role: "buddy" | "sponsor") => void;
@@ -105,11 +107,16 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
 
           {/* Right — Two iPhones with sync arrow */}
           <div className="flex items-center justify-center gap-2 md:gap-4">
-            {/* Phone 1 */}
+            {/* Phone 1 — Buddy */}
             <div className="relative w-[200px] md:w-[280px] animate-float">
               <img
+                src={buddyScreenshot}
+                alt="Sobr app — buddy view"
+                className="absolute inset-[3.5%] top-[2%] bottom-[2%] w-[93%] h-[96%] object-cover rounded-[2rem] z-[5]"
+              />
+              <img
                 src={iphoneFrame}
-                alt="Sobr app — user view"
+                alt="iPhone frame"
                 className="w-full h-auto relative z-10 drop-shadow-2xl"
               />
               <div className="absolute inset-0 -z-0 blur-3xl bg-sobr-coral/20 rounded-full scale-75" />
@@ -125,11 +132,16 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
               <span className="text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase">Sponsor</span>
             </div>
 
-            {/* Phone 2 */}
+            {/* Phone 2 — Sponsor */}
             <div className="relative w-[200px] md:w-[280px] animate-float" style={{ animationDelay: "0.5s" }}>
               <img
-                src={iphoneFrame}
+                src={sponsorScreenshot}
                 alt="Sobr app — sponsor view"
+                className="absolute inset-[3.5%] top-[2%] bottom-[2%] w-[93%] h-[96%] object-cover rounded-[2rem] z-[5]"
+              />
+              <img
+                src={iphoneFrame}
+                alt="iPhone frame"
                 className="w-full h-auto relative z-10 drop-shadow-2xl"
               />
               <div className="absolute inset-0 -z-0 blur-3xl bg-sobr-amber/15 rounded-full scale-75" />
