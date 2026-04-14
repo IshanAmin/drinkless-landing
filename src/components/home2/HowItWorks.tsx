@@ -25,7 +25,7 @@ const HowItWorks = () => {
           {/* Buddy */}
           <Step icon={Rocket} num={3} title={<>Start Your Journey <span className="font-extrabold">As Buddy</span></>} desc="Set goals, track progress, and get 24/7 AI-powered support." />
           {/* Sobr Link */}
-          <img src={sobrLink} alt="Sobr Link" className="w-20 h-auto" />
+          <img src={sobrLink} alt="Sobr Link" className="w-20 h-auto animate-pulse-glow" />
           {/* Sponsor */}
           <Step icon={Rocket} num={3} title={<>Start Your Journey <span className="font-extrabold">As Sponsor</span></>} desc="Set goals, track progress, and get 24/7 AI-powered support." />
         </div>
@@ -58,7 +58,7 @@ const HowItWorks = () => {
             <Step icon={Rocket} num={3} title={<>Start Your Journey <span className="font-extrabold">As Buddy</span></>} desc="Set goals, track progress, and get 24/7 AI-powered support." />
 
             {/* Sobr Link logo */}
-            <img src={sobrLink} alt="Sobr Link — connecting Buddy and Sponsor" className="w-24 h-auto my-2" />
+            <img src={sobrLink} alt="Sobr Link — connecting Buddy and Sponsor" className="w-24 h-auto my-2 animate-pulse-glow" />
 
             {/* Sponsor step 3 */}
             <Step icon={Rocket} num={3} title={<>Start Your Journey <span className="font-extrabold">As Sponsor</span></>} desc="Set goals, track progress, and get 24/7 AI-powered support." />
