@@ -54,7 +54,7 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
                 <span className="gradient-text">Leaving Alcohol Behind</span>
               </h1>
               <p className="text-lg md:text-xl text-sobr-text-secondary max-w-lg mx-auto md:mx-0 font-inter">
-                Whether you're ready to quit or supporting someone who is —
+                Whether you're ready to quit or supporting someone who is -
                 Sobr gives you the tools, the community, and the AI-powered
                 guidance to make it stick.
               </p>
