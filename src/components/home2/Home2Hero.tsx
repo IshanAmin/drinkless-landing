@@ -1,8 +1,6 @@
-import { useState } from "react";
 import sobrLogo from "@/assets/sobr-logo-light.png";
 import appStoreBadge from "@/assets/app-store-badge.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
-import iphoneFrame from "@/assets/iphone-frame.png";
 import buddyScreenshot from "@/assets/buddy-screenshot.png";
 import sponsorScreenshot from "@/assets/sponsor-screenshot.png";
 
