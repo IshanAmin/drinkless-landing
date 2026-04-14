@@ -94,11 +94,22 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "pulse-glow": {
+          "0%, 100%": {
+            transform: "scale(1)",
+            filter: "drop-shadow(0 0 0px hsl(var(--sobr-primary) / 0))",
+          },
+          "50%": {
+            transform: "scale(1.08)",
+            filter: "drop-shadow(0 0 16px hsl(var(--sobr-primary) / 0.4))",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fade-up 0.5s ease-out",
+        "pulse-glow": "pulse-glow 3s ease-in-out infinite",
       },
     },
   },
