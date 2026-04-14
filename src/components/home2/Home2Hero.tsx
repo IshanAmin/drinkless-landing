@@ -1,7 +1,6 @@
 import sobrLogo from "@/assets/sobr-logo-light.png";
 import appStoreBadge from "@/assets/app-store-badge.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
-import iphoneFrame from "@/assets/iphone-frame.png";
 import buddyScreenshot from "@/assets/buddy-screenshot.png";
 import sponsorScreenshot from "@/assets/sponsor-screenshot.png";
 
@@ -109,16 +108,11 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
             {/* Phone 1 — Buddy */}
             <div className="relative w-[200px] md:w-[280px] animate-float">
               <img
-                src={iphoneFrame}
-                alt="iPhone frame"
-                className="w-full h-auto relative z-10 drop-shadow-2xl"
-              />
-              <img
                 src={buddyScreenshot}
                 alt="Sobr app — buddy view"
-                className="absolute top-[1.5%] left-[5%] w-[90%] h-[97%] object-cover rounded-[2rem] z-[5]"
+                className="w-full h-auto drop-shadow-2xl rounded-[2rem]"
               />
-              <div className="absolute inset-0 -z-0 blur-3xl bg-sobr-coral/20 rounded-full scale-75" />
+              <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-coral/20 rounded-full scale-75" />
             </div>
 
             {/* Bi-directional sync arrow */}
@@ -134,16 +128,11 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
             {/* Phone 2 — Sponsor */}
             <div className="relative w-[200px] md:w-[280px] animate-float" style={{ animationDelay: "0.5s" }}>
               <img
-                src={iphoneFrame}
-                alt="iPhone frame"
-                className="w-full h-auto relative z-10 drop-shadow-2xl"
-              />
-              <img
                 src={sponsorScreenshot}
                 alt="Sobr app — sponsor view"
-                className="absolute top-[1.5%] left-[5%] w-[90%] h-[97%] object-cover rounded-[2rem] z-[5]"
+                className="w-full h-auto drop-shadow-2xl rounded-[2rem]"
               />
-              <div className="absolute inset-0 -z-0 blur-3xl bg-sobr-amber/15 rounded-full scale-75" />
+              <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-amber/15 rounded-full scale-75" />
             </div>
           </div>
         </div>
