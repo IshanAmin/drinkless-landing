@@ -1,8 +1,6 @@
-import { useState } from "react";
 import sobrLogo from "@/assets/sobr-logo-light.png";
 import appStoreBadge from "@/assets/app-store-badge.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
-import iphoneFrame from "@/assets/iphone-frame.png";
 import buddyScreenshot from "@/assets/buddy-screenshot.png";
 import sponsorScreenshot from "@/assets/sponsor-screenshot.png";
 
@@ -109,17 +107,16 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
           <div className="flex items-center justify-center gap-2 md:gap-4">
             {/* Phone 1 — Buddy */}
             <div className="relative w-[200px] md:w-[280px] animate-float">
-              <img
-                src={buddyScreenshot}
-                alt="Sobr app — buddy view"
-                className="absolute inset-[3.5%] top-[2%] bottom-[2%] w-[93%] h-[96%] object-cover rounded-[2rem] z-[5]"
-              />
-              <img
-                src={iphoneFrame}
-                alt="iPhone frame"
-                className="w-full h-auto relative z-10 drop-shadow-2xl"
-              />
-              <div className="absolute inset-0 -z-0 blur-3xl bg-sobr-coral/20 rounded-full scale-75" />
+              <div className="relative rounded-[2.5rem] overflow-hidden border-[6px] border-gray-800 shadow-2xl bg-black">
+                {/* Notch */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[35%] h-[22px] bg-black rounded-b-2xl z-20" />
+                <img
+                  src={buddyScreenshot}
+                  alt="Sobr app — buddy view"
+                  className="w-full h-auto block"
+                />
+              </div>
+              <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-coral/20 rounded-full scale-75" />
             </div>
 
             {/* Bi-directional sync arrow */}
@@ -134,17 +131,16 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
 
             {/* Phone 2 — Sponsor */}
             <div className="relative w-[200px] md:w-[280px] animate-float" style={{ animationDelay: "0.5s" }}>
-              <img
-                src={sponsorScreenshot}
-                alt="Sobr app — sponsor view"
-                className="absolute inset-[3.5%] top-[2%] bottom-[2%] w-[93%] h-[96%] object-cover rounded-[2rem] z-[5]"
-              />
-              <img
-                src={iphoneFrame}
-                alt="iPhone frame"
-                className="w-full h-auto relative z-10 drop-shadow-2xl"
-              />
-              <div className="absolute inset-0 -z-0 blur-3xl bg-sobr-amber/15 rounded-full scale-75" />
+              <div className="relative rounded-[2.5rem] overflow-hidden border-[6px] border-gray-800 shadow-2xl bg-black">
+                {/* Notch */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[35%] h-[22px] bg-black rounded-b-2xl z-20" />
+                <img
+                  src={sponsorScreenshot}
+                  alt="Sobr app — sponsor view"
+                  className="w-full h-auto block"
+                />
+              </div>
+              <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-amber/15 rounded-full scale-75" />
             </div>
           </div>
         </div>
