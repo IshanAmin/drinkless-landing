@@ -13,6 +13,7 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import Support from "./pages/Support";
 import AccountDeletion from "./pages/AccountDeletion";
 import UnchainPrivacyPolicy from "./pages/UnchainPrivacyPolicy";
+import TheEpidemic from "./pages/TheEpidemic";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/support" element={<Support />} />
           <Route path="/account-deletion" element={<AccountDeletion />} />
           <Route path="/unchain-privacy" element={<UnchainPrivacyPolicy />} />
+          <Route path="/the-epidemic" element={<TheEpidemic />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
