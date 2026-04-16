@@ -211,7 +211,7 @@ const EpidemicPage = () => {
               These numbers are alarming, but change starts with awareness. Sobr is here to help you or your loved one take the first step.
             </p>
             <Link
-              to="/"
+              to="/learn-how-to-quit-drinking"
               className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-[#FF7E6B] text-[#0B0913] font-semibold hover:bg-[#FF7E6B]/90 transition-colors"
             >
               Learn How Sobr Can Help
