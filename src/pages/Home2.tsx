@@ -16,11 +16,6 @@ export default function Home2() {
 
   return (
     <div className="min-h-screen sobr-dark">
-      {/* Work in Progress Banner */}
-      <div className="bg-sobr-coral text-sobr-text text-center py-3 px-4 font-semibold text-sm tracking-wide font-jakarta">
-        🚧 Work in Progress — New Site Coming Soon 🚧
-      </div>
-
       <main>
         <Home2Hero onRoleSelect={setActiveRole} activeRole={activeRole} />
         <HowItWorks />
