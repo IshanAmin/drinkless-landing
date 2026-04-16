@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { ArrowLeft, Send } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -8,7 +7,6 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
 import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
-import sobrLogo from "@/assets/sobr-logo-light.png";
 
 const SUPPORT_EMAIL = "support@sobr.com";
 
@@ -35,21 +33,6 @@ export default function Support() {
 
   return (
     <div className="min-h-screen bg-sobr-root text-sobr-text sobr-dark">
-      <header className="border-b border-white/5 bg-sobr-root">
-        <div className="container mx-auto px-4 py-6 flex items-center justify-between">
-          <Link to="/">
-            <img src={sobrLogo} alt="Sobr" className="h-8 w-auto" />
-          </Link>
-          <Link
-            to="/"
-            className="flex items-center gap-2 text-sobr-text-muted hover:text-sobr-coral transition-colors font-inter text-sm"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Home
-          </Link>
-        </div>
-      </header>
-
       <main className="container mx-auto px-4 py-16 max-w-xl">
         <h1 className="text-3xl md:text-4xl font-bold text-sobr-text font-jakarta mb-2">
           Contact Support
