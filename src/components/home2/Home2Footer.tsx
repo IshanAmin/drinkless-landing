@@ -19,6 +19,7 @@ const Home2Footer = () => {
             <Link to="/privacy" className="hover:text-sobr-coral transition-colors">Privacy Policy</Link>
             <Link to="/account-deletion" className="hover:text-sobr-coral transition-colors">Delete Account</Link>
             <Link to="/the-epidemic" className="hover:text-sobr-coral transition-colors">The Epidemic</Link>
+            <Link to="/learn-how-to-quit-drinking" className="hover:text-sobr-coral transition-colors">Learn How to Quit</Link>
             <Link to="/home3" className="hover:text-sobr-coral transition-colors opacity-50">Home3 (old)</Link>
           </div>
 
