@@ -3,7 +3,6 @@ import { Clock, ArrowLeft } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
 import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
-import sobrLogo from "@/assets/sobr-logo-light.png";
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
