@@ -36,8 +36,8 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
       {/* Warm gradient glow */}
       <div className="absolute inset-0 bg-gradient-to-br from-sobr-coral/10 via-transparent to-sobr-amber/5" />
 
-      {/* Logo — large, top-right (top-center on mobile to avoid colliding with menu button) */}
-      <div className="absolute top-6 left-0 right-0 md:left-auto md:right-8 flex justify-center md:justify-end z-20">
+      {/* Logo — large, top-left */}
+      <div className="absolute top-6 left-0 right-0 md:left-8 md:right-auto flex justify-center md:justify-start z-20">
         <img src={sobrLogo} alt="Sobr Logo" className="h-[80px] w-auto" />
       </div>
 

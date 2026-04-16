@@ -15,8 +15,8 @@ const navLinks = [
 
 /**
  * HomeHeader — used only on `/`.
- * Transparent overlay header with menu on the LEFT.
- * Logo is intentionally omitted; the large Sobr logo lives in the hero.
+ * Transparent overlay header. Menu + CTA on the RIGHT.
+ * The large Sobr logo lives in the hero (top-left) and is intentionally not duplicated here.
  */
 const HomeHeader = () => {
   const [open, setOpen] = useState(false);
@@ -43,41 +43,39 @@ const HomeHeader = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex h-16 md:h-20 items-center justify-between">
-          {/* Left — nav */}
-          <nav className="hidden md:flex items-center gap-1" aria-label="Primary">
-            {navLinks.map((link) => (
-              <NavLink
-                key={link.to}
-                to={link.to}
-                end={link.to === "/"}
-                className={({ isActive }) =>
-                  `px-4 py-2 rounded-full text-sm font-jakarta font-medium transition-colors ${
-                    isActive
-                      ? "text-sobr-coral bg-sobr-coral/10"
-                      : "text-sobr-text-secondary hover:text-sobr-text hover:bg-white/5"
-                  }`
-                }
-              >
-                {link.label}
-              </NavLink>
-            ))}
-          </nav>
-
-          {/* Right — CTA (desktop) */}
-          <div className="hidden md:flex items-center">
+        <div className="flex h-16 md:h-20 items-center justify-end">
+          {/* Right — nav + CTA (desktop) */}
+          <div className="hidden md:flex items-center gap-1">
+            <nav className="flex items-center gap-1" aria-label="Primary">
+              {navLinks.map((link) => (
+                <NavLink
+                  key={link.to}
+                  to={link.to}
+                  end={link.to === "/"}
+                  className={({ isActive }) =>
+                    `px-4 py-2 rounded-full text-sm font-jakarta font-medium transition-colors ${
+                      isActive
+                        ? "text-sobr-coral bg-sobr-coral/10"
+                        : "text-sobr-text-secondary hover:text-sobr-text hover:bg-white/5"
+                    }`
+                  }
+                >
+                  {link.label}
+                </NavLink>
+              ))}
+            </nav>
             <a
               href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-sobr-coral text-sobr-root font-jakarta font-semibold text-sm hover:bg-sobr-coral-light transition-all hover:scale-105 shadow-md shadow-sobr-coral/20"
+              className="ml-3 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-sobr-coral text-sobr-root font-jakarta font-semibold text-sm hover:bg-sobr-coral-light transition-all hover:scale-105 shadow-md shadow-sobr-coral/20"
             >
               Get the App
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
 
-          {/* Mobile toggle — left side, so it doesn't collide with hero logo */}
+          {/* Mobile toggle — right side */}
           <button
             className="md:hidden p-2 rounded-lg bg-sobr-root/40 backdrop-blur-sm text-sobr-text hover:bg-sobr-root/60 transition-colors"
             onClick={() => setOpen(!open)}
@@ -86,9 +84,6 @@ const HomeHeader = () => {
           >
             {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
-
-          {/* Spacer so the mobile button stays left-aligned */}
-          <div className="md:hidden" aria-hidden="true" />
         </div>
 
         {/* Mobile menu */}
