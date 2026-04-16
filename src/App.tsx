@@ -32,6 +32,7 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/support" element={<Support />} />
           <Route path="/account-deletion" element={<AccountDeletion />} />
+          <Route path="/unchain-privacy" element={<UnchainPrivacyPolicy />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
