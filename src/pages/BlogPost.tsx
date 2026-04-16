@@ -3,7 +3,6 @@ import { Clock, ArrowLeft } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
 import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
-import sobrLogo from "@/assets/sobr-logo-light.png";
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
@@ -84,21 +83,6 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen sobr-dark bg-sobr-root">
-      {/* Nav */}
-      <nav className="bg-sobr-root/80 backdrop-blur-md border-b border-white/5 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
-            <img src={sobrLogo} alt="Sobr" className="h-14 w-auto" />
-          </Link>
-          <Link
-            to="/blog"
-            className="text-sobr-text-muted hover:text-sobr-coral transition-colors text-sm font-inter flex items-center gap-1"
-          >
-            <ArrowLeft className="h-3.5 w-3.5" />
-            All Articles
-          </Link>
-        </div>
-      </nav>
 
       <main className="container mx-auto px-4 py-16 md:py-24">
         <article className="max-w-3xl mx-auto">
