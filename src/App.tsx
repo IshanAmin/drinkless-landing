@@ -12,6 +12,7 @@ import BlogPost from "./pages/BlogPost";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import Support from "./pages/Support";
 import AccountDeletion from "./pages/AccountDeletion";
+import UnchainPrivacyPolicy from "./pages/UnchainPrivacyPolicy";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/support" element={<Support />} />
           <Route path="/account-deletion" element={<AccountDeletion />} />
+          <Route path="/unchain-privacy" element={<UnchainPrivacyPolicy />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
