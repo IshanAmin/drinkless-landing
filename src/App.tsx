@@ -12,6 +12,7 @@ import BlogPost from "./pages/BlogPost";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import Support from "./pages/Support";
 import AccountDeletion from "./pages/AccountDeletion";
+import UnchainPrivacyPolicy from "./pages/UnchainPrivacyPolicy";
 
 const queryClient = new QueryClient();
 
