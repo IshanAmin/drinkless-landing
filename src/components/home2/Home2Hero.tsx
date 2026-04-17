@@ -37,8 +37,8 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
       <div className="absolute inset-0 bg-gradient-to-br from-sobr-coral/10 via-transparent to-sobr-amber/5" />
 
       {/* Logo — large, top-left */}
-      <div className="absolute top-6 left-0 right-0 md:left-8 md:right-auto flex justify-center md:justify-start z-20">
-        <img src={sobrLogo} alt="Sobr Logo" className="h-[80px] w-auto" />
+      <div className="absolute top-4 md:top-6 left-0 right-0 md:left-8 md:right-auto flex justify-center md:justify-start z-20">
+        <img src={sobrLogo} alt="Sobr Logo" className="h-14 md:h-[80px] w-auto" />
       </div>
 
       <div className="container mx-auto px-4 py-20 md:py-28 relative z-10 mt-12 md:mt-0">
@@ -49,7 +49,7 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
               <p className="text-sobr-coral font-jakarta font-semibold tracking-wide uppercase text-sm">
                 Your sobriety companion
               </p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-jakarta font-extrabold leading-tight text-sobr-text">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-jakarta font-extrabold leading-tight text-sobr-text">
                 Your Partner in{" "}
                 <span className="gradient-text">Leaving Alcohol Behind</span>
               </h1>
