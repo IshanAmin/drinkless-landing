@@ -22,7 +22,7 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
 
   return (
     <section
-      className="relative min-h-[90vh] flex items-center overflow-hidden"
+      className="relative min-h-[90vh] flex items-center overflow-x-hidden"
       style={{
         backgroundImage:
           'url("/lovable-uploads/b170d9ae-89cd-44e3-a592-0fe4d06ebc7d.png")',
