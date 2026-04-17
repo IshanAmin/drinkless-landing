@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft, Users, Brain, Heart, PieChart, Droplet, TrendingUp, AlertTriangle } from "lucide-react";
+import { Users, Brain, Heart, PieChart, Droplet, TrendingUp, AlertTriangle } from "lucide-react";
 import { primaryStatsData } from "@/components/stats/PrimaryStats";
 import { demographicStatsData } from "@/components/stats/DemographicStats";
 import { youthStatsData } from "@/components/stats/YouthStats";
@@ -17,14 +17,6 @@ const iconMap: Record<string, React.ReactNode> = {
 const EpidemicPage = () => {
   return (
     <div className="min-h-screen sobr-dark bg-[#0B0913] text-[#FFF9F7]">
-      {/* SEO-optimized header */}
-      <header className="container mx-auto px-4 pt-8 pb-4">
-        <Link to="/" className="inline-flex items-center gap-2 text-[#FFF9F7]/60 hover:text-[#FF7E6B] transition-colors text-sm">
-          <ArrowLeft className="h-4 w-4" />
-          Back to Home
-        </Link>
-      </header>
-
       <main>
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-16 md:py-24 text-center">
