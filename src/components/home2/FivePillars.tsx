@@ -4,26 +4,31 @@ const pillars = [
   {
     icon: CheckCircle,
     title: "The Companion",
+    tagline: "Soby AI",
     desc: "24/7 personal support & proactive insights.",
   },
   {
     icon: Heart,
     title: "The Bond",
+    tagline: "Sponsor System",
     desc: "Human-to-human Sponsor system connection and social proof.",
   },
   {
     icon: TrendingUp,
     title: "The Guardrail",
+    tagline: "Crisis Flow",
     desc: "Immediate intervention for high-risk moments.",
   },
   {
     icon: ShieldAlert,
     title: "The Arena",
+    tagline: "Community",
     desc: "Gamification and collective motivation - you're never alone.",
   },
   {
     icon: Layers,
     title: "The Ledger",
+    tagline: "Progress",
     desc: "Visual dashboards, milestones, and journaling show how far you've come.",
   },
 ];
@@ -52,6 +57,9 @@ const FivePillars = () => {
                 <p.icon className="w-7 h-7 text-sobr-coral" />
               </div>
               <h3 className="text-base font-jakarta font-bold text-sobr-text">{p.title}</h3>
+              <p className="text-[10px] font-jakarta font-semibold tracking-wider uppercase text-sobr-coral">
+                {p.tagline}
+              </p>
               <p className="text-xs text-sobr-text-muted font-inter leading-relaxed">{p.desc}</p>
             </div>
           ))}
