@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
           </h1>
           <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-sobr-text-muted font-inter">
             <span>Effective Date: February 16, 2026</span>
-            <span>Last Updated: February 16, 2026</span>
+            <span>Last Updated: February 17, 2026</span>
           </div>
           <div className="h-px w-full bg-white/10 mt-6" />
         </div>
