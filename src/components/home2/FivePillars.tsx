@@ -10,7 +10,7 @@ const pillars = [
   {
     icon: Heart,
     title: "The Bond",
-    tagline: "Sponsor System",
+    tagline: "ACCOUNTABILITY",
     desc: "Human-to-human Sponsor system connection and social proof.",
   },
   {
