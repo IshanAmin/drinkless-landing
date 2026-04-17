@@ -114,7 +114,7 @@ const PrivacyPolicy = () => {
             <li><strong className="text-sobr-text">Camera:</strong> To capture daily selfie logs for your personal sobriety journal and to update your profile picture. Full-resolution photos are saved to your device's Photos library. A smaller thumbnail copy is uploaded to our secure backend storage (Supabase) for syncing across your devices and is visible to your chosen Sponsor if you have invited one.</li>
             <li><strong className="text-sobr-text">Contacts:</strong> To allow you to quickly select an emergency contact from your address book. We only collect the specific contacts, name, phone number, and relationship type. We do not use or upload your entire address book. Contact permissions are also used to invite a buddy or a sponsor.</li>
             <li><strong className="text-sobr-text">Location:</strong> Used only when you log a craving or mood, so the App can tag that log with your location and local weather. Location is never tracked in the background.</li>
-            <li><strong className="text-sobr-text">Notifications:</strong> To send you recovery reminders and chat alerts.</li>
+            <li><strong className="text-sobr-text">Notifications:</strong> Used to send you (a) local on-device reminders you schedule in Settings (daily logging, daily selfie, daily affirmation), (b) chat alerts when your Buddy or Sponsor messages you, and (c) Sponsor "nudges" — short encouragement messages your Sponsor can send you with one tap. You can disable any of these from Sobr's Settings or from your device's notification settings at any time.</li>
           </ul>
         </Section>
 
