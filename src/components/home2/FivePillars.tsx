@@ -11,13 +11,13 @@ const pillars = [
     icon: Heart,
     title: "The Bond",
     tagline: "ACCOUNTABILITY",
-    desc: "Human-to-human Sponsor system connection and social proof.",
+    desc: "Human-to-human Sponsor system for empathetic connections",
   },
   {
     icon: TrendingUp,
     title: "The Guardrail",
     tagline: "Crisis Flow",
-    desc: "Immediate intervention for high-risk moments.",
+    desc: "Immediate intervention for high-risk moments.\n\n",
   },
   {
     icon: ShieldAlert,
@@ -29,7 +29,7 @@ const pillars = [
     icon: Layers,
     title: "The Ledger",
     tagline: "Progress",
-    desc: "Visual dashboards, milestones, and journaling show how far you've come.",
+    desc: "Dashboards, milestones, and journaling show how far you've come.",
   },
 ];
 
