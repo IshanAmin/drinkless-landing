@@ -1,6 +1,4 @@
-import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import sobrLogo from "@/assets/sobr-logo-light.png";
 import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
 
@@ -33,22 +31,6 @@ const LegalEmphasis = ({ children }: { children: React.ReactNode }) => (
 const TermsAndConditions = () => {
   return (
     <div className="sobr-dark min-h-screen bg-sobr-root">
-      {/* Header */}
-      <header className="border-b border-white/5 py-5">
-        <div className="container mx-auto px-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3">
-            <img src={sobrLogo} alt="Sobr" className="h-8 w-auto" />
-          </Link>
-          <Link
-            to="/home2"
-            className="flex items-center gap-2 text-sm text-sobr-text-muted hover:text-sobr-coral transition-colors font-inter"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Home
-          </Link>
-        </div>
-      </header>
-
       {/* Content */}
       <main className="container mx-auto px-4 py-12 md:py-20 max-w-3xl">
         <div className="mb-12">

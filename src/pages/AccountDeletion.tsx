@@ -1,6 +1,5 @@
-import { ArrowLeft, Trash2, ShieldCheck, Clock, AlertTriangle } from "lucide-react";
+import { Trash2, ShieldCheck, Clock, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
-import sobrLogo from "@/assets/sobr-logo-light.png";
 import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
 
@@ -14,21 +13,6 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
 export default function AccountDeletion() {
   return (
     <div className="min-h-screen bg-sobr-root text-sobr-text sobr-dark">
-      <header className="border-b border-white/5 bg-sobr-root">
-        <div className="container mx-auto px-4 py-6 flex items-center justify-between">
-          <Link to="/">
-            <img src={sobrLogo} alt="Sobr" className="h-8 w-auto" />
-          </Link>
-          <Link
-            to="/"
-            className="flex items-center gap-2 text-sobr-text-muted hover:text-sobr-coral transition-colors font-inter text-sm"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Home
-          </Link>
-        </div>
-      </header>
-
       <main className="container mx-auto px-4 py-12 md:py-20 max-w-3xl">
         {/* Page header */}
         <div className="mb-12">
