@@ -37,8 +37,8 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
       <div className="absolute inset-0 bg-gradient-to-br from-sobr-coral/10 via-transparent to-sobr-amber/5" />
 
       {/* Logo — large, top-left */}
-      <div className="absolute top-6 left-0 right-0 md:left-8 md:right-auto flex justify-center md:justify-start z-20">
-        <img src={sobrLogo} alt="Sobr Logo" className="h-[80px] w-auto" />
+      <div className="absolute top-4 md:top-6 left-0 right-0 md:left-8 md:right-auto flex justify-center md:justify-start z-20">
+        <img src={sobrLogo} alt="Sobr Logo" className="h-14 md:h-[80px] w-auto" />
       </div>
 
       <div className="container mx-auto px-4 py-20 md:py-28 relative z-10 mt-12 md:mt-0">
@@ -49,7 +49,7 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
               <p className="text-sobr-coral font-jakarta font-semibold tracking-wide uppercase text-sm">
                 Your sobriety companion
               </p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-jakarta font-extrabold leading-tight text-sobr-text">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-jakarta font-extrabold leading-tight text-sobr-text">
                 Your Partner in{" "}
                 <span className="gradient-text">Leaving Alcohol Behind</span>
               </h1>
@@ -103,10 +103,10 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
             </div>
           </div>
 
-          {/* Right — Two iPhones with sync arrow */}
-          <div className="flex items-center justify-center gap-2 md:gap-4">
+          {/* Right — Two iPhones with sync arrow (always side-by-side) */}
+          <div className="flex items-center justify-center gap-1 sm:gap-2 md:gap-4 w-full max-w-full overflow-hidden">
             {/* Phone 1 — Buddy */}
-            <div className="relative w-[200px] md:w-[280px] animate-float">
+            <div className="relative w-[36vw] max-w-[140px] sm:max-w-[180px] md:max-w-[280px] md:w-[280px] shrink-0 animate-float">
               <img
                 src={buddyScreenshot}
                 alt="Sobr app — buddy view"
@@ -116,17 +116,17 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
             </div>
 
             {/* Bi-directional sync arrow */}
-            <div className="flex flex-col items-center gap-1 z-20 text-sobr-coral">
-              <span className="text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase">Buddy</span>
-              <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 md:w-12" stroke="currentColor">
+            <div className="flex flex-col items-center gap-1 z-20 text-sobr-coral shrink-0 px-1">
+              <span className="text-[8px] sm:text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase">Buddy</span>
+              <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 sm:w-8 md:w-12" stroke="currentColor">
                 <path d="M4 8H36L30 2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 <path d="M44 16H12L18 22" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <span className="text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase">Sponsor</span>
+              <span className="text-[8px] sm:text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase">Sponsor</span>
             </div>
 
             {/* Phone 2 — Sponsor */}
-            <div className="relative w-[200px] md:w-[280px] animate-float" style={{ animationDelay: "0.5s" }}>
+            <div className="relative w-[36vw] max-w-[140px] sm:max-w-[180px] md:max-w-[280px] md:w-[280px] shrink-0 animate-float" style={{ animationDelay: "0.5s" }}>
               <img
                 src={sponsorScreenshot}
                 alt="Sobr app — sponsor view"

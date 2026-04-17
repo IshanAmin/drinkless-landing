@@ -100,16 +100,16 @@ const DualExperience = ({ activeTab, onTabChange }: DualExperienceProps) => {
         </div>
 
         <Tabs value={currentTab} onValueChange={handleChange} className="max-w-5xl mx-auto">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 bg-sobr-elevated border border-white/5 p-1 rounded-xl mb-10">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 bg-sobr-elevated border border-white/5 p-1 rounded-xl mb-10 h-auto">
             <TabsTrigger
               value="buddy"
-              className="rounded-lg font-jakarta font-semibold data-[state=active]:bg-sobr-coral data-[state=active]:text-sobr-text text-sobr-text-muted"
+              className="rounded-lg font-jakarta font-semibold data-[state=active]:bg-sobr-coral data-[state=active]:text-sobr-text text-sobr-text-muted whitespace-normal text-xs sm:text-sm px-2 py-2"
             >
               🙋 For Buddies
             </TabsTrigger>
             <TabsTrigger
               value="sponsor"
-              className="rounded-lg font-jakarta font-semibold data-[state=active]:bg-sobr-coral data-[state=active]:text-sobr-text text-sobr-text-muted"
+              className="rounded-lg font-jakarta font-semibold data-[state=active]:bg-sobr-coral data-[state=active]:text-sobr-text text-sobr-text-muted whitespace-normal text-xs sm:text-sm px-2 py-2"
             >
               🤝 For Sponsors
             </TabsTrigger>
