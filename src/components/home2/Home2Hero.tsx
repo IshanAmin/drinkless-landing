@@ -104,7 +104,7 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
           </div>
 
           {/* Right — Two iPhones with sync arrow (always side-by-side) */}
-          <div className="flex items-center justify-center gap-1 sm:gap-2 md:gap-4 w-full max-w-full overflow-hidden">
+          <div className="flex items-center justify-center gap-1 sm:gap-2 md:gap-4 w-full max-w-full py-6">
             {/* Phone 1 — Buddy */}
             <div className="relative w-[36vw] max-w-[140px] sm:max-w-[180px] md:max-w-[280px] md:w-[280px] shrink-0 animate-float">
               <img
