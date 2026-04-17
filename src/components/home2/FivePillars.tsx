@@ -3,28 +3,28 @@ import { CheckCircle, Heart, TrendingUp, ShieldAlert, Layers } from "lucide-reac
 const pillars = [
   {
     icon: CheckCircle,
-    title: "Accountability",
-    desc: "Daily check-ins, streaks, and honest tracking keep you grounded.",
+    title: "The Companion",
+    desc: "24/7 personal support & proactive insights.",
   },
   {
     icon: Heart,
-    title: "Support",
-    desc: "Sponsor system, AI companion, and community — you're never alone.",
+    title: "The Bond",
+    desc: "Human-to-human Sponsor system connection and social proof.",
   },
   {
     icon: TrendingUp,
-    title: "Progress",
-    desc: "Visual dashboards, milestones, and journaling show how far you've come.",
+    title: "The Guardrail",
+    desc: "Immediate intervention for high-risk moments.",
   },
   {
     icon: ShieldAlert,
-    title: "Crisis Help",
-    desc: "Emergency flow and instant resources when it matters most.",
+    title: "The Arena",
+    desc: "Gamification and collective motivation - you're never alone.",
   },
   {
     icon: Layers,
-    title: "Unified Solution",
-    desc: "Everything you need in one app — no juggling multiple tools.",
+    title: "The Ledger",
+    desc: "Visual dashboards, milestones, and journaling show how far you've come.",
   },
 ];
 
@@ -37,7 +37,7 @@ const FivePillars = () => {
             Our foundation
           </p>
           <h2 className="text-3xl md:text-4xl font-jakarta font-bold text-sobr-text">
-            The Five Pillars of Sobr
+            The Sobr Pulse
           </h2>
         </div>
 
