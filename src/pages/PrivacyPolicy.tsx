@@ -80,7 +80,7 @@ const PrivacyPolicy = () => {
 
           <SubSection title="D. Location & Context">
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong className="text-sobr-text">Location:</strong> If granted, we collect approximate location data to provide context for your journal entries or to localize weather data.</li>
+              <li><strong className="text-sobr-text">Location:</strong> If granted, we collect approximate location data at the moment you log a craving (urge) or mood. This lets the App show you which places or conditions tend to trigger your urges so you can plan safer routines. Location is only captured in the foreground, at the moment of logging, and is never tracked in the background.</li>
               <li><strong className="text-sobr-text">Weather:</strong> We may derive local weather conditions using open-source APIs (Open-Meteo) to help you correlate weather patterns with mood or urges.</li>
             </ul>
           </SubSection>
@@ -113,7 +113,7 @@ const PrivacyPolicy = () => {
           <ul className="list-disc pl-6 space-y-2">
             <li><strong className="text-sobr-text">Camera:</strong> To capture daily selfie logs for your personal sobriety journal and to update your profile picture. Full-resolution photos are saved to your device's Photos library. A smaller thumbnail copy is uploaded to our secure backend storage (Supabase) for syncing across your devices and is visible to your chosen Sponsor if you have invited one.</li>
             <li><strong className="text-sobr-text">Contacts:</strong> To allow you to quickly select an emergency contact from your address book. We only collect the specific contacts, name, phone number, and relationship type. We do not use or upload your entire address book. Contact permissions are also used to invite a buddy or a sponsor.</li>
-            <li><strong className="text-sobr-text">Location:</strong> To provide weather context and localized journaling.</li>
+            <li><strong className="text-sobr-text">Location:</strong> Used only when you log a craving or mood, so the App can tag that log with your location and local weather. Location is never tracked in the background.</li>
             <li><strong className="text-sobr-text">Notifications:</strong> To send you recovery reminders and chat alerts.</li>
           </ul>
         </Section>
