@@ -88,6 +88,10 @@ const PrivacyPolicy = () => {
           <SubSection title="E. Subscription & Billing Data">
             <p>If you purchase premium features, transactions are processed directly by our payment processing partner, RevenueCat via the Apple App Store or Google Play Store. Premium access is managed using RevenueCat. We receive data regarding your subscription status, package selection, and entitlement, but we do not process or store your credit card numbers or raw financial data.</p>
           </SubSection>
+
+          <SubSection title="F. Face Data (Not Collected)">
+            <p>Sobr does not collect, process, store, share, or retain any face data as defined by applicable app store policies and biometric-privacy laws. The daily "Sobr Selfie" feature captures a standard photograph (a JPEG image file) for your personal progress journal. Sobr does not perform facial recognition, facial geometry scanning, faceprint extraction, face landmark detection, face tracking, or any other biometric analysis on the photograph. The photograph is stored only as an image file, used solely for your own progress journaling, and — if you have invited a Sponsor — optionally visible to that single Sponsor. We do not use face data for identification, authentication, advertising, analytics, or AI/ML model training.</p>
+          </SubSection>
         </Section>
 
         {/* 2 */}
@@ -107,10 +111,9 @@ const PrivacyPolicy = () => {
         <Section title="3. App Permissions">
           <p>The App may request access to specific device features. You can revoke these permissions at any time in your device settings, though this may limit functionality.</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong className="text-sobr-text">Camera:</strong> To capture selfie logs or update your profile picture.</li>
+            <li><strong className="text-sobr-text">Camera:</strong> To capture daily selfie logs for your personal sobriety journal and to update your profile picture. Full-resolution photos are saved to your device's Photos library. A smaller thumbnail copy is uploaded to our secure backend storage (Supabase) for syncing across your devices and is visible to your chosen Sponsor if you have invited one.</li>
             <li><strong className="text-sobr-text">Contacts:</strong> To allow you to quickly select an emergency contact from your address book. We only collect the specific contacts, name, phone number, and relationship type. We do not use or upload your entire address book. Contact permissions are also used to invite a buddy or a sponsor.</li>
             <li><strong className="text-sobr-text">Location:</strong> To provide weather context and localized journaling.</li>
-            <li><strong className="text-sobr-text">Motion & Fitness:</strong> To integrate with Apple Health or Google Fit for holistic wellness tracking.</li>
             <li><strong className="text-sobr-text">Notifications:</strong> To send you recovery reminders and chat alerts.</li>
           </ul>
         </Section>
