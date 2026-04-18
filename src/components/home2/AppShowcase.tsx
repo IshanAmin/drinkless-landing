@@ -1,4 +1,6 @@
-import iphoneFrame from "@/assets/iphone-frame.png";
+import showcaseBuddy from "@/assets/showcase-buddy.png";
+import showcaseSponsor from "@/assets/showcase-sponsor.png";
+import buddySponsorLogo from "@/assets/buddy-sponsor-logo.png";
 
 const AppShowcase = () => {
   return (
@@ -19,14 +21,34 @@ const AppShowcase = () => {
           </p>
         </div>
 
-        <div className="flex justify-center">
-          <div className="relative w-[260px] md:w-[300px] animate-float">
+        <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-8 max-w-full">
+          {/* Left — Buddy single phone */}
+          <div className="relative shrink-0 w-[28vw] max-w-[180px] md:max-w-[260px] animate-float">
             <img
-              src={iphoneFrame}
-              alt="Sobr app screenshot"
+              src={showcaseBuddy}
+              alt="Sobr buddy app — daily check-ins"
               className="w-full h-auto drop-shadow-2xl"
             />
-            <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-coral/15 rounded-full scale-90" />
+            <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-coral/20 rounded-full scale-75" />
+          </div>
+
+          {/* Center — Buddy ↔ Sponsor logo */}
+          <div className="relative shrink-0 w-[18vw] max-w-[120px] md:max-w-[180px]">
+            <img
+              src={buddySponsorLogo}
+              alt="Buddy and Sponsor sync"
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* Right — Sponsor 3-phone group */}
+          <div className="relative shrink-0 w-[40vw] max-w-[280px] md:max-w-[420px] animate-float" style={{ animationDelay: "0.5s" }}>
+            <img
+              src={showcaseSponsor}
+              alt="Sobr sponsor app — progress dashboards"
+              className="w-full h-auto drop-shadow-2xl"
+            />
+            <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-amber/15 rounded-full scale-75" />
           </div>
         </div>
       </div>
