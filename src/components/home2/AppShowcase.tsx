@@ -42,7 +42,7 @@ const AppShowcase = () => {
           </div>
 
           {/* Right — Sponsor 3-phone group */}
-          <div className="relative shrink-0 w-[40vw] max-w-[280px] md:max-w-[420px] animate-float" style={{ animationDelay: "0.5s" }}>
+          <div className="relative shrink-0 w-[28vw] max-w-[180px] md:max-w-[260px] animate-float" style={{ animationDelay: "0.5s" }}>
             <img
               src={showcaseSponsor}
               alt="Sobr sponsor app — progress dashboards"
