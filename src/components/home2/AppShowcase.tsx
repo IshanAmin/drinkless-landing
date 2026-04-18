@@ -23,30 +23,30 @@ const AppShowcase = () => {
 
         <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-8 max-w-full">
           {/* Left — Buddy single phone */}
-          <div className="relative shrink-0 w-[28vw] max-w-[180px] md:max-w-[260px] animate-float">
+          <div className="relative shrink-0 h-[40vw] max-h-[280px] md:max-h-[420px] animate-float">
             <img
               src={showcaseBuddy}
               alt="Sobr buddy app — daily check-ins"
-              className="w-full h-auto drop-shadow-2xl"
+              className="h-full w-auto drop-shadow-2xl"
             />
             <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-coral/20 rounded-full scale-75" />
           </div>
 
           {/* Center — Buddy ↔ Sponsor logo */}
-          <div className="relative shrink-0 w-[18vw] max-w-[120px] md:max-w-[180px]">
+          <div className="relative shrink-0 h-[20vw] max-h-[140px] md:max-h-[200px]">
             <img
               src={buddySponsorLogo}
               alt="Buddy and Sponsor sync"
-              className="w-full h-auto"
+              className="h-full w-auto"
             />
           </div>
 
           {/* Right — Sponsor 3-phone group */}
-          <div className="relative shrink-0 w-[28vw] max-w-[180px] md:max-w-[260px] animate-float" style={{ animationDelay: "0.5s" }}>
+          <div className="relative shrink-0 h-[40vw] max-h-[280px] md:max-h-[420px] animate-float" style={{ animationDelay: "0.5s" }}>
             <img
               src={showcaseSponsor}
               alt="Sobr sponsor app — progress dashboards"
-              className="w-full h-auto drop-shadow-2xl"
+              className="h-full w-auto drop-shadow-2xl"
             />
             <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-amber/15 rounded-full scale-75" />
           </div>
