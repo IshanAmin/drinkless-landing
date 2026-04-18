@@ -33,7 +33,7 @@ const AppShowcase = () => {
           </div>
 
           {/* Center — Buddy ↔ Sponsor logo */}
-          <div className="relative shrink-0 h-[20vw] max-h-[140px] md:max-h-[200px]">
+          <div className="relative shrink-0 h-[15vw] max-h-[105px] md:max-h-[150px]">
             <img
               src={buddySponsorLogo}
               alt="Buddy and Sponsor sync"
