@@ -197,6 +197,20 @@ const PrivacyPolicy = () => {
         {/* 10 */}
         <Section title="10. Contact Us">
           <p>If you have questions or comments about this Privacy Policy, please contact us at:</p>
+          <div className="bg-sobr-card border border-white/10 rounded-lg p-6 mt-2 mb-4">
+            <p className="font-semibold text-sobr-text">Request Account Deletion</p>
+            <p>
+              Link:{" "}
+              <a
+                href="https://www.getsobr.ai/account-deletion"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sobr-coral hover:text-sobr-coral-light transition-colors underline"
+              >
+                https://www.getsobr.ai/account-deletion
+              </a>
+            </p>
+          </div>
           <div className="bg-sobr-card border border-white/10 rounded-lg p-6 mt-2">
             <p className="font-semibold text-sobr-text">BrightSlides LLC</p>
             <p>
