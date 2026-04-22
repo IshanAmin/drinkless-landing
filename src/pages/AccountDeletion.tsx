@@ -63,10 +63,10 @@ export default function AccountDeletion() {
               <p className="font-semibold text-sobr-text mb-2">Option 1 — In-App (Recommended)</p>
               <ol className="list-decimal pl-5 space-y-2">
                 <li>Open the <strong className="text-sobr-text">Sobr</strong> app on your device.</li>
-                <li>Navigate to <strong className="text-sobr-text">Settings</strong> (gear icon).</li>
-                <li>Scroll down to <strong className="text-sobr-text">Your Account</strong>.</li>
+                 <li>Navigate to <strong className="text-sobr-text">Settings</strong> (Click on your Avatar Icon in Top Left).</li>
+                 <li>Scroll down to the bottom of the Settings page.</li>
                 <li>Tap <strong className="text-sobr-text">"Delete Account"</strong>.</li>
-                <li>Confirm the deletion when prompted.</li>
+                 <li>Fill out the form so our data team can find your account and properly delete all data.</li>
               </ol>
               <div className="bg-sobr-card border border-white/10 rounded-lg p-4 mt-3">
                 <p className="text-sm text-sobr-amber font-medium">
