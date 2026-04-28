@@ -104,40 +104,85 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
             </div>
           </div>
 
-          {/* Right — Two iPhones with sync arrow (always side-by-side) */}
+          {/* Right — Two iPhones with sync arrow (swap on role toggle) */}
           <div className="flex items-center justify-center gap-1 sm:gap-2 md:gap-4 w-full max-w-full py-6">
-            {/* Phone 1 — Buddy */}
-            <div className="relative w-[36vw] max-w-[140px] sm:max-w-[180px] md:max-w-[280px] md:w-[280px] shrink-0 animate-float">
-              <img
-                src={buddyScreenshot}
-                alt="Sobr app — buddy view"
-                className="w-full h-auto drop-shadow-2xl rounded-[2rem]"
-              />
-              <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-coral/20 rounded-full scale-75" />
-            </div>
+            {(() => {
+              const phones = [
+                {
+                  id: "buddy",
+                  src: buddyScreenshot,
+                  alt: "Sobr app — buddy view (Ishaan)",
+                  glow: "bg-sobr-coral/20",
+                  delay: 0,
+                },
+                {
+                  id: "sponsor",
+                  src: sponsorScreenshot,
+                  alt: "Sobr app — sponsor view (Jolly)",
+                  glow: "bg-sobr-amber/15",
+                  delay: 0.5,
+                },
+              ];
+              const ordered = isBuddy ? phones : [phones[1], phones[0]];
 
-            {/* Bi-directional sync arrow */}
-            <div className="flex flex-col items-center gap-1 z-20 text-sobr-coral shrink-0 px-1">
-              <span className="text-[8px] sm:text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase">Buddy</span>
-              <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 sm:w-8 md:w-12" stroke="currentColor">
-                <path d="M4 8H36L30 2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M44 16H12L18 22" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-              <span className="text-[8px] sm:text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase">Sponsor</span>
-            </div>
+              const Phone = ({ phone }: { phone: typeof phones[number] }) => (
+                <motion.div
+                  layout
+                  layoutId={`hero-phone-${phone.id}`}
+                  transition={{ type: "spring", stiffness: 220, damping: 26 }}
+                  className="relative w-[36vw] max-w-[140px] sm:max-w-[180px] md:max-w-[280px] md:w-[280px] shrink-0 animate-float"
+                  style={{ animationDelay: `${phone.delay}s` }}
+                >
+                  <img
+                    src={phone.src}
+                    alt={phone.alt}
+                    className="w-full h-auto drop-shadow-2xl rounded-[2rem]"
+                  />
+                  <div className={`absolute inset-0 -z-10 blur-3xl ${phone.glow} rounded-full scale-75`} />
+                </motion.div>
+              );
 
-            {/* Phone 2 — Sponsor */}
-            <div className="relative w-[36vw] max-w-[140px] sm:max-w-[180px] md:max-w-[280px] md:w-[280px] shrink-0 animate-float" style={{ animationDelay: "0.5s" }}>
-              <img
-                src={sponsorScreenshot}
-                alt="Sobr app — sponsor view"
-                className="w-full h-auto drop-shadow-2xl rounded-[2rem]"
-              />
-              <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-amber/15 rounded-full scale-75" />
-            </div>
+              return (
+                <>
+                  <Phone phone={ordered[0]} />
+
+                  {/* Bi-directional sync arrow with animated labels */}
+                  <motion.div layout className="flex flex-col items-center gap-1 z-20 text-sobr-coral shrink-0 px-1">
+                    <AnimatePresence mode="wait" initial={false}>
+                      <motion.span
+                        key={`top-${ordered[0].id}`}
+                        initial={{ opacity: 0, y: -4 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 4 }}
+                        transition={{ duration: 0.2 }}
+                        className="text-[8px] sm:text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase"
+                      >
+                        {ordered[0].id === "buddy" ? "Buddy" : "Sponsor"}
+                      </motion.span>
+                    </AnimatePresence>
+                    <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 sm:w-8 md:w-12" stroke="currentColor">
+                      <path d="M4 8H36L30 2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M44 16H12L18 22" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    <AnimatePresence mode="wait" initial={false}>
+                      <motion.span
+                        key={`bot-${ordered[1].id}`}
+                        initial={{ opacity: 0, y: -4 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 4 }}
+                        transition={{ duration: 0.2 }}
+                        className="text-[8px] sm:text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase"
+                      >
+                        {ordered[1].id === "buddy" ? "Buddy" : "Sponsor"}
+                      </motion.span>
+                    </AnimatePresence>
+                  </motion.div>
+
+                  <Phone phone={ordered[1]} />
+                </>
+              );
+            })()}
           </div>
-        </div>
-      </div>
     </section>
   );
 };
