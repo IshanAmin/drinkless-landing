@@ -3,6 +3,7 @@ import appStoreBadge from "@/assets/app-store-badge.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
 import buddyScreenshot from "@/assets/buddy-screenshot.png";
 import sponsorScreenshot from "@/assets/sponsor-screenshot.png";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface Home2HeroProps {
   onRoleSelect: (role: "buddy" | "sponsor") => void;
