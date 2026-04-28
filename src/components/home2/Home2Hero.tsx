@@ -183,6 +183,8 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
               );
             })()}
           </div>
+        </div>
+      </div>
     </section>
   );
 };
