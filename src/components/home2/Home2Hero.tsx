@@ -101,7 +101,7 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
           </div>
 
           {/* Right — Two iPhones with sync arrow (swap on role toggle) */}
-          <div className="relative flex items-center justify-center gap-1 sm:gap-2 md:gap-4 w-full max-w-full py-6">
+          <div className="flex items-center justify-center gap-1 sm:gap-2 md:gap-4 w-full max-w-full py-6">
             {(() => {
               const phones = [
                 {
@@ -119,61 +119,41 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
                   delay: 0.5,
                 },
               ];
-              // Position 0 = left slot, Position 1 = right slot
-              // When isBuddy: buddy(0) on left, sponsor(1) on right -> positions [0, 1]
-              // When !isBuddy: sponsor(1) on left, buddy(0) on right -> positions [1, 0]
-              const buddyPosition = isBuddy ? 0 : 1; // 0 = left, 1 = right
-              const sponsorPosition = isBuddy ? 1 : 0;
+              const ordered = isBuddy ? phones : [phones[1], phones[0]];
 
-              const transition = { type: "spring" as const, stiffness: 60, damping: 20, mass: 1.4 };
-
-              const Phone = ({ phone, position }: { phone: typeof phones[number]; position: number }) => (
+              const Phone = ({ phone }: { phone: typeof phones[number] }) => (
                 <motion.div
-                  animate={{ x: position === 0 ? "0%" : "100%" }}
-                  initial={false}
-                  transition={transition}
-                  className="absolute top-1/2 left-0 -translate-y-1/2 origin-center"
-                  style={{
-                    width: "calc(50% - 32px)",
-                    maxWidth: 280,
-                  }}
+                  layout
+                  layoutId={`hero-phone-${phone.id}`}
+                  transition={{ type: "spring", stiffness: 220, damping: 26 }}
+                  className="relative w-[36vw] max-w-[140px] sm:max-w-[180px] md:max-w-[280px] md:w-[280px] shrink-0 animate-float"
+                  style={{ animationDelay: `${phone.delay}s` }}
                 >
-                  <div
-                    className="relative w-full animate-float"
-                    style={{ animationDelay: `${phone.delay}s` }}
-                  >
-                    <img
-                      src={phone.src}
-                      alt={phone.alt}
-                      className="w-full h-auto drop-shadow-2xl rounded-[2rem]"
-                    />
-                    <div className={`absolute inset-0 -z-10 blur-3xl ${phone.glow} rounded-full scale-75`} />
-                  </div>
+                  <img
+                    src={phone.src}
+                    alt={phone.alt}
+                    className="w-full h-auto drop-shadow-2xl rounded-[2rem]"
+                  />
+                  <div className={`absolute inset-0 -z-10 blur-3xl ${phone.glow} rounded-full scale-75`} />
                 </motion.div>
               );
 
-              const leftIsBuddy = isBuddy;
-
               return (
-                <div className="relative w-full max-w-[640px] mx-auto" style={{ aspectRatio: "640 / 560" }}>
-                  <Phone phone={phones[0]} position={buddyPosition} />
-                  <Phone phone={phones[1]} position={sponsorPosition} />
+                <>
+                  <Phone phone={ordered[0]} />
 
-                  {/* Bi-directional sync arrow with animated labels — centered overlay */}
-                  <motion.div
-                    transition={transition}
-                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-1 z-20 text-sobr-coral px-1"
-                  >
+                  {/* Bi-directional sync arrow with animated labels */}
+                  <motion.div layout className="flex flex-col items-center gap-1 z-20 text-sobr-coral shrink-0 px-1">
                     <AnimatePresence mode="wait" initial={false}>
                       <motion.span
-                        key={`top-${leftIsBuddy ? "buddy" : "sponsor"}`}
+                        key={`top-${ordered[0].id}`}
                         initial={{ opacity: 0, y: -4 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 4 }}
                         transition={{ duration: 0.2 }}
                         className="text-[8px] sm:text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase"
                       >
-                        {leftIsBuddy ? "Buddy" : "Sponsor"}
+                        {ordered[0].id === "buddy" ? "Buddy" : "Sponsor"}
                       </motion.span>
                     </AnimatePresence>
                     <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 sm:w-8 md:w-12" stroke="currentColor">
@@ -182,18 +162,20 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
                     </svg>
                     <AnimatePresence mode="wait" initial={false}>
                       <motion.span
-                        key={`bot-${leftIsBuddy ? "sponsor" : "buddy"}`}
+                        key={`bot-${ordered[1].id}`}
                         initial={{ opacity: 0, y: -4 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 4 }}
                         transition={{ duration: 0.2 }}
                         className="text-[8px] sm:text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase"
                       >
-                        {leftIsBuddy ? "Sponsor" : "Buddy"}
+                        {ordered[1].id === "buddy" ? "Buddy" : "Sponsor"}
                       </motion.span>
                     </AnimatePresence>
                   </motion.div>
-                </div>
+
+                  <Phone phone={ordered[1]} />
+                </>
               );
             })()}
           </div>
