@@ -125,7 +125,7 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
                 <motion.div
                   layout
                   layoutId={`hero-phone-${phone.id}`}
-                  transition={{ type: "spring", stiffness: 220, damping: 26 }}
+                  transition={{ type: "spring", stiffness: 80, damping: 18, mass: 1.2 }}
                   className="relative w-[36vw] max-w-[140px] sm:max-w-[180px] md:max-w-[280px] md:w-[280px] shrink-0 animate-float"
                   style={{ animationDelay: `${phone.delay}s` }}
                 >
