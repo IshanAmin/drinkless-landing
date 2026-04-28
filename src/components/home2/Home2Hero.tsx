@@ -15,10 +15,6 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
 
   const handleClick = (role: "buddy" | "sponsor") => {
     onRoleSelect(role);
-    // Smooth scroll to dual-experience section
-    setTimeout(() => {
-      document.getElementById("dual-experience")?.scrollIntoView({ behavior: "smooth" });
-    }, 50);
   };
 
   return (
