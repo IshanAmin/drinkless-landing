@@ -138,7 +138,7 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
                   <img
                     src={phone.label}
                     alt={phone.labelAlt}
-                    className="w-[55%] h-auto mb-2 md:mb-3 drop-shadow-lg select-none pointer-events-none"
+                    className="h-6 sm:h-8 md:h-10 w-auto mb-2 md:mb-3 drop-shadow-lg select-none pointer-events-none"
                   />
                   <img
                     src={phone.src}
