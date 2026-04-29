@@ -3,6 +3,8 @@ import appStoreBadge from "@/assets/app-store-badge.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
 import buddyScreenshot from "@/assets/buddy-screenshot.png";
 import sponsorScreenshot from "@/assets/sponsor-screenshot.png";
+import buddyLabel from "@/assets/label-buddy.png";
+import sponsorLabel from "@/assets/label-sponsor.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface Home2HeroProps {
@@ -107,6 +109,8 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
                 {
                   id: "buddy",
                   src: buddyScreenshot,
+                  label: buddyLabel,
+                  labelAlt: "Buddy",
                   alt: "Sobr app — buddy view (Ishaan)",
                   glow: "bg-sobr-coral/20",
                   delay: 0,
@@ -114,6 +118,8 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
                 {
                   id: "sponsor",
                   src: sponsorScreenshot,
+                  label: sponsorLabel,
+                  labelAlt: "Sponsor",
                   alt: "Sobr app — sponsor view (Jolly)",
                   glow: "bg-sobr-amber/15",
                   delay: 0.5,
@@ -126,9 +132,14 @@ const Home2Hero = ({ onRoleSelect, activeRole }: Home2HeroProps) => {
                   layout
                   layoutId={`hero-phone-${phone.id}`}
                   transition={{ type: "spring", stiffness: 220, damping: 26 }}
-                  className="relative w-[36vw] max-w-[140px] sm:max-w-[180px] md:max-w-[280px] md:w-[280px] shrink-0 animate-float"
+                  className="relative flex flex-col items-center w-[36vw] max-w-[140px] sm:max-w-[180px] md:max-w-[280px] md:w-[280px] shrink-0 animate-float"
                   style={{ animationDelay: `${phone.delay}s` }}
                 >
+                  <img
+                    src={phone.label}
+                    alt={phone.labelAlt}
+                    className="w-[55%] h-auto mb-2 md:mb-3 drop-shadow-lg select-none pointer-events-none"
+                  />
                   <img
                     src={phone.src}
                     alt={phone.alt}
