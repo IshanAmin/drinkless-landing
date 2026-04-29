@@ -58,7 +58,7 @@ const AppShowcase = () => {
           <img
             src={buddySponsorChat}
             alt="Buddy and Sponsor chat flow — nudges and templates"
-            className="w-full max-w-5xl h-auto drop-shadow-2xl"
+            className="w-full max-w-3xl h-auto drop-shadow-2xl"
           />
         </div>
       </div>
