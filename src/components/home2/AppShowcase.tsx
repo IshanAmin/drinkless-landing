@@ -3,6 +3,7 @@ import showcaseSponsor from "@/assets/showcase-sponsor.png";
 import buddySponsorLogo from "@/assets/buddy-sponsor-logo.png";
 import buddySponsorChat from "@/assets/buddy-sponsor-chat.png";
 import groundRulesFull from "@/assets/ground-rules-full.png";
+import aiInsightsFull from "@/assets/ai-insights-full.png";
 
 const AppShowcase = () => {
   return (
