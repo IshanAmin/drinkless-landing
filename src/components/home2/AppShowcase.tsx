@@ -5,6 +5,7 @@ import buddySponsorChat from "@/assets/buddy-sponsor-chat.png";
 import groundRulesFull from "@/assets/ground-rules-full.png";
 import aiInsightsBuddy from "@/assets/ai-insights-buddy.png";
 import aiInsightsSponsor from "@/assets/ai-insights-sponsor.png";
+import buddyLayoutFull from "@/assets/buddy-layout-full.png";
 
 const AppShowcase = () => {
   return (
