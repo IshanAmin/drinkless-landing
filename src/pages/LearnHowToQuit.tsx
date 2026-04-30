@@ -16,8 +16,22 @@ import {
 } from "lucide-react";
 import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
+import appStoreBadge from "@/assets/app-store-badge.png";
+import googlePlayBadge from "@/assets/google-play-badge.png";
 
-const APP_STORE_URL = "https://apps.apple.com/us/app/sobr-quit-drinking-coach/id6748581017";
+const APP_STORE_URL = "https://apps.apple.com/app/id6758133222";
+const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.wpes.sobr";
+
+const StoreBadges = () => (
+  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+    <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
+      <img src={appStoreBadge} alt="Download on the App Store" className="h-14 w-auto" />
+    </a>
+    <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
+      <img src={googlePlayBadge} alt="Get it on Google Play" className="h-14 w-auto" />
+    </a>
+  </div>
+);
 
 const benefits = [
   {
@@ -373,6 +387,9 @@ const LearnHowToQuit = () => {
                 </div>
               ))}
             </div>
+            <div className="mt-12 animate-fade-in">
+              <StoreBadges />
+            </div>
           </div>
         </section>
 
@@ -476,23 +493,7 @@ const LearnHowToQuit = () => {
             <p className="text-lg text-sobr-text-muted mb-10 leading-relaxed">
               The best time to regain your clarity was yesterday. The second best time is right now. Join the thousands who have used Sobr to change their lives.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a
-                href={APP_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-sobr-coral text-sobr-root font-semibold font-jakarta hover:bg-sobr-coral-light transition-all duration-300 shadow-lg shadow-sobr-coral/30 hover:scale-105"
-              >
-                Start Your Free Trial
-                <ArrowRight className="h-5 w-5" />
-              </a>
-              <Link
-                to="/"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-white/20 text-sobr-text font-semibold font-jakarta hover:border-sobr-coral hover:text-sobr-coral transition-colors"
-              >
-                See Pricing Plans
-              </Link>
-            </div>
+            <StoreBadges />
           </div>
         </section>
       </main>
