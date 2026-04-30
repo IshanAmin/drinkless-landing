@@ -3,6 +3,7 @@ import showcaseSponsor from "@/assets/showcase-sponsor.png";
 import buddySponsorLogo from "@/assets/buddy-sponsor-logo.png";
 import buddySponsorChat from "@/assets/buddy-sponsor-chat.png";
 import groundRulesFull from "@/assets/ground-rules-full.png";
+import aiInsightsFull from "@/assets/ai-insights-full.png";
 
 const AppShowcase = () => {
   return (
@@ -98,6 +99,30 @@ const AppShowcase = () => {
             <img
               src={groundRulesFull}
               alt="Sponsor sets ground rules and AI insights for Buddy to follow"
+              className="w-full max-w-3xl h-auto drop-shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Fourth showcase — Soby AI Insights */}
+      <div className="mt-20 md:mt-28 -mb-20 md:-mb-28 bg-sobr-card py-20 md:py-28">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 space-y-3">
+            <p className="text-sobr-coral font-jakarta font-semibold tracking-wide uppercase text-sm">
+              Powered by Soby
+            </p>
+            <h2 className="text-3xl md:text-4xl font-jakarta font-bold text-sobr-text">
+              AI Insights & Recommendations
+            </h2>
+            <p className="text-sobr-text-secondary font-inter max-w-xl mx-auto">
+              Soby, our AI mascot, analyzes your journey and surfaces personalized insights and next steps — for both Buddies and Sponsors.
+            </p>
+          </div>
+          <div className="flex items-center justify-center max-w-full">
+            <img
+              src={aiInsightsFull}
+              alt="Soby AI Insights — personalized analysis and recommendations for Buddy and Sponsor"
               className="w-full max-w-3xl h-auto drop-shadow-2xl"
             />
           </div>
