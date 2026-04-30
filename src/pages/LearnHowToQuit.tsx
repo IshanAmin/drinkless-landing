@@ -16,8 +16,7 @@ import {
 } from "lucide-react";
 import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
-import appStoreBadge from "@/assets/app-store-badge.png";
-import googlePlayBadge from "@/assets/google-play-badge.png";
+import AndroidWaitlistButton from "@/components/AndroidWaitlistButton";
 
 const APP_STORE_URL = "https://apps.apple.com/app/id6758133222";
 const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.wpes.sobr";
