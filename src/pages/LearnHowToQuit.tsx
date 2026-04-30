@@ -18,19 +18,7 @@ import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
 import AndroidWaitlistButton from "@/components/AndroidWaitlistButton";
 
-const APP_STORE_URL = "https://apps.apple.com/app/id6758133222";
-const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.wpes.sobr";
-
-const StoreBadges = () => (
-  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-    <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
-      <img src={appStoreBadge} alt="Download on the App Store" className="h-14 w-auto" />
-    </a>
-    <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
-      <img src={googlePlayBadge} alt="Get it on Google Play" className="h-14 w-auto" />
-    </a>
-  </div>
-);
+const StoreBadges = () => <AndroidWaitlistButton badgeHeight="h-14" />;
 
 const benefits = [
   {
