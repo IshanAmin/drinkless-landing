@@ -122,7 +122,7 @@ const AppShowcase = () => {
           </div>
           <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-8 max-w-full">
             {/* Left — Buddy AI insights phone */}
-            <div className="relative shrink-0 h-[40vw] max-h-[280px] md:max-h-[420px] animate-float">
+            <div className="relative shrink-0 h-[55vw] max-h-[420px] md:max-h-[620px] animate-float">
               <img
                 src={aiInsightsBuddy}
                 alt="Soby AI Insights — Buddy journey analysis and recommendations"
@@ -132,7 +132,7 @@ const AppShowcase = () => {
             </div>
 
             {/* Center — Buddy ↔ Sponsor logo */}
-            <div className="relative shrink-0 h-[15vw] max-h-[105px] md:max-h-[150px]">
+            <div className="relative shrink-0 h-[18vw] max-h-[140px] md:max-h-[200px]">
               <img
                 src={buddySponsorLogo}
                 alt="Buddy and Sponsor sync"
@@ -141,7 +141,7 @@ const AppShowcase = () => {
             </div>
 
             {/* Right — Sponsor AI insights phone */}
-            <div className="relative shrink-0 h-[40vw] max-h-[280px] md:max-h-[420px] animate-float" style={{ animationDelay: "0.5s" }}>
+            <div className="relative shrink-0 h-[55vw] max-h-[420px] md:max-h-[620px] animate-float" style={{ animationDelay: "0.5s" }}>
               <img
                 src={aiInsightsSponsor}
                 alt="Soby AI Insights — Sponsor recommended support actions"
