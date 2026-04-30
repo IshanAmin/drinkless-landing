@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import sobrLogo from "@/assets/sobr-logo-light.png";
+import appStoreBadge from "@/assets/app-store-badge.png";
 
 const APP_STORE_URL =
   "https://apps.apple.com/us/app/sobr-quit-drinking-coach/id6748581017";
@@ -72,10 +73,10 @@ const SiteHeader = () => {
               href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-sobr-coral text-sobr-root font-jakarta font-semibold text-sm hover:bg-sobr-coral-light transition-all hover:scale-105 shadow-md shadow-sobr-coral/20"
+              aria-label="Download on the App Store"
+              className="transition-transform hover:scale-105"
             >
-              Get the App
-              <ArrowRight className="h-4 w-4" />
+              <img src={appStoreBadge} alt="Download on the App Store" className="h-10 w-auto" />
             </a>
           </div>
 
@@ -114,10 +115,10 @@ const SiteHeader = () => {
                 href={APP_STORE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-sobr-coral text-sobr-root font-jakarta font-semibold text-sm hover:bg-sobr-coral-light transition-colors"
+                aria-label="Download on the App Store"
+                className="mt-3 inline-flex items-center justify-center transition-transform hover:scale-105"
               >
-                Get the App
-                <ArrowRight className="h-4 w-4" />
+                <img src={appStoreBadge} alt="Download on the App Store" className="h-12 w-auto" />
               </a>
             </nav>
           </div>
