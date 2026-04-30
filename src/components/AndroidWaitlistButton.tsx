@@ -114,7 +114,7 @@ const AndroidWaitlistButton = ({
           </button>
         </DrawerTrigger>
 
-        <DrawerContent className="bg-sobr-root border-t border-white/10">
+        <DrawerContent className="sobr-dark bg-sobr-root border-t border-white/10">
           <div className="mx-auto w-full max-w-md">
             <DrawerHeader>
               <DrawerTitle className="text-sobr-text font-jakarta text-2xl">
