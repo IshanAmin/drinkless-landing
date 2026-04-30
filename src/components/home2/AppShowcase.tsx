@@ -98,7 +98,7 @@ const AppShowcase = () => {
             <img
               src={groundRulesFull}
               alt="Sponsor sets ground rules and AI insights for Buddy to follow"
-              className="w-full max-w-5xl h-auto drop-shadow-2xl"
+              className="w-full max-w-3xl h-auto drop-shadow-2xl"
             />
           </div>
         </div>
