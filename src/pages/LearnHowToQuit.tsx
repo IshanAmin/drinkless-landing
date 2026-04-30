@@ -361,9 +361,6 @@ const LearnHowToQuit = () => {
                 );
               })}
             </div>
-            <div className="mt-12 animate-fade-in">
-              <StoreBadges />
-            </div>
           </div>
         </section>
 
@@ -389,6 +386,9 @@ const LearnHowToQuit = () => {
                   <p className="text-sobr-text-muted leading-relaxed">{s.description}</p>
                 </div>
               ))}
+            </div>
+            <div className="mt-12 animate-fade-in">
+              <StoreBadges />
             </div>
           </div>
         </section>
