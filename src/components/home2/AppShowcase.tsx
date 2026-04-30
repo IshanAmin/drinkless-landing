@@ -19,7 +19,7 @@ const AppShowcase = () => {
             Beautiful & Intuitive
           </p>
           <h2 className="text-3xl md:text-4xl font-jakarta font-bold text-sobr-text">
-            See Sobr in Action
+            Details Logging and Tracking
           </h2>
           <p className="text-sobr-text-secondary font-inter max-w-xl mx-auto">
             Designed with care — every screen is built to support, encourage, and empower you on your journey.
@@ -64,13 +64,13 @@ const AppShowcase = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 space-y-3">
             <p className="text-sobr-coral font-jakarta font-semibold tracking-wide uppercase text-sm">
-              Stay Connected
+              Stay Connected 24/7
             </p>
             <h2 className="text-3xl md:text-4xl font-jakarta font-bold text-sobr-text">
-              Buddy ↔ Sponsor Chat
+              Buddy ↔ Sponsor Chat & Push Notifications
             </h2>
             <p className="text-sobr-text-secondary font-inter max-w-xl mx-auto">
-              Real-time nudges and supportive templates keep the connection strong, anytime.
+              Real-time Custom Push Notification from Sponsor to keep Buddy on Track!
             </p>
           </div>
           <div className="flex items-center justify-center max-w-full">
