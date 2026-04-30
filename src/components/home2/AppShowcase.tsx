@@ -132,13 +132,18 @@ const AppShowcase = () => {
               <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-coral/20 rounded-full scale-75" />
             </div>
 
-            {/* Center — Buddy ↔ Sponsor logo */}
-            <div className="relative shrink-0 h-[18vw] max-h-[140px] md:max-h-[200px]">
-              <img
-                src={buddySponsorLogo}
-                alt="Buddy and Sponsor sync"
-                className="h-full w-auto"
-              />
+            {/* Center — Buddy ↔ Sponsor sync (matches hero style) */}
+            <div className="flex flex-col items-center gap-1 z-20 text-sobr-coral shrink-0 px-1">
+              <span className="text-[8px] sm:text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase">
+                Buddy
+              </span>
+              <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 sm:w-8 md:w-12" stroke="currentColor">
+                <path d="M4 8H36L30 2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M44 16H12L18 22" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <span className="text-[8px] sm:text-[10px] md:text-xs font-jakarta font-semibold tracking-wider uppercase">
+                Sponsor
+              </span>
             </div>
 
             {/* Right — Sponsor AI insights phone */}
