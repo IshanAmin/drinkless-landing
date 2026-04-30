@@ -1,6 +1,5 @@
 import sobrIcon from "@/assets/sobr-icon.png";
-import appStoreBadge from "@/assets/app-store-badge.png";
-import googlePlayBadge from "@/assets/google-play-badge.png";
+import AndroidWaitlistButton from "@/components/AndroidWaitlistButton";
 
 const FinalCTA = () => {
   return (
