@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import sobrLogo from "@/assets/sobr-logo-light.png";
+import appStoreBadge from "@/assets/app-store-badge.png";
 
 const APP_STORE_URL =
   "https://apps.apple.com/us/app/sobr-quit-drinking-coach/id6748581017";
