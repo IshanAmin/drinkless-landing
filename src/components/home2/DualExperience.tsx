@@ -111,7 +111,7 @@ const DualExperience = ({ activeTab, onTabChange }: DualExperienceProps) => {
               value="sponsor"
               className="rounded-lg font-jakarta font-semibold data-[state=active]:bg-sobr-coral data-[state=active]:text-sobr-text text-sobr-text-muted whitespace-normal text-xs sm:text-sm px-2 py-2"
             >
-              🤝 For Sponsors
+              🤝 Connect with a Sponsor
             </TabsTrigger>
           </TabsList>
 
