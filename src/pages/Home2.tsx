@@ -20,11 +20,11 @@ export default function Home2() {
         <Home2Hero onRoleSelect={setActiveRole} activeRole={activeRole} />
         <HowItWorks />
         <DualExperience activeTab={activeRole} onTabChange={setActiveRole} />
-        <FivePillars />
         
         <AppShowcase />
         <Home2Testimonials />
         <Home2FAQ />
+        <FivePillars />
         <FinalCTA />
       </main>
 
