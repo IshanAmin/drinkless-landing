@@ -49,6 +49,7 @@ const sponsorFeatures = [
   { icon: Bell, title: "Nudge System", desc: "Send encouragement exactly when it matters." },
   { icon: AlertTriangle, title: "Crisis Alerts", desc: "Get notified instantly if your buddy needs help." },
   { icon: Heart, title: "Shared Milestones", desc: "Celebrate wins together on the journey." },
+  { icon: Lightbulb, title: "AI Insights", desc: "Personalized AI-driven insights based on your buddy's patterns." },
 ];
 
 interface FeatureCardProps {
