@@ -1,6 +1,5 @@
 import sobrIcon from "@/assets/sobr-icon.png";
-import appStoreBadge from "@/assets/app-store-badge.png";
-import googlePlayBadge from "@/assets/google-play-badge.png";
+import AndroidWaitlistButton from "@/components/AndroidWaitlistButton";
 
 const FinalCTA = () => {
   return (
@@ -37,14 +36,10 @@ const FinalCTA = () => {
         </div>
 
         {/* App store badges */}
-        <div className="flex gap-4 justify-center">
-          <a href="https://apps.apple.com/app/id6758133222" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
-            <img src={appStoreBadge} alt="Download on the App Store" className="h-12 w-auto" />
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=com.wpes.sobr" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
-            <img src={googlePlayBadge} alt="Get it on Google Play" className="h-12 w-auto" />
-          </a>
-        </div>
+        <AndroidWaitlistButton
+          badgeHeight="h-12"
+          className="flex gap-4 justify-center items-center"
+        />
       </div>
     </section>
   );
