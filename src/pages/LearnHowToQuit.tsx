@@ -18,6 +18,8 @@ import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
 import AndroidWaitlistButton from "@/components/AndroidWaitlistButton";
 
+const APP_STORE_URL = "https://apps.apple.com/app/id6758133222";
+
 const StoreBadges = () => <AndroidWaitlistButton badgeHeight="h-14" />;
 
 const benefits = [
