@@ -92,7 +92,7 @@ const DualExperience = ({ activeTab, onTabChange }: DualExperienceProps) => {
             Two roles, one mission
           </p>
           <h2 className="text-3xl md:text-4xl font-jakarta font-bold text-sobr-text">
-            Built for Buddies & Sponsors
+            Built for Buddies & Connecting with a Sponsor
           </h2>
           <p className="text-sobr-text-secondary font-inter max-w-2xl mx-auto">
             Whether you're on the journey yourself or walking beside someone — Sobr has you covered.
