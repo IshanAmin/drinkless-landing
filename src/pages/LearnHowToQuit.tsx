@@ -493,23 +493,7 @@ const LearnHowToQuit = () => {
             <p className="text-lg text-sobr-text-muted mb-10 leading-relaxed">
               The best time to regain your clarity was yesterday. The second best time is right now. Join the thousands who have used Sobr to change their lives.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a
-                href={APP_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-sobr-coral text-sobr-root font-semibold font-jakarta hover:bg-sobr-coral-light transition-all duration-300 shadow-lg shadow-sobr-coral/30 hover:scale-105"
-              >
-                Start Your Free Trial
-                <ArrowRight className="h-5 w-5" />
-              </a>
-              <Link
-                to="/"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-white/20 text-sobr-text font-semibold font-jakarta hover:border-sobr-coral hover:text-sobr-coral transition-colors"
-              >
-                See Pricing Plans
-              </Link>
-            </div>
+            <StoreBadges />
           </div>
         </section>
       </main>
