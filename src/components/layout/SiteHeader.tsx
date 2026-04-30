@@ -73,10 +73,10 @@ const SiteHeader = () => {
               href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-sobr-coral text-sobr-root font-jakarta font-semibold text-sm hover:bg-sobr-coral-light transition-all hover:scale-105 shadow-md shadow-sobr-coral/20"
+              aria-label="Download on the App Store"
+              className="transition-transform hover:scale-105"
             >
-              Get the App
-              <ArrowRight className="h-4 w-4" />
+              <img src={appStoreBadge} alt="Download on the App Store" className="h-10 w-auto" />
             </a>
           </div>
 
