@@ -3,7 +3,8 @@ import showcaseSponsor from "@/assets/showcase-sponsor.png";
 import buddySponsorLogo from "@/assets/buddy-sponsor-logo.png";
 import buddySponsorChat from "@/assets/buddy-sponsor-chat.png";
 import groundRulesFull from "@/assets/ground-rules-full.png";
-import aiInsightsFull from "@/assets/ai-insights-full.png";
+import aiInsightsBuddy from "@/assets/ai-insights-buddy.png";
+import aiInsightsSponsor from "@/assets/ai-insights-sponsor.png";
 
 const AppShowcase = () => {
   return (
@@ -119,12 +120,35 @@ const AppShowcase = () => {
               Soby, our AI mascot, analyzes your journey and surfaces personalized insights and next steps — for both Buddies and Sponsors.
             </p>
           </div>
-          <div className="flex items-center justify-center max-w-full">
-            <img
-              src={aiInsightsFull}
-              alt="Soby AI Insights — personalized analysis and recommendations for Buddy and Sponsor"
-              className="w-full max-w-3xl h-auto drop-shadow-2xl"
-            />
+          <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-8 max-w-full">
+            {/* Left — Buddy AI insights phone */}
+            <div className="relative shrink-0 h-[40vw] max-h-[280px] md:max-h-[420px] animate-float">
+              <img
+                src={aiInsightsBuddy}
+                alt="Soby AI Insights — Buddy journey analysis and recommendations"
+                className="h-full w-auto drop-shadow-2xl"
+              />
+              <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-coral/20 rounded-full scale-75" />
+            </div>
+
+            {/* Center — Buddy ↔ Sponsor logo */}
+            <div className="relative shrink-0 h-[15vw] max-h-[105px] md:max-h-[150px]">
+              <img
+                src={buddySponsorLogo}
+                alt="Buddy and Sponsor sync"
+                className="h-full w-auto"
+              />
+            </div>
+
+            {/* Right — Sponsor AI insights phone */}
+            <div className="relative shrink-0 h-[40vw] max-h-[280px] md:max-h-[420px] animate-float" style={{ animationDelay: "0.5s" }}>
+              <img
+                src={aiInsightsSponsor}
+                alt="Soby AI Insights — Sponsor recommended support actions"
+                className="h-full w-auto drop-shadow-2xl"
+              />
+              <div className="absolute inset-0 -z-10 blur-3xl bg-sobr-amber/15 rounded-full scale-75" />
+            </div>
           </div>
         </div>
       </div>
