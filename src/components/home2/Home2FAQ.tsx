@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "What's the difference between a Buddy and a Sponsor?",
-    a: "A Buddy is the person on the sobriety journey — they track, journal, and get AI support. A Sponsor is someone who supports a Buddy — they get a dashboard, nudge system, and crisis alerts.",
+    a: "A Buddy is the person on the sobriety journey - they track, journal, and get AI support. A Sponsor is someone who supports a Buddy - they get a dashboard, nudge system, and crisis alerts.",
   },
   {
     q: "Is Sobr free?",
