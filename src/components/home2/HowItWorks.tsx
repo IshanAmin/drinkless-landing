@@ -61,7 +61,7 @@ const HowItWorks = () => {
             <img src={sobrLink} alt="Sobr Link — connecting Buddy and Sponsor" className="w-24 h-auto my-2 animate-pulse-glow" />
 
             {/* Sponsor step 3 */}
-            <Step icon={Rocket} num={3} title={<>Start Your Journey <span className="font-extrabold">As Sponsor</span></>} desc="Set goals, track progress, get 24/7 AI-powered support and stay sober." />
+            <Step icon={Rocket} num={3} title={<>Connect with a <span className="font-extrabold">Sponsor</span></>} desc="Set goals, track progress, get 24/7 AI-powered support and stay sober." />
           </div>
         </div>
       </div>
