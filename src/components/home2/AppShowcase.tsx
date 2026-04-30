@@ -79,6 +79,30 @@ const AppShowcase = () => {
           </div>
         </div>
       </div>
+
+      {/* Third showcase — Sponsor sets Ground Rules for Buddy */}
+      <div className="mt-20 md:mt-28 -mb-20 md:-mb-28 bg-sobr-root py-20 md:py-28 relative">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 space-y-3">
+            <p className="text-sobr-coral font-jakarta font-semibold tracking-wide uppercase text-sm">
+              Accountability
+            </p>
+            <h2 className="text-3xl md:text-4xl font-jakarta font-bold text-sobr-text">
+              Sponsor Sets the Ground Rules
+            </h2>
+            <p className="text-sobr-text-secondary font-inter max-w-xl mx-auto">
+              Sponsors create personalized rules and AI insights — Buddies see them right on their home screen to stay on track.
+            </p>
+          </div>
+          <div className="flex items-center justify-center max-w-full">
+            <img
+              src={groundRulesFull}
+              alt="Sponsor sets ground rules and AI insights for Buddy to follow"
+              className="w-full max-w-5xl h-auto drop-shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
