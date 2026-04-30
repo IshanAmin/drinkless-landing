@@ -27,7 +27,7 @@ const HowItWorks = () => {
           {/* Sobr Link */}
           <img src={sobrLink} alt="Sobr Link" className="w-20 h-auto animate-pulse-glow" />
           {/* Sponsor */}
-          <Step icon={Rocket} num={3} title={<>Start Your Journey <span className="font-extrabold">As Sponsor</span></>} desc="Set goals, track progress, get 24/7 AI-powered support and stay sober." />
+          <Step icon={Rocket} num={3} title={<>Connect with a <span className="font-extrabold">Sponsor</span></>} desc="Set goals, track progress, get 24/7 AI-powered support and stay sober." />
         </div>
 
         {/* Desktop layout: left steps + right split */}
