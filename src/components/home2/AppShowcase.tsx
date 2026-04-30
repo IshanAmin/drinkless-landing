@@ -91,7 +91,7 @@ const AppShowcase = () => {
               Sponsor Sets the Ground Rules
             </h2>
             <p className="text-sobr-text-secondary font-inter max-w-xl mx-auto">
-              Sponsors create personalized rules and AI insights — Buddies see them right on their home screen to stay on track.
+              Sponsors create personalized rules — Buddies see them right on their home screen to stay on track.
             </p>
           </div>
           <div className="flex items-center justify-center max-w-full">
