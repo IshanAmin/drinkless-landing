@@ -153,6 +153,30 @@ const AppShowcase = () => {
           </div>
         </div>
       </div>
+
+      {/* Fifth showcase — Buddy app layout overview */}
+      <div className="mt-20 md:mt-28 -mb-20 md:-mb-28 bg-sobr-root py-20 md:py-28">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 space-y-3">
+            <p className="text-sobr-coral font-jakarta font-semibold tracking-wide uppercase text-sm">
+              Built for the Journey
+            </p>
+            <h2 className="text-3xl md:text-4xl font-jakarta font-bold text-sobr-text">
+              Everything Buddies Need, In One Place
+            </h2>
+            <p className="text-sobr-text-secondary font-inter max-w-2xl mx-auto">
+              From crisis support and relapse prevention to curated activities and selfie progress timelapses — every screen is designed to help Buddies stay strong, every day.
+            </p>
+          </div>
+          <div className="flex items-center justify-center max-w-full">
+            <img
+              src={buddyLayoutFull}
+              alt="Sobr Buddy app layout — Emergency Support, relapse prevention, activities, and selfie progress"
+              className="w-full max-w-5xl h-auto drop-shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
