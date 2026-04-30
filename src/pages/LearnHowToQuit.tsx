@@ -361,6 +361,9 @@ const LearnHowToQuit = () => {
                 );
               })}
             </div>
+            <div className="mt-12 animate-fade-in">
+              <StoreBadges />
+            </div>
           </div>
         </section>
 
