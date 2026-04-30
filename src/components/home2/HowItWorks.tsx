@@ -23,11 +23,11 @@ const HowItWorks = () => {
           <Step icon={Users} num={2} title="Choose Your Role" desc="Are you the Buddy quitting alcohol, or the Sponsor supporting them?" />
           <Arrow direction="down" />
           {/* Buddy */}
-          <Step icon={Rocket} num={3} title={<>Start Your Journey <span className="font-extrabold">As Buddy</span></>} desc="Set goals, track progress, and get 24/7 AI-powered support." />
+          <Step icon={Rocket} num={3} title={<>Start Your Journey <span className="font-extrabold">As Buddy</span></>} desc="Set goals, track progress, get 24/7 AI-powered support and stay sober." />
           {/* Sobr Link */}
           <img src={sobrLink} alt="Sobr Link" className="w-20 h-auto animate-pulse-glow" />
           {/* Sponsor */}
-          <Step icon={Rocket} num={3} title={<>Start Your Journey <span className="font-extrabold">As Sponsor</span></>} desc="Set goals, track progress, and get 24/7 AI-powered support." />
+          <Step icon={Rocket} num={3} title={<>Start Your Journey <span className="font-extrabold">As Sponsor</span></>} desc="Set goals, track progress, get 24/7 AI-powered support and stay sober." />
         </div>
 
         {/* Desktop layout: left steps + right split */}
@@ -55,13 +55,13 @@ const HowItWorks = () => {
           {/* Right split — cols 9-12 */}
           <div className="col-span-4 flex flex-col items-center gap-4">
             {/* Buddy step 3 */}
-            <Step icon={Rocket} num={3} title={<>Start Your Journey <span className="font-extrabold">As Buddy</span></>} desc="Set goals, track progress, and get 24/7 AI-powered support." />
+            <Step icon={Rocket} num={3} title={<>Start Your Journey <span className="font-extrabold">As Buddy</span></>} desc="Set goals, track progress, get 24/7 AI-powered support and stay sober." />
 
             {/* Sobr Link logo */}
             <img src={sobrLink} alt="Sobr Link — connecting Buddy and Sponsor" className="w-24 h-auto my-2 animate-pulse-glow" />
 
             {/* Sponsor step 3 */}
-            <Step icon={Rocket} num={3} title={<>Start Your Journey <span className="font-extrabold">As Sponsor</span></>} desc="Set goals, track progress, and get 24/7 AI-powered support." />
+            <Step icon={Rocket} num={3} title={<>Start Your Journey <span className="font-extrabold">As Sponsor</span></>} desc="Set goals, track progress, get 24/7 AI-powered support and stay sober." />
           </div>
         </div>
       </div>
