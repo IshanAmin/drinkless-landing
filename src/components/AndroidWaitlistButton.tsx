@@ -117,6 +117,18 @@ const AndroidWaitlistButton = ({
         <DrawerContent className="sobr-dark bg-sobr-root border-t border-white/10">
           <div className="mx-auto w-full max-w-md">
             <DrawerHeader>
+              <div className="flex justify-center mb-2">
+                <div className="relative inline-block">
+                  <img
+                    src={googlePlayBadge}
+                    alt="Get it on Google Play (coming soon)"
+                    className="h-12 w-auto opacity-60"
+                  />
+                  <span className="absolute -top-2 -right-2 bg-sobr-coral text-sobr-root text-[9px] font-jakarta font-bold uppercase tracking-wider px-2 py-1 rounded-md shadow-md whitespace-nowrap">
+                    Coming Soon
+                  </span>
+                </div>
+              </div>
               <DrawerTitle className="text-sobr-text font-jakarta text-2xl">
                 Get notified when Android launches
               </DrawerTitle>
