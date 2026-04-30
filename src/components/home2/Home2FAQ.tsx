@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "Is my data private and secure?",
-    a: "Absolutely. We use industry-standard encryption and never sell your data. Your journey is yours — we protect it.",
+    a: "Absolutely. We use industry-standard encryption and never sell your data. Your journey is yours - we protect it.",
   },
   {
     q: "Can I use Sobr without a Sponsor?",
