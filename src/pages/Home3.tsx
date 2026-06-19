@@ -1,4 +1,5 @@
 
+import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { Heart } from "lucide-react";
 import { Link } from "react-router-dom";
