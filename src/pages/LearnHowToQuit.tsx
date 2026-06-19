@@ -14,6 +14,7 @@ import {
   Activity,
   Quote,
 } from "lucide-react";
+import Seo from "@/components/Seo";
 import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
 import AndroidWaitlistButton from "@/components/AndroidWaitlistButton";
@@ -198,6 +199,11 @@ const LearnHowToQuit = () => {
 
   return (
     <div className="sobr-dark min-h-screen bg-sobr-root text-sobr-text font-inter">
+      <Seo
+        title="Learn How to Quit Drinking — A 90-Day Roadmap"
+        description="Your 90-day roadmap to quitting alcohol. Regain clarity, earn back respect, and achieve the success you deserve with Sobr."
+        path="/learn-how-to-quit-drinking"
+      />
       <main>
         {/* HERO */}
         <header className="relative overflow-hidden">

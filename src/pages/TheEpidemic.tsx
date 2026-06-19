@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Users, Brain, Heart, PieChart, Droplet, TrendingUp, AlertTriangle } from "lucide-react";
+import Seo from "@/components/Seo";
 import { primaryStatsData } from "@/components/stats/PrimaryStats";
 import { demographicStatsData } from "@/components/stats/DemographicStats";
 import { youthStatsData } from "@/components/stats/YouthStats";
@@ -17,6 +18,11 @@ const iconMap: Record<string, React.ReactNode> = {
 const EpidemicPage = () => {
   return (
     <div className="min-h-screen sobr-dark bg-[#0B0913] text-[#FFF9F7]">
+      <Seo
+        title="The Alcoholism Epidemic — Statistics & Crisis Data"
+        description="Understanding the alcoholism crisis: prevalence, demographics, youth impact, and the treatment gap in America."
+        path="/the-epidemic"
+      />
       <main>
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-16 md:py-24 text-center">

@@ -1,4 +1,5 @@
 
+import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { Heart } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -16,6 +17,11 @@ import ReferencesDialog from "@/components/stats/ReferencesDialog";
 export default function Index() {
   return (
     <div className="min-h-screen">
+      <Seo
+        title="Sobr — Quit Drinking in 90 Days"
+        description="Quit drinking in 90 days and gain back respect, clarity, and success with Sobr's AI coach and live sponsor."
+        path="/home3"
+      />
       <main>
         <HeroSection />
         <AlcoholismStats />

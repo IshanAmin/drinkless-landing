@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Seo from "@/components/Seo";
 import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
 
@@ -31,6 +32,11 @@ const LegalEmphasis = ({ children }: { children: React.ReactNode }) => (
 const TermsAndConditions = () => {
   return (
     <div className="sobr-dark min-h-screen bg-sobr-root">
+      <Seo
+        title="Terms and Conditions"
+        description="The legally binding terms governing use of the Sobr app by Brightslides LLC."
+        path="/terms"
+      />
       {/* Content */}
       <main className="container mx-auto px-4 py-12 md:py-20 max-w-3xl">
         <div className="mb-12">

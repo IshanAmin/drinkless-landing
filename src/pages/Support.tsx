@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
+import Seo from "@/components/Seo";
 import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
 
@@ -33,6 +34,11 @@ export default function Support() {
 
   return (
     <div className="min-h-screen bg-sobr-root text-sobr-text sobr-dark">
+      <Seo
+        title="Contact Support"
+        description="Get help with Sobr. Send us a message and we'll get back to you."
+        path="/support"
+      />
       <main className="container mx-auto px-4 py-16 max-w-xl">
         <h1 className="text-3xl md:text-4xl font-bold text-sobr-text font-jakarta mb-2">
           Contact Support

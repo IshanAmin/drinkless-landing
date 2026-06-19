@@ -1,5 +1,6 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import { Clock, ArrowLeft } from "lucide-react";
+import Seo from "@/components/Seo";
 import { blogPosts } from "@/data/blogPosts";
 import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
@@ -83,7 +84,13 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen sobr-dark bg-sobr-root">
-
+      <Seo
+        title={post.title}
+        description={post.excerpt}
+        path={`/blog/${post.slug}`}
+        image={post.imageUrl}
+        type="article"
+      />
       <main className="container mx-auto px-4 py-16 md:py-24">
         <article className="max-w-3xl mx-auto">
           {/* Meta */}
