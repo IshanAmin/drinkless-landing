@@ -1,3 +1,4 @@
+import Seo from "@/components/Seo";
 import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
 
@@ -18,6 +19,11 @@ const SubSection = ({ title, children }: { title: string; children: React.ReactN
 const UnchainPrivacyPolicy = () => {
   return (
     <div className="sobr-dark min-h-screen bg-sobr-root">
+      <Seo
+        title="Privacy Policy — Unchain (Quit Porn Addiction)"
+        description="Privacy policy for Unchain, the Quit Porn Addiction app by Brightslides LLC."
+        path="/unchain-privacy"
+      />
       {/* Content */}
       <main className="container mx-auto px-4 py-12 md:py-20 max-w-3xl">
         <div className="mb-12">

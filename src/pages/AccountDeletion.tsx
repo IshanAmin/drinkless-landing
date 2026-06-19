@@ -1,5 +1,6 @@
 import { Trash2, ShieldCheck, Clock, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
+import Seo from "@/components/Seo";
 import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
 
@@ -13,6 +14,11 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
 export default function AccountDeletion() {
   return (
     <div className="min-h-screen bg-sobr-root text-sobr-text sobr-dark">
+      <Seo
+        title="Account Deletion Request"
+        description="Learn how to delete your Sobr account and what happens to your data."
+        path="/account-deletion"
+      />
       <main className="container mx-auto px-4 py-12 md:py-20 max-w-3xl">
         {/* Page header */}
         <div className="mb-12">

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Seo from "@/components/Seo";
 import Home2Hero from "@/components/home2/Home2Hero";
 import HowItWorks from "@/components/home2/HowItWorks";
 import DualExperience from "@/components/home2/DualExperience";
@@ -16,6 +17,11 @@ export default function Home2() {
 
   return (
     <div className="min-h-screen sobr-dark">
+      <Seo
+        title="Sobr — Quit Drinking in 90 Days with AI + a Live Sponsor"
+        description="Sobr pairs you with an empathetic AI coach and a live sponsor to help you quit drinking in 90 days and rebuild clarity, respect, and success."
+        path="/"
+      />
       <main>
         <Home2Hero onRoleSelect={setActiveRole} activeRole={activeRole} />
         <HowItWorks />

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Clock, ArrowRight } from "lucide-react";
+import Seo from "@/components/Seo";
 import { blogPosts } from "@/data/blogPosts";
 import Home2Footer from "@/components/home2/Home2Footer";
 import ScrollToTop from "@/components/home2/ScrollToTop";
@@ -7,6 +8,11 @@ import ScrollToTop from "@/components/home2/ScrollToTop";
 export default function Blog() {
   return (
     <div className="min-h-screen sobr-dark bg-sobr-root">
+      <Seo
+        title="Blog — Insights & Resources for Quitting Alcohol"
+        description="Expert articles, tips, and stories to support your journey toward a healthier relationship with alcohol."
+        path="/blog"
+      />
       <main className="container mx-auto px-4 py-16 md:py-24">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
